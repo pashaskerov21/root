@@ -1,0 +1,43 @@
+/*--------------ABOUT SECTION--------------*/
+.about-section{
+    .row{
+        width: 100%;
+        .col-12{
+            padding: 0;
+            @include center;
+        }
+    }
+    .about-image{
+        width: 100%;
+        max-width: 500px;
+        @include center;
+        position: relative;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        .first-image{
+            width: 100%;
+        }
+        .second-image{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 70%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px var(--black-5);
+            //transform: translate(0, 50px);
+        }
+    }
+    .content{
+        width: 100%;
+        @include column-center;
+        .section-title{
+            margin-bottom: 30px;
+        }
+        .text{
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
+

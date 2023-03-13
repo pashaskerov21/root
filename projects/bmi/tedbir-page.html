@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="icon" href="image/bmi-new-logo/1x/iconsmall.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="mobile-header-wrapper">
+                    <div class="mh-left">
+                        <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/1x/verticalsmall.png" alt="logo"></a>
+                    </div>
+                    <div class="mh-right">
+                        <button class="search-button me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button type="button" class="offcanvas-button" data-bs-toggle="offcanvas" data-bs-target="#bmi-offcanvas"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="top-navbar-left">
+                        <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/2x/verticalbig.png" alt="logo"></a>
+                    </div>
+                    <div class="top-navbar-right">
+                        <div class="tnr-top">
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                            </div>
+                        </div>
+                        <div class="tnr-bottom">
+                            <div class="lang-dropdown">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><span>AZ</span><i class="fa-solid fa-chevron-down"></i></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">EN</a></li>
+                                      <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="search-box">
+                                <input type="text" placeholder="Axtar">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-navbar">
+                    <div class="container">
+                        <div class="d-flex align-items-center">
+                            <a href="index.html" class="header-logo d-none"><img src="image/bmi-new-logo/1x/shortsmall.png" alt="logo"></a>
+                            <div class="links-wrapper">
+                                <a href="index.html">Ana Səhifə</a>
+                                <a href="about.html">Haqqımızda</a>
+                                <a href="trainings.html">Təlimlər</a>
+                                <a href="trainers.html">Təlimçilər</a>
+                                <a href="forms.html">Forumlar</a>
+                                <a href="news.html">Xəbərlər</a>
+                                <a href="contact.html">Bizimlə Əlaqə</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-top" id="search-offcanvas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <input type="text" class="form-control" placeholder="Axtar">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" id="bmi-offcanvas">
+            <div class="offcanvas-header">
+                <div class="mh-left">
+                    <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/white-logo/vertical.svg" alt="logo"></a>
+                </div>
+                <div class="mh-right">
+                    <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="links-wrapper">
+                    <a href="index.html">Ana Səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="trainings.html">Təlimlər</a>
+                    <a href="trainers.html">Təlimçilər</a>
+                    <a href="forms.html">Forumlar</a>
+                    <a href="news.html">Xəbərlər</a>
+                    <a href="contact.html">Bizimlə Əlaqə</a>
+                    <a data-bs-toggle="collapse" href="#lang-collapse" role="button">Az</a>
+                    <div class="collapse" id="lang-collapse">
+                        <div class="links-wrapper">
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons-wrapper my-3">
+                    <div class="contact-icons">
+                        <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                        <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                    </div>
+                    <div class="sosial-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="banner-section">
+            <div class="swiper banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-2.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-2.png" alt="slide"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="content-wrapper">
+                        <div class="content-left">
+                            <h1>BUSINESS<br> MANAGEMENT<br>INSTITUTE</h1>
+                            <a href="#" class="banner-button">Ətraflı</a>
+                        </div>
+                        <div class="content-right">
+                            <div class="video-wrapper">
+                                <div class="video-poster"><img src="image/2-main/swiper-1/video-poster.png" alt="poster"></div>
+                                <div class="hover-div">
+                                    <a href="image/2-main/swiper-1/video-poster.png" data-fancybox="" class="play-button">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="page-header container">
+            <div class="root-links">
+                <a href="#">Əsas səhifə</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Tədbir 1</a>
+            </div>
+            <span class="header">TƏDBİR 1</span>
+        </div>
+        <section class="tedbir-about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="poster">
+                            <img src="image/2-main/tedbirler/poster/img-1.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="right">
+                            <span class="header">Tədbir başlığı</span>
+                            <div class="icons">
+                                <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                            </div>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Tempora laboriosam delectus illo eaque ex aperiam nemo iste laudantium, 
+                                placeat accusantium, molestiae temporibus asperiores vero omnis corrupti 
+                                reiciendis harum laborum eos possimus repellendus? Mollitia nihil similique 
+                                id eos sunt? Fugiat velit assumenda vitae omnis aspernatur fugit, doloribus 
+                                officiis vero suscipit obcaecati minima a amet in repellendus, hic at sapiente 
+                                praesentium laboriosam ratione! Pariatur voluptatum exercitationem ab ipsum. 
+                                Necessitatibus error eligendi rem. Qui asperiores tenetur quis illum ad architecto 
+                                totam fugit iusto, porro necessitatibus obcaecati aliquam odit exercitationem repudiandae 
+                                quos dolorem consequatur incidunt sapiente suscipit vero. Error ad assumenda dolores 
+                                veritatis officia. illum ad architecto totam fugit iusto, porro necessitatibus obcaecati 
+                                aliquam odit exercitationem repudiandae quos dolorem consequatur incidunt sapiente suscipit vero.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-center">
+                        <div class="swiper tedbir-gallery-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-1.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-1.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-2.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-2.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-3.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-3.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-4.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-4.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-5.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-5.png">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="image/2-main/tedbirler/poster/img-6.png" class="gallery-image" data-fancybox="">
+                                        <img src="image/2-main/tedbirler/poster/img-6.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diger-tedbirler-container">
+                    <div class="section-header">
+                        <div class="blue-line"></div>
+                        <span class="header">DİGƏR TƏDBİRLƏR</span>
+                        <div class="blue-line"></div>
+                    </div>
+                    <div class="swiper diger-tedbirler-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-1.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 1</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-2.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 2</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-3.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 3</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-4.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 4</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-5.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 5</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tedbir-card-2">
+                                    <div class="image">
+                                        <img src="image/2-main/tedbirler/poster/img-6.png">
+                                        <div class="hover-div">
+                                            <a href="#">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <span class="name">Tədbir 6</span>
+                                        <div class="icons">
+                                            <div class="item"><i class="fa-solid fa-calendar-days"></i><span>19 yanvar 2021</span></div>
+                                            <div class="item"><i class="fa-solid fa-location-dot"></i><span>Baku</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top d-flex flex-column align-items-center flex-lg-row">
+                <div class="footer-logo"><a href="index.html"><img src="image/bmi-new-logo/white-logo/text icon.svg" class="w-100"></a></div>
+                <div class="row w-100">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Menyular</h4>
+                            <a href="about.html">Haqqımızda</a>
+                            <a href="trainings.html">Təlimlər</a>
+                            <a href="trainers.html">Təlimçilər</a>
+                            <a href="forms.html">Forumlar</a>
+                            <a href="news.html">Xəbərlər</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Faydalı linklər</h4>
+                            <a href="faq.html">Tez-tez soruşulanlar</a>
+                            <a href="career.html">Karyera</a>
+                            <a href="service-network.html">Xidmət şəbəkəsi</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Əlaqə</h4>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                            </div>
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022. Business Management Institute</p>
+        </div>
+    </footer>
+
+    <div class="page-main-buttons">
+        <button  class="page-button muraciet-button" type="button" >
+            <img src="image/icons/muraciet.png">
+            <span data-bs-target="#muraciet-offcanvas" data-bs-toggle="offcanvas">Müraciət et</span>
+        </button>
+        <button class="page-button kurs-button" type="button">
+            <img src="image/icons/kurs.png">
+            <span data-bs-target="#kurslar-offcanvas" data-bs-toggle="offcanvas">Popular kurslar</span>
+        </button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="muraciet-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Müraciət et</h3>
+            <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="#" class="form-general" autocomplete="off">
+                <div class="row w-100">
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="telim-select">Kateqoriya seç*</label>
+                            <select id="telim-select" class="form-select">
+                                <option selected disabled>Kateqoriya daxil edin</option>
+                                <option>Kateqoriya 1</option>
+                                <option>Kateqoriya 2</option>
+                                <option>Kateqoriya 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="telim-select">Təlim seç*</label>
+                            <select id="telim-select" class="form-select">
+                                <option selected disabled>Təlim daxil edin</option>
+                                <option>Təlim 1</option>
+                                <option>Təlim 2</option>
+                                <option>Təlim 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-name">Ad, soyad*</label>
+                            <input type="text" class="form-control" id="user-name" placeholder="Adınız və Soyadınız">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-work">İş yeri*</label>
+                            <input type="text" class="form-control" id="user-work" placeholder="İş yerinizi daxil edin">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-vezife">Vəzifə*</label>
+                            <input type="text" class="form-control" id="user-vezife" placeholder="Vəzifəniz">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-email">E-mail*</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Şəxsi e-mail ünvanınızı daxil edin">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-phone">Telefon*</label>
+                            <input type="text" class="form-control" id="user-phone" placeholder="+994 50 999 99 99">
+                        </div>
+                    </div>
+                    <div class="col-12 col-center">
+                        <button type="submit" class="form-submit-button">Müraciət göndər</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="kurslar-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Popular Kurslar</h3>
+            <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="kurs-cards-wrapper">
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-1.png"></div>
+                    <span>Rəhbərlər üçün təlimlər</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-2.png"></div>
+                    <span>Marketinq təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-3.png"></div>
+                    <span>İnsan Resurslarının idarə edilməsi təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-4.png"></div>
+                    <span>Rəhbərlər üçün təlimlər</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-5.png"></div>
+                    <span>Marketinq təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-6.png"></div>
+                    <span>İnsan Resurslarının idarə edilməsi təlimləri</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

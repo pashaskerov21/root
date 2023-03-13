@@ -1,0 +1,145 @@
+/*banner section scss/css start*/
+.banner-swiper{
+    position: relative;
+    .swiper-button-prev,
+    .swiper-button-next{
+        i{
+            font-size: 28px;
+        }
+    }
+    .cover-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content{
+        width: 100%;
+        min-height: 350px;
+        @include column-center;
+        background-color: var(--black-4);
+        z-index: 2;
+        padding: 20px;
+        .container{
+            @include column-center;
+        }
+        .text{
+            color: var(--color-3);
+            @include column-center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 700px;
+            p{
+                color: var(--color-3);
+            }
+            .large-text{
+                margin-bottom: 25px;
+                font-size: 20px;
+                opacity: 0;
+                animation: content-text-top 1s ease 1s forwards;
+            }
+            .small-text{
+                opacity: 0;
+                animation: content-text-bottom 1s ease 1s forwards;
+            }
+        }
+    }
+}
+/*banner section media queries*/
+@media only screen and (min-width: 380px){
+    .banner-swiper{
+        .content{
+            min-height: 260px;
+            max-height: 260px;
+        }
+    }
+}
+@media only screen and (min-width: 576px){
+    .banner-swiper{
+        .swiper-button-prev,
+        .swiper-button-next{
+            i{
+                font-size: 32px;
+            }
+        }
+        .content{
+            min-height: 400px;
+            max-height: 400px;
+            .container{
+                @include column-start;
+            }
+            .text{
+                @include column-start;
+                text-align: start;
+                font-size: 20px;
+                .large-text{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .banner-swiper{
+        .swiper-button-prev,
+        .swiper-button-next{
+            i{
+                font-size: 36px;
+            }
+        }
+        .content{
+            min-height: 600px;
+            max-height: 600px;
+            .text{
+                font-size: 24px;
+                .large-text{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .banner-swiper{
+        .swiper-button-prev,
+        .swiper-button-next{
+            padding: 0 25px;
+            i{
+                font-size: 40px;
+                
+            }
+        }
+        .content{
+            min-height: 80vh;
+            max-height: 80vh;
+            .text{
+                font-size: 28px;
+                .large-text{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .banner-swiper{
+        .content{
+            
+            .text{
+                font-size: 34px;
+                padding: 0 40px;
+                max-width: 900px;
+                .large-text{
+                    font-size: 38px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+/*banner section scss/css end*/

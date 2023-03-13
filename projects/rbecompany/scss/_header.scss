@@ -1,0 +1,88 @@
+header{
+    width: 100%;
+    padding: 20px 0;
+    
+    .container{
+        @include center;
+        
+        .inside-wrapper{
+            width: 100%;
+            @include column-center;
+        }
+        .logo{
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 25px;
+            img{
+                width: 100%;
+            }
+        }
+        .contact-links{
+            @include center;
+            a{
+                @include center;
+                color: #000;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 15px;
+                border-radius: 10px;
+                transition: 0.1s;
+                i{
+                    color: var(--color-1);
+                    margin-right: 8px;
+                    font-size: 24px;
+                    transition: 0.1s;
+                    &.fa-phone{
+                        animation: phone-animation 0.3s ease infinite;
+                    }
+                    &.fa-envelope{
+                        color: #A8CF46;
+                    }
+                }
+                &:hover{
+                    background-color: var(--color-1);
+                    color: #fff;
+                    i{color: #fff;}
+                }
+            }
+        }
+    }
+}
+
+@keyframes phone-animation{
+    0%{transform: rotate(0);}
+    25%{transform: rotate(12deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(-12deg);}
+    100%{transform: rotate(0);}
+}
+
+@media only screen and (min-width: 576px){
+    header{
+        .container{
+            border-bottom: 1px solid var(--black-2);
+            .inside-wrapper{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .contact-links{
+                a{
+                    font-size: 18px;
+                    i{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width :768px){
+    header{
+        .container{
+            .logo{
+                max-width: 220px;
+            }
+        }
+    }
+}

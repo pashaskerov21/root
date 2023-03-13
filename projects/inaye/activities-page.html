@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnayə | Fəaliyyət</title>
+    <link rel="icon" href="image/logo/inaye_logo.svg">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="mobile-header container d-xl-none">
+            <div class="header-logo">
+                <a href="index.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
+                <p>XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
+            </div>
+            <button type="button" class="offcanvas-open-btn" data-bs-toggle="offcanvas" data-bs-target="#inaye-offcanvas"><i class="fa-solid fa-bars fa-2x"></i></button>
+        </div>
+        <div class="offcanvas offcanvas-end" id="inaye-offcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html"><img src="image/logo/inaye_logo_white.svg"></a>
+                <button type="button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fa-2x"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="canvas-links-wrapper">
+                    <a href="index.html" class="canvas-link">Əsas</a>
+                    <a href="about.html" class="canvas-link">Haqqımızda</a>
+                    <button class="canvas-link collapse-button" data-bs-toggle="collapse" data-bs-target="#fealiyyet-collapse"><span>Fəaliyyətlər</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="collapse" id="fealiyyet-collapse">
+                        <div class="collapse-wrapper">
+                            <a href="activities.html" class="canvas-link">Fəaliyyətlərimiz</a>
+                            <a href="actions.html" class="canvas-link">Aksiyalar</a>
+                            <a href="projects.html" class="canvas-link">Layihələr</a>
+                        </div>
+                    </div>
+                    <button class="canvas-link collapse-button" data-bs-toggle="collapse" data-bs-target="#muraciet-collapse"><span>Müraciət</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="collapse" id="muraciet-collapse">
+                        <div class="collapse-wrapper">
+                            <a href="subscribe.html" class="canvas-link">Üzv ol</a>
+                            <a href="volunteer.html" class="canvas-link">Könüllü ol</a>
+                            <a href="need_help.html" class="canvas-link">Ehtiyacım var</a>
+                        </div>
+                    </div>
+                    <button class="canvas-link collapse-button" data-bs-toggle="collapse" data-bs-target="#gallery-collapse"><span>Qalereya</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="collapse" id="gallery-collapse">
+                        <div class="collapse-wrapper">
+                            <a href="gallery_photos.html" class="canvas-link">Fotolar</a>
+                            <a href="gallery_videos.html" class="canvas-link">Videolar</a>
+                        </div>
+                    </div>
+                    <a href="calculations.html" class="canvas-link">Hesabat</a>
+                    <a href="contact.html" class="canvas-link">Əlaqə</a>
+                    <button class="canvas-link collapse-button" data-bs-toggle="collapse" data-bs-target="#language-collapse"><span>Az</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="collapse" id="language-collapse">
+                        <div class="collapse-wrapper">
+                            <a href="#" class="canvas-link">AZ</a>
+                            <a href="#" class="canvas-link">EN</a>
+                            <a href="#" class="canvas-link">RU</a>
+                        </div>
+                    </div>
+                    <button class="iane-button">İanə et</button>
+                </div>
+            </div>
+            <div class="offcanvas-bottom">
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-vine"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-xl-block">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-3 d-flex justify-content-center">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="image/logo/inaye_logo.svg" alt="logo"></a>
+                            <p>XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
+                        </div>
+                    </div>
+                    <div class="col-9 d-flex justify-content-center">
+                        <div class="nav-links-wrapper">
+                            <a href="index.html" class="nav-link">Əsas</a>
+                            <a href="about.html" class="nav-link">Haqqımızda</a>
+                            <div class="dropdown-button">
+                                <span class="nav-link">Fəaliyyətlər<i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="nav-drop-menu d-none">
+                                    <a href="activities.html">Fəaliyyətlərimiz</a>
+                                    <a href="actions.html">Aksiyalar</a>
+                                    <a href="projects.html">Layihələr</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-button">
+                                <span class="nav-link">Müraciət<i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="nav-drop-menu d-none">
+                                    <a href="subscribe.html">Üzv ol</a>
+                                    <a href="volunteer.html">Könüllü ol</a>
+                                    <a href="need_help.html">Ehtiyacım var</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-button">
+                                <span class="nav-link">Qalereya<i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="nav-drop-menu d-none">
+                                    <a href="gallery_photos.html">Fotolar</a>
+                                    <a href="gallery_videos.html">Videolar</a>
+                                </div>
+                            </div>
+                            <a href="calculations.html" class="nav-link">Hesabat</a>
+                            <a href="contact.html" class="nav-link">Əlaqə</a>
+                            <div class="dropdown-button">
+                                <span class="nav-link">AZ<i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="nav-drop-menu d-none">
+                                    <a href="#">AZ</a>
+                                    <a href="#">EN</a>
+                                    <a href="#">RU</a>
+                                </div>
+                            </div>
+                            <button class="iane-button">İanə et</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+    </header>
+
+    <main class="inaye-activities-page">
+        <div class="row container py-5">
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="page-image"><img src="../../../image/inaye-fealiyyetler/1-fealiyyet/img-1.jpg"></div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center page-text">
+                <div class="d-flex flex-column">
+                    <h1>Ailə ziyarətləri</h1>
+                    <span>2022-05-20</span>
+                    <p>
+                        İnayə xeyriyyə ictimai birliyi olaraq bizə müraciət edən ailələrin ehtiyaclarını
+                        təyin etmək üçün ailə ziyarətlərimiz davam edir. Bu ailələrin dərdlərinə dərman 
+                        olmaq üçün sizlərin dəstəyinə ehtiyacımız var. Yardım və köməklik üçün aşağıdakı 
+                        vasitələrdən istifadə edə bilərsiniz. 🖥Online: https://hesab.az/unregistered/... 
+                        💳 E-Manat terminallarından: - Xeyriyyə və yardım bölməsinə daxil olaraq İNAYƏ-ni seçirsiniz. 
+                        💳 Kapital Bank, kart hesabı. 4172115332862416 (İNAYE KHEYRİYYA) ☎️ Bizə zəng edərək. 
+                        +994 55 540 25 50 +994 55 529 25 50
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="yardim-section">
+            <img src="image/inaye-main/yardim-bg.jpg">
+            <div class="hover-absolute-div">
+                <div class="yardim-content">
+                    <div class="yardim-header">YARDIM ETMƏK İSTƏYİRSƏN?</div>
+                    <div class="yardim-text">Bizə ya xüsusi mövzu üzrə ya da ki müəyyən məbləğlə ianə edə bilərsiniz. Bunun üçün linkə daxil olun.</div>
+                    <a href="#" class="yardim-button">İanə et <i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-12 col-md-6">
+                    <div class="footer-info-panel">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="image/logo/inaye_logo_white.svg" alt="logo"></a>
+                            <p class="py-2">XEYRİYYƏ İCTİMAİ BİRLİYİ</p>
+                        </div>
+                        <div class="footer-info-content">
+                            <p>Bizimlə sosial şəbəkələrdən, ünvanımızdan və ya əlaqə nömrəmizdən əlaqə qura bilərsiniz</p>
+                            <span>Bakı, Nərimanov rayonu, Əhməd Rəcəbli küçəsi 2/24</span>
+                            <a href="#">+994 55 540 25 50</a>
+                            <a href="#">info@inaye.az</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-right">
+                        <h3>Tərəfdaşlarımız</h3>
+                        <div class="swiper footer-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="image/footer/slide/slide1.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide2.png"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide3.png"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide4.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide5.png"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide6.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide7.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide8.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide9.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide10.png"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide11.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide12.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide13.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide14.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide15.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide16.jpg"></div>
+                                <div class="swiper-slide"><img src="image/footer/slide/slide17.jpg"></div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-white py-3 mt-5 my-3">Sosiallar</h3>
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022 | "İNAYƏ" | Bütün Hüquqlar Qorunur | Hazırlanıb <a href="#">PROTON</a></p>
+        </div>
+    </footer>
+
+
+
+    <button class="page-up-scroll-btn d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

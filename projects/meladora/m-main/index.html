@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meladora</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="d-flex align-items-end">
+      <div id="black-bg"></div>
+      <nav class="fixed-top" id="main-navbar">
+        <div class="container">
+          <div id="contact-info-nav" class="navbar border-bottom border-white">
+            <div id="phone-number">
+              <a href="#" class="nav-item" id="phone-icon-button"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <span class="text-white d-none d-md-inline-block" id="phone-span"
+                >+994 (70) 555 5777</span
+              >
+            </div>
+            <div id="sosial-icon">
+              <a href="#" class="nav-item"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="nav-item"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="nav-item"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="nav-item"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="nav-item"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div id="page-links-nav" class="navbar">
+            <a href="index.html" class="navbar-brand" id="navbar-logo-div">
+              <img src="img/header/nav-logo.png" alt="logo" />
+            </a>
+            <div id="navbar-links" class="d-flex align-items-center">
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m1-info/index.html">Biz kimik?</a>
+              </div>
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m2-gardens/index.html">Bağlarımız</a>
+              </div>
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m3-products/index.html">Məhsullarımız</a>
+              </div>
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m4-services/index.html">Xidmətlərimiz</a>
+              </div>
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m5-sosial-resb/index.html">Sosial məsuliyyət</a>
+              </div>
+              <div class="navbar-links-item p-2 d-none d-lg-block">
+                <a href="../m6-contact/">Əlaqə</a>
+              </div>
+              <div id="nav-offcanvas" class="mx-1 d-lg-none">
+                <a
+                  href="#link-nav-offcanvas"
+                  id="menu-toggle-btn"
+                  data-bs-toggle="offcanvas"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+                <div
+                  class="offcanvas offcanvas-end text-bg-dark"
+                  id="link-nav-offcanvas"
+                >
+                  <div class="offcanvas-header">
+                    <img src="img/header/nav-logo.png" alt="logo" />
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body my-3 mx-2">
+                    <div>
+                      <a href="../m1-info/index.html">Biz kimik</a>
+                    </div>
+                    <div>
+                      <a href="../m2-gardens/index.html">Bağlarımız</a>
+                    </div>
+                    <div>
+                      <a href="../m3-products/index.html">Məhsullarımız</a>
+                    </div>
+                    <div><a href="../m4-services/index.html">Xidmətlərimiz</a></div>
+                    <div><a href="../m5-sosial-resb/index.html">Sosial məsuliyyət</a></div>
+                    <div><a href="../m6-contact/index.html">Əlaqə</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="px-2"
+                id="open-search-box"
+                style="font-size: 25px; color: #91b40d"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <style></style>
+            <div id="nav-search-box" class="d-none">
+              <form action="#" autocomplete="off">
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                  style="width: 260px"
+                >
+                  <div>
+                    <input type="text" class="form-control form-control-sm" />
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-success btn-sm">
+                      Axtar
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      id="close-search-box"
+                      class="btn-close btn-close-white"
+                    ></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="product-swiper" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div id="fruit-slide">
+              <div id="info" class="position-absolute m-5">
+                <h3 class="text-white">Meyvələr</h3>
+                <a href="../m3-products/index.html">Daha çox...</a>
+              </div>
+              <div id="fruit-slide-bg"></div>
+              <div id="fruit-slide-img"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div id="vegetable-slide">
+              <div id="info" class="position-absolute m-5">
+                <h3 class="text-white">Tərəvəzlər</h3>
+                <a href="../m3-products/index.html">Daha çox...</a>
+              </div>
+              <div id="vegetable-slide-bg"></div>
+              <div id="vegetable-slide-img"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div id="flour-slide">
+              <div id="info" class="position-absolute m-5">
+                <h3 class="text-white">Taxıl</h3>
+                <a href="../m3-products/index.html">Daha çox...</a>
+              </div>
+              <div id="flour-slide-bg"></div>
+              <div id="flour-slide-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="meladora-information-section"
+        class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <div id="meladora-information-image"></div>
+        <div id="meladora-information-section-content">
+          <div id="content-text">
+            <div id="content-basic-bg">
+              <img src="img/main/content-img/txt-bg.png" />
+            </div>
+            <h3>Biz kimik?</h3>
+            <div><img src="img/main/content-img/txt-img1.png" /></div>
+            <p class="text-center px-5 py-2">
+              Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə
+              olduğumuz zaman baş verdi.<br />İsmayıllı rayonunun füsunkar
+              təbiətinin gözəlliyi bizim bir gün burda kənd təsərrüfatı ilə
+              məşğul olmaq arzusu oyatdı. Daha sonra dostlarımızla bu məsələni
+              müzakirə edərək İsmayıllıda təsərrüfat qurmağa qərar verdik.
+              <br />
+              Böyük uğurlar vaxtında və yerində verilən qərarlarla çox
+              bağlıdır.<br />
+              Elə bizdə ilk səfərdə qərar verdik və başladıq. İllər çox sürətli
+              keçdir. Bizdə böyümədə zamanın sürətindən geri qalmadıq. Qısa
+              zaman müddətində əldə etdiyimiz uğurlar və daha sürətlə böyüməyə
+              davam etməyimiz işimizə olan sevginin göstəricisidir.<br />Alma,
+              armud nektarin, gavalıç gilas və qoz yetişdirməklə qalmadıq,
+              tingçilik və toxumçuluq məhsul sıramızı genişləndirdik.<br />
+              Qısa zamanda ən son texnoloji yeniliklərlə damla suvarma
+              sistemlərinin qurulması BAĞLARIN layihələndirilməsi, salınması
+              kimi çətin işlərin öhdəsindən uğurla gəldik.<br />2022-ci ildə
+              əsas hədəfimiz brendimizin "made in AZERBAİJAN" adına layiq ölkə
+              kənarında rəflərdə görünməsidir.<br />Növbəti hədəfləri sizlərlə
+              paylaşmaq arzusuyla
+            </p>
+            <p>hörmətlə</p>
+          </div>
+
+          <div id="text-bottom-img">
+            <img src="img/main/content-img/txt-img2.1.png" />
+            <img src="img/main/content-img/txt-img2.2.png" />
+            <img src="img/main/content-img/txt-img2.3.png" />
+          </div>
+          <div class="d-flex flex-column flex-sm-row my-5">
+            <div class="d-flex flex-column align-items-center mx-2">
+              <img src="img/main/content-img/txt-img3.1.png" />
+              <p>Organik</p>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-2">
+              <img src="img/main/content-img/txt-img3.2.png" />
+              <p>Məmnuniyyət</p>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-2">
+              <img src="img/main/content-img/txt-img3.3.png" />
+              <p>Lorem</p>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-2">
+              <img src="img/main/content-img/txt-img3.4.png" />
+              <p>Yüksək keyfiyyət</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="meladora-gardens-section">
+        <div id="gardens-header" class="d-flex flex-column align-items-center">
+          <h3>Bağlarımız</h3>
+          <div><img src="img/main/content-img/txt-img1.png" /></div>
+        </div>
+        <div
+          id="gardens-flex-wrap"
+          class="d-flex flex-column flex-md-row flex-wrap flex-lg-nowrap justify-content-center"
+        >
+          <div
+            id="flex-wrap-item-1"
+            class="flex-wrap-item d-flex flex-column align-items-center"
+          >
+            <p>01</p>
+            <p>Bağ</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              quas soluta iusto nulla odit labore nobis culpa id quo saepe, rem
+              numquam adipisci quaerat magnam nesciunt fugit, quia eum
+              laboriosam?
+            </p>
+            <div><img src="img/main/content-img/garden-1.png" /></div>
+          </div>
+
+          <div
+            id="flex-wrap-item-2"
+            class="flex-wrap-item d-flex flex-column flex-lg-column-reverse align-items-center"
+          >
+            <p>02</p>
+            <p>Bağ</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              quas soluta iusto nulla odit labore nobis culpa id quo saepe, rem
+              numquam adipisci quaerat magnam nesciunt fugit, quia eum
+              laboriosam?
+            </p>
+            <div><img src="img/main/content-img/garden-2.png" /></div>
+          </div>
+
+          <div
+            id="flex-wrap-item-3"
+            class="flex-wrap-item d-flex flex-column align-items-center"
+          >
+            <p>03</p>
+            <p>Bağ</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              quas soluta iusto nulla odit labore nobis culpa id quo saepe, rem
+              numquam adipisci quaerat magnam nesciunt fugit, quia eum
+              laboriosam?
+            </p>
+            <div><img src="img/main/content-img/garden-3.png" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="meladora-products-section">
+        <div id="products-header" class="d-flex flex-column align-items-center">
+          <h3>Məhsullarımız</h3>
+          <div><img src="img/main/content-img/txt-img1.png" /></div>
+        </div>
+        <div id="products-links">
+          <div id="all-products" style="color: #91b40d">Hamısı</div>
+          <div id="fruit-products">Meyvələr</div>
+          <div id="vegetable-products">Tərəvəzlər</div>
+          <div id="flour-products">Taxıllar</div>
+          <div id="other-products">Digər</div>
+        </div>
+        <div id="product-items">
+          <div class="card fruit-item">
+            <img src="img/main/product/alma.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Alma</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card fruit-item">
+            <img src="img/main/product/armud.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Armud</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card fruit-item">
+            <img src="img/main/product/portagal.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Portağal</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card fruit-item">
+            <img src="img/main/product/saftali.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Şaftalı</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card fruit-item">
+            <img src="img/main/product/gilas.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Gilas</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+          <div class="card fruit-item">
+            <img src="img/main/product/gavali.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Gavalı</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card other-item">
+            <img src="img/main/product/qoz.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Qoz</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card vegetable-item">
+            <img src="img/main/product/pomidor.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pomidor</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card flour-item">
+            <img src="img/main/product/taxil.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Taxıl</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+
+          <div class="card other-item">
+            <img src="img/main/product/tingler.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Müxtəlif tinglər</h5>
+              <p>5₼</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="meladora-blogs-section">
+        <div id="blogs-header" class="d-flex flex-column align-items-center">
+          <h3>Bloglar</h3>
+          <div><img src="img/main/content-img/txt-img1.png" /></div>
+        </div>
+        <div
+          id="blog-container"
+          class="py-1 py-lg-5 d-flex flex-column flex-md-row flex-wrap flex-xl-nowrap justify-content-center"
+        >
+          <div
+            class="blog-item py-4 py-xl-0 d-flex flex-column align-items-center"
+          >
+            <img src="img/main/blog/blog-img1.png" />
+            <h5>Blog Header</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              harum ullam exercitationem nobis maiores nesciunt accusantium
+              aliquid, vitae earum aut, officia iusto quae temporibus vel
+              placeat facere eum a autem.
+            </p>
+          </div>
+
+          <div
+            class="blog-item py-4 py-xl-0 d-flex flex-column align-items-center"
+          >
+            <img src="img/main/blog/blog-img2.png" />
+            <h5>Blog Header</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              harum ullam exercitationem nobis maiores nesciunt accusantium
+              aliquid, vitae earum aut, officia iusto quae temporibus vel
+              placeat facere eum a autem.
+            </p>
+          </div>
+
+          <div
+            class="blog-item py-4 py-xl-0 d-flex flex-column align-items-center"
+          >
+            <img src="img/main/blog/blog-img3.png" />
+            <h5>Blog Header</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              harum ullam exercitationem nobis maiores nesciunt accusantium
+              aliquid, vitae earum aut, officia iusto quae temporibus vel
+              placeat facere eum a autem.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          id="main-panel"
+          class="border-bottom border-white d-flex flex-column align-items-center flex-lg-row-reverse justify-content-lg-evenly align-items-lg-start"
+        >
+          <div id="footer-links" class="d-flex flex-column flex-sm-row">
+            <div class="links-wrap px-sm-3">
+              <h5 class="text-white">Menyular</h5>
+              <ul class="list-unstyled">
+                <li><a href="../m1-info/index.html">Biz kimik?</a></li>
+                <li><a href="../m2-gardens/index.html">Bağlarımız</a></li>
+                <li><a href="../m3-products/index.html">Məhsullarımız</a></li>
+                <li><a href="../m4-services/index.html">Xidmətlərimiz</a></li>
+                <li><a href="../m5-sosial-resb/index.html">Sosial məsuliyyət</a></li>
+                <li><a href="../m6-contact/index.html">Əlaqə</a></li>
+              </ul>
+            </div>
+            <div class="links-wrap px-sm-3">
+              <h5 class="text-white">Faydalı linklər</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Tez-tez soruşulanlar</a></li>
+                <li><a href="#">Karyera</a></li>
+                <li><a href="#">Xidmət şəbəkəsi</a></li>
+              </ul>
+            </div>
+            <div class="links-wrap px-sm-3">
+              <ul class="list-unstyled">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Təhlükəsizlik</a></li>
+                <li><a href="#">Şərtlər və qaydalar</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="../m-main/index.html" id="footer-logo" class="py-3">
+            <img src="img/footer/footer-logo.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="container text-white py-3">Copyright</div>
+    </footer>
+
+    <button
+      id="page-up-scroll-btn"
+      class="btn btn-lg btn-success position-fixed bottom-0 end-0 m-3 m-lg-4 d-none"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        //spaceBetween: 100,
+        centeredSlides: true,
+        slidesPerView: 1,
+        //spaceBetween: 40,
+        breakpoints: {
+          960: {
+            slidesPerView: 2,
+            spaceBetween: 70,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/3cf65b98ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

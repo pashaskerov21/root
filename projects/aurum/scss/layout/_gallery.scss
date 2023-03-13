@@ -1,0 +1,162 @@
+/*-----------------AURUM GALLERY PAGE-----------------*/
+.gallery-section{
+    padding: 40px 0;
+    .general-row{
+        .video-gallery-col,
+        .photo-gallery-col{
+            @include center;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+    .gallery-buttons{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 40px;
+        button{
+            width: 100%;
+            max-width: 230px;
+            margin-bottom: 20px;
+            padding: 5px;
+            border: 2px dashed transparent;
+            span{
+                padding: 20px;
+                width: 100%;
+                border: 1px solid var(--d-color-1);
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--t-color-1);
+            }
+            &.active{
+                border-color: var(--d-color-1);
+                span{
+                    background-color: var(--bg-color-1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .gallery-panel{
+        width: 100%;
+        @include center;
+        opacity: 0;
+        animation: gallery-panel 0.5s ease forwards;
+    }
+    .general-row{
+        width: 100%;
+    }
+    .large-poster{
+        width: 100%;
+        margin-bottom: 30px;
+        max-width: 500px;
+        background-color: var(--bg-color-2);
+        img{
+            width: 100%;
+            //max-height: 520px;
+        }
+        &:hover{
+            img{
+                transform: scale(0.94);
+            }
+            
+        }
+    }
+    .right-wrapper{
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .row{
+            width: 100%;
+        }
+    }
+    .text{
+        width: 100%;
+        margin-bottom: 20px;
+        p{
+            text-align: center;
+        }
+    }
+    .photo-gallery{
+        width: 100%;
+        .col-12{
+            margin-bottom: 15px;
+            padding: 0;
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+            background-color: var(--bg-color-2);
+            img{
+                width: 100%;
+            }
+            &:hover{
+                img{
+                    transform: scale(0.85);
+                }
+                
+            }
+        }
+        &-2{
+            width: 100%;
+            .col-12{
+                margin-bottom: 15px;
+            }
+            a{
+                display: inline-block;
+                width: 100%;
+                background-color: var(--bg-color-2);
+                img{
+                    width: 100%;
+                }
+                &:hover{
+                    img{
+                        transform: scale(0.85);
+                    }
+                    
+                }
+            }
+        }
+    }
+    .video-gallery{
+        width: 100%;
+        .col-12{
+            margin-bottom: 15px;
+        }
+        .video-item{
+            position: relative;
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+            .play-button{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                @include center;
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                
+            }
+            &:hover{
+                .play-button{
+                    border-color: transparent;
+                    i{
+                        transform: scale(2);
+                    }
+                }
+            }
+        }
+    }
+    
+}

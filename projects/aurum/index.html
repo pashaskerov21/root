@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum</title>
+    <link rel="icon" href="image/logo/favicon.png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aurum-main.css">
+</head>
+<body>
+    
+
+    <!--HEADER-->
+    <header>
+        <!--HEADER BACKGROUND SWIPER-->
+        <div class="swiper header-bg-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/header-swiper/bg-1.png">
+                </div>
+            </div>
+        </div>
+        <!--MOBILE NAVBAR-->
+        <nav class="mobile-navbar d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <div class="dropdown-center language-dropdown">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="offcanvas offcanvas-start" id="mobile-menu">
+            <div class="offcanvas-header">
+                <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                <button class="close-button" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="canvas-links">
+                    <a href="index.html">Ana səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <a class="collapse-button" data-bs-toggle="collapse" href="#xidmet-collapse">Xidmətlər <i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="collapse" id="xidmet-collapse">
+                        <div class="collapse-links">
+                            <a href="service-ship.html">Ship Agency</a>
+                            <a href="service-port.html">Port Service</a>
+                        </div>
+                    </div>
+                    <a href="ships.html">Üzən qurğular</a>
+                    <a href="blog.html">Bloglar</a>
+                    <a href="gallery.html">Qalereya</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-links">
+                        <a href="#">+994 55 6666600</a>
+                        <a href="#">+994 55 4466606</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">info@aurum.com</a>
+                </div>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--GENERAL HEADER-->
+        <nav class="general-header d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-start">
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-center">
+                        <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    </div>
+                    <div class="col-4 col-end">
+                        <div class="general-language">
+                            <a href="#" class="active">Az</a>
+                            <a href="#">Ru</a>
+                            <a href="#">En</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-navbar">
+                <div class="container">
+                    <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    <a href="index.html" class="active">Ana səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <div class="bottom-navbar-dropdown">
+                        <button class="dropdown-button">
+                            <a href="#">Xidmətlər  <i class="fa-solid fa-chevron-right"></i></a>
+                        </button>
+                        <div class="links-menu d-none">
+                            <a href="service-ship.html">Ship Agency</a>
+                            <a href="service-port.html">Port Service</a>
+                        </div>
+                    </div>
+                    <a href="ships.html">Üzən qurğular</a>
+                    <a href="blog.html">Bloglar</a>
+                    <a href="gallery.html">Qalereya</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+            </div>
+        </nav>
+        <!--HEADER ABOUT SWIPER-->
+        <div class="container pb-3">
+            <div class="swiper header-about-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>The standard Lorem Ipsum passage</h1>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Facere laborum voluptate sequi, voluptas atque eaque incidunt 
+                                    consequatur modi eveniet quod, saepe quam porro voluptatibus 
+                                    eos quo id error, esse obcaecati non sed! Quo fuga nisi 
+                                    voluptatum assumenda, eum porro? Dolor nesciunt earum saepe. 
+                                    Ullam, quia sit error provident quo a.
+                                </p>
+                            </div>
+                            <a href="#" class="about-button">ƏTRAFLI</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>The standard Lorem Ipsum passage</h1>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Facere laborum voluptate sequi, voluptas atque eaque incidunt 
+                                    consequatur modi eveniet quod, saepe quam porro voluptatibus 
+                                    eos quo id error, esse obcaecati non sed! Quo fuga nisi 
+                                    voluptatum assumenda, eum porro? Dolor nesciunt earum saepe. 
+                                    Ullam, quia sit error provident quo a.
+                                </p>
+                            </div>
+                            <a href="#" class="about-button">ƏTRAFLI</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <h1>The standard Lorem Ipsum passage</h1>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Facere laborum voluptate sequi, voluptas atque eaque incidunt 
+                                    consequatur modi eveniet quod, saepe quam porro voluptatibus 
+                                    eos quo id error, esse obcaecati non sed! Quo fuga nisi 
+                                    voluptatum assumenda, eum porro? Dolor nesciunt earum saepe. 
+                                    Ullam, quia sit error provident quo a.
+                                </p>
+                            </div>
+                            <a href="#" class="about-button">ƏTRAFLI</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+        
+    </header>
+
+
+    <main style="background-image: url('image/background/main-bg.png');">
+        
+        <!--WHY US SECTION-->
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="content-wrapper">
+                            <div class="section-title">
+                                <span class="design-span"></span>
+                                <span class="main-span">Niyə Biz?</span>
+                                <img src="image/design/wavy-line.png">
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Rem, iusto exercitationem maxime veritatis ducimus quis deserunt. 
+                                    Dolore amet natus ex rerum fugiat eaque consectetur. Ab quos ut cumque 
+                                    sint nisi exercitationem, ex quam voluptates quasi hic, iusto adipisci 
+                                    officiis vitae et voluptatem, atque iure dicta excepturi eligendi debitis. 
+                                    Placeat accusantium consectetur accusamus, iste asperiores sit earum labore 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-center">
+                        <div class="about-image">
+                            <img src="image/about/content-img-1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SERVICES CARD SECTION-->
+        <section class="service-cards-section">
+            <div class="container">
+                <div class="section-title">
+                    <span class="design-span"></span>
+                    <span class="main-span">Xidmətlər</span>
+                    <img src="image/design/wavy-line.png">
+                </div>
+                <div class="swiper mission-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="image">
+                                    <img src="image/mission/img-1.png">
+                                </div>
+                                <div class="content">
+                                    <span class="title">LOREM IPSUM</span>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Ex beatae enim veritatis porro impedit voluptas adipisci quisquam 
+                                            ab aspernatur corporis 
+                                        </p>
+                                    </div>
+                                    <a href="#" class="about-button">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="image">
+                                    <img src="image/mission/img-2.png">
+                                </div>
+                                <div class="content">
+                                    <span class="title">LOREM IPSUM</span>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Ex beatae enim veritatis porro impedit voluptas adipisci quisquam 
+                                            ab aspernatur corporis 
+                                        </p>
+                                    </div>
+                                    <a href="#" class="about-button">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="image">
+                                    <img src="image/mission/img-3.png">
+                                </div>
+                                <div class="content">
+                                    <span class="title">LOREM IPSUM</span>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Ex beatae enim veritatis porro impedit voluptas adipisci quisquam 
+                                            ab aspernatur corporis 
+                                        </p>
+                                    </div>
+                                    <a href="#" class="about-button">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="image">
+                                    <img src="image/mission/img-1.png">
+                                </div>
+                                <div class="content">
+                                    <span class="title">LOREM IPSUM</span>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Ex beatae enim veritatis porro impedit voluptas adipisci quisquam 
+                                            ab aspernatur corporis 
+                                        </p>
+                                    </div>
+                                    <a href="#" class="about-button">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="image">
+                                    <img src="image/mission/img-2.png">
+                                </div>
+                                <div class="content">
+                                    <span class="title">LOREM IPSUM</span>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Ex beatae enim veritatis porro impedit voluptas adipisci quisquam 
+                                            ab aspernatur corporis 
+                                        </p>
+                                    </div>
+                                    <a href="#" class="about-button">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--COUNTER SECTION-->
+        <section class="counter-section" style="background-image: url('image/background/counters-bg.png');">
+            <div class="container">
+                <div class="counters-wrapper">
+                    <div class="item">
+                        <span class="counter-span" data-val="90">0</span>
+                        <div class="content">
+                            <span class="title">LOREM IPSUM</span>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Asperiores earum sed ipsa fugit maxime quia hic cumque 
+                                    voluptates eligendi tenetur ducimus doloremque,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="counter-span" data-val="142">0</span>
+                        <div class="content">
+                            <span class="title">LOREM IPSUM</span>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Asperiores earum sed ipsa fugit maxime quia hic cumque 
+                                    voluptates eligendi tenetur ducimus doloremque,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="counter-span" data-val="59">0</span>
+                        <div class="content">
+                            <span class="title">LOREM IPSUM</span>
+                            <div class="text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Asperiores earum sed ipsa fugit maxime quia hic cumque 
+                                    voluptates eligendi tenetur ducimus doloremque,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--BLUE ABOUT SWIPER SECTION-->
+        <section class="blue-about-swiper-section" style="background-image: url(image/background/blue-about-bg.png);">
+            <div class="container">
+                <div class="swiper blue-about-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row content">
+                                <div class="col-12 col-lg-6">
+                                    <div class="left">
+                                        <div class="title">
+                                            <span>Lorem Ipsum</span>
+                                            <img src="image/design/wavy-line.png">
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                Quam labore nemo repellendus rem illo dolores soluta nihil 
+                                                voluptas amet, error facere explicabo eligendi, aliquam nam 
+                                                magni dolorum accusantium earum ad esse? Iste molestias est, 
+                                                autem officiis, ipsam nemo consectetur qui cumque ipsa aliquam 
+                                                voluptas! Aliquid labore earum voluptas suscipit neque corporis 
+                                                eaque architecto consectetur quibusdam deleniti quasi, repellat 
+                                                natus aut rem! Incidunt saepe maiores nam obcaecati debitis sequi 
+                                                molestiae? Nesciunt non assumenda doloremque, nam maiores optio 
+                                                consequuntur voluptates placeat dignissimos dolores at autem labore? 
+                                                At, officiis provident quaerat ipsa placeat est totam excepturi vitae ex, 
+                                                natus, aut perspiciatis quo esse?
+                                            </p>
+                                        </div>
+                                        <a href="#" class="about-button">ƏTRAFLI</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="right">
+                                        <img src="image/gallery/photo/large-poster.png">
+                                        <a href="image/gallery/photo/large-poster.png" class="play-button" data-fancybox="">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--PARTNER SECTION-->
+        <section class="partner-section">
+            <div class="container">
+                <div class="swiper partner-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="image/partner/img-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/partner/img-2.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/partner/img-3.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/partner/img-4.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/partner/img-5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--BLOGS SECTION-->
+        <section class="blogs-section">
+            <div class="container">
+                <div class="section-title">
+                    <span class="design-span"></span>
+                    <span class="main-span">Bloglar</span>
+                    <img src="image/design/wavy-line.png">
+                </div>
+                <div class="swiper blog-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="blog-about.html" class="blog-card">
+                                <div class="image">
+                                    <img src="image/blog/img-1.png">
+                                </div>
+                                <div class="content">
+                                    <div class="date-wrapper">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        <div class="date-value">
+                                            <p>26 December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                            Reiciendis distinctio sed totam magni dicta, nemo at numquam 
+                                            laboriosam facere iusto unde quae incidunt soluta neque adipisci 
+                                        </p>
+                                    </div>
+                                    <div class="bottom-icons">
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <div class="icon-value">
+                                                <span>12</span><span>view</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-comments"></i>
+                                            <div class="icon-value">
+                                                <span>5</span><span>comments</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="blog-about.html" class="blog-card">
+                                <div class="image">
+                                    <img src="image/blog/img-2.png">
+                                </div>
+                                <div class="content">
+                                    <div class="date-wrapper">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        <div class="date-value">
+                                            <p>26 December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                            Reiciendis distinctio sed totam magni dicta, nemo at numquam 
+                                            laboriosam facere iusto unde quae incidunt soluta neque adipisci 
+                                        </p>
+                                    </div>
+                                    <div class="bottom-icons">
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <div class="icon-value">
+                                                <span>12</span><span>view</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-comments"></i>
+                                            <div class="icon-value">
+                                                <span>5</span><span>comments</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="blog-about.html" class="blog-card">
+                                <div class="image">
+                                    <img src="image/blog/img-3.png">
+                                </div>
+                                <div class="content">
+                                    <div class="date-wrapper">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        <div class="date-value">
+                                            <p>26 December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                            Reiciendis distinctio sed totam magni dicta, nemo at numquam 
+                                            laboriosam facere iusto unde quae incidunt soluta neque adipisci 
+                                        </p>
+                                    </div>
+                                    <div class="bottom-icons">
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <div class="icon-value">
+                                                <span>12</span><span>view</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <i class="fa-solid fa-comments"></i>
+                                            <div class="icon-value">
+                                                <span>5</span><span>comments</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!--FOOTER-->
+    <footer style="background-image: url('image/background/footer-bg.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 logo">
+                    <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="index.html">Ana səhifə</a>
+                        <a href="about.html">Haqqımızda</a>
+                        <a href="service-ship.html">Ship Agency</a>
+                        <a href="service-port.html">Port Service</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="ships.html">Üzən qurğular</a>
+                        <a href="blog.html">Bloglar</a>
+                        <a href="gallery.html">Qalereya</a>
+                        <a href="contact.html">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="#" class="adress">Bakı şəh., Üzeyir Hacıbəyov, 5/34A</a>
+                        <div class="contact-item">
+                            <span>Tel:</span>
+                            <div class="links">
+                                <a href="#">+994 55 6666600</a>
+                                <a href="#">+994 55 4666606</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>Mail:</span>
+                            <div class="links">
+                                <a href="#">info@aurum.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

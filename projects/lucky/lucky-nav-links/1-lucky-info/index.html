@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky | Haqqımızda</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!--Register Link-->
+      <div class="d-flex justify-content-end container-md p-2">
+        <div id="registration-div" class="d-flex">
+          <a href="../../lucky-account/lucky-login/index.html" class="px-2 py-1 px-md-4 py-md-2">Daxil ol</a>
+          <a href="../../lucky-account/lucky-register/index.html" class="px-2 py-1 px-md-4 py-md-2">Qeydiyyat</a>
+        </div>
+      </div>
+
+      <div class="navbar-grid-system-1" id="navbar-grid-system-div">
+        <!--1ci grid element-->
+        <div
+          class="d-flex justify-content-center align-items-center"
+          id="tnav-logo"
+        >
+          <a href="../../lucky-main/index.html"><img src="img/header/logo-header.svg" /></a>
+        </div>
+        <!--2ci grid element 768den sora yox olacaq-->
+        <div
+          class="d-flex justify-content-start justify-content-md-center align-items-center d-md-none"
+          id="tnav-toggle-menu-btn"
+        >
+          <div class="tnav-menu-btn">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </div>
+        <!--3cu grid element-->
+        <div
+          class="d-flex justify-content-end justify-content-md-center align-items-center"
+          id="tnav-icons"
+        >
+          <a href="../../lucky-icons/shopping/index.html" class="mx-1" id="nav-shopping-btn"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span class="badge">0</span></a
+          >
+          <a href="../../lucky-icons/heart/index.html" class="mx-4" id="nav-heart-btn"
+            ><i class="fa-solid fa-heart"></i><span class="badge">0</span></a
+          >
+        </div>
+        <!--4cu grid element-->
+        <div
+          class="d-flex justify-content-center align-items-center d-none d-md-flex"
+          id="tnav-search-div"
+        >
+          <div>
+            <input type="text" placeholder="Axtar" />
+            <a href="#"><i class="fa-solid fa-search"></i></a>
+          </div>
+        </div>
+        <!--5ci grid element-->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center d-none d-md-flex flex-md-row tntm-links"
+          id="tnav-menu-links"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="index.html">Haqqımızda</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../2-lucky-new-product/index.html">Yeni</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../3-lucky-endirim/index.html">Endirimlər</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../4-lucky-favorite/index.html">Ən çox satılanlar</a>
+          </div>
+
+          <div
+            id="terms-link-btn"
+            class="d-flex flex-column align-items-center justify-content-center align-self-stretch mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <p class="m-0 p-1">
+              Şərtlər <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <div
+              id="terms-link-menu"
+              class="d-flex flex-column align-items-center d-none d-md-none align-items-md-start"
+            >
+              <a href="../5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+              <a href="../5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../6-lucky-contact/index.html">Əlaqə</a>
+          </div>
+        </div>
+        <!--6ci grid element-->
+        <div id="bnav-category-btn" class="d-flex flex-column">
+          <div id="btn-name" class="d-flex justify-content-center">
+            <img src="img/header/category.svg" />
+            <p>Kateqoriyalar</p>
+          </div>
+          <div
+            id="bnav-category-menu"
+            class="d-flex flex-column align-items-center py-4 py-md-2 d-none d-md-none"
+          >
+            <div class="category-item" id="office-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img
+                  src="img/header/ofis-levazimat.svg"
+                  class="d-none d-md-block"
+                />
+                <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="office-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Ağardıcı</a></li>
+                  <li><a href="#">Bıçaq</a></li>
+                  <li><a href="#">Bloknot</a></li>
+                  <li><a href="#">Çek və qaimə</a></li>
+                  <li><a href="#">Çərçivə</a></li>
+                  <li><a href="#">Delgəc</a></li>
+                  <li><a href="#">Dəftər</a></li>
+                  <li><a href="#">Fayl</a></li>
+                  <li><a href="#">Kağız</a></li>
+                  <li><a href="#">Kalkulyator</a></li>
+                  <li><a href="#">Karandaş</a></li>
+                  <li><a href="#">Karandaş yonan</a></li>
+                  <li><a href="#">Marker</a></li>
+                  <li><a href="#">Masaüstü</a></li>
+                  <li><a href="#">Pozan</a></li>
+                  <li><a href="#">Pul rezini</a></li>
+                  <li><a href="#">Qayçı</a></li>
+                  <li><a href="#">Qısqac</a></li>
+                  <li><a href="#">Qeyd kağızı</a></li>
+                  <li><a href="#">Qələm</a></li>
+                  <li><a href="#">Qısqac</a></li>
+                  <li><a href="#">Qovluq</a></li>
+                  <li><a href="#">Sənəd Dolabı</a></li>
+                  <li><a href="#">Sənəd Rəfi</a></li>
+                  <li><a href="#">Skoç</a></li>
+                  <li><a href="#">Skrepka</a></li>
+                  <li><a href="#">Stepler</a></li>
+                  <li><a href="#">Xətkeş</a></li>
+                  <li><a href="#">Yapışqan</a></li>
+                  <li><a href="#">Yazı lövhəsi</a></li>
+                  <li><a href="#">Zərf</a></li>
+                  <li><a href="#">Zibil qabı</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="food-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/qida.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
+                <button id="mobile-food-btn" class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="food-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Çay</a></li>
+                  <li><a href="#">Ədviyyat</a></li>
+                  <li><a href="#">Qəhvə</a></li>
+                  <li><a href="#">Qənd</a></li>
+                  <li><a href="#">Quru meyvə</a></li>
+                  <li><a href="#">Şirniyyat</a></li>
+                  <li><a href="#">Soyuq içkilər</a></li>
+                  <li><a href="#">Süd</a></li>
+                  <li><a href="#">Un məhsulları</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="teserrufat-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img
+                  src="img/header/teserrufat.png"
+                  class="d-none d-md-block"
+                />
+                <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="teserrufat-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Birdəfəlik qablar</a></li>
+                  <li><a href="#">Əlcək</a></li>
+                  <li><a href="#">Hava təravətləndirici</a></li>
+                  <li><a href="#">Mətbəx Dəsmalı</a></li>
+                  <li><a href="#">Mətbəx Ləvazimatları</a></li>
+                  <li><a href="#">Sabun</a></li>
+                  <li><a href="#">Salfetlər</a></li>
+                  <li><a href="#">Təmizləyici maddələr</a></li>
+                  <li><a href="#">Təmizlik Vasitələri</a></li>
+                  <li><a href="#">Tibbi ləvazimatlar</a></li>
+                  <li><a href="#">Tualet kağızı</a></li>
+                  <li><a href="#">Xırdavat</a></li>
+                  <li><a href="#">Zibil paketi</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="elektron-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/elektron.webp" class="d-none d-md-block" />
+                <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="elektron-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Batareyalar</a></li>
+                  <li><a href="#">Katric</a></li>
+                  <li><a href="#">Klaviatura</a></li>
+                  <li><a href="#">Çanta</a></li>
+                  <li><a href="#">Modem</a></li>
+                  <li><a href="#">Mouse</a></li>
+                  <li><a href="#">Power Bank</a></li>
+                  <li><a href="#">Printer</a></li>
+                  <li><a href="#">Telefon</a></li>
+                  <li><a href="#">Təmizləyicilər</a></li>
+                  <li><a href="#">Uzadıcı</a></li>
+                  <li><a href="#">Yaddaş Kartı</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="flower-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/gul.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="flower-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Aksesuarlar</a></li>
+                  <li><a href="#">Otaq Gülləri</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="gift-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/hediye.jpg" class="d-none d-md-block" />
+                <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="gift-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Cüzdan</a></li>
+                  <li><a href="#">Masaüstü Dəstləri</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="coffee-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/coffee.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="coffee-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Mondo</a></li>
+                  <li><a href="#">Qəhvə bişirənlər</a></li>
+                  <li><a href="#">Qəhvə kapsulları</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column align-items-center">
+      <div id="info-header" class="d-flex flex-column align-items-center">
+        <h3>Haqqımızda</h3>
+        <div class="design-line"></div>
+        <p>Ana səhifə / Haqqımızda</p>
+      </div>
+      <div id="info-content" class="d-flex flex-column align-items-center flex-xl-row py-4">
+        <div id="info-text" class="px-4">
+          <h1 class="py-4">Haqqımızda</h1>
+          <p>
+            Şirkətimiz, ofisinizin gündəlik təchizatı üçün zəruri olan
+            <b>dəftərxana ləvazimatlarının, su, çay, kofe kimi daimi istifadə
+            edilən qida məhsullarının, gigiyena və təmizlik vasitələrinin,
+            daşınan və daşınmaz hər növ inventarın (ofis mebel dəstləri,
+            kompyuter və onun yan avadanlıqları)</b> Sizə sürətli və maneəsiz
+            çatdırılması xidmətini həyata keçirir.
+          </p>
+          <p>Xidmətlərimizdən istifadə etməklə Siz;</p>
+          <ul>
+            <li>vaxtınıza qənaət etmiş olursunuz,</li>
+            <li>sifariş etmədən öncə qiymətlərlə tanış ola, qiymət müqaisəsini rahatlıqla edə bilirsiniz,</li>
+            <li>sifarişlərinizi həm nəğd, həm də köçürmə yolu ilə həyata keçirə bilirsiniz,</li>
+            <li>əməkdaşlarınızın ancaq işlərinə vaxt sərf etməsinə zəmin yaradırsınız,</li>
+            <li>əlavə xərclərdən (taksi, park yeri, park cərimələri və s.) azad olursunuz.</li>
+            <p class="py-3">Bizimlə əməkdaşlıq etdiyiniz təqdirdə, bütün xidmətlərin yüksək sürət və həssasiyyətlə həyata keçiriləcəyinə təminat veririk.</p>
+          </ul>
+        </div>
+        <div id="info-image" class="m-5"><img src="img/footer-logo.svg"></div>
+      </div>
+    </main>
+
+    <footer class="d-flex flex-column align-items-center">
+      <div
+        class="d-flex flex-column flex-xl-row w-100 justify-content-md-around align-items-center"
+      >
+        <div id="footer-logo" class="d-flex flex-column align-items-center">
+          <a href="../../lucky-main/index.html"><img src="img/footer-logo.svg" alt="logo" /></a>
+          <div id="footer-icons" class="d-flex py-1">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a
+            ><a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div id="footer-links" class="d-flex flex-column flex-md-row">
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Kateqoriyalar</h5>
+            <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
+            <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
+            <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
+            <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
+            <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
+            <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
+            <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Menyular</h5>
+            <a href="index.html">Haqqımızda</a>
+            <a href="../5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+            <a href="../5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
+            <a href="../6-lucky-contact/index.html">Əlaqə</a>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Əlaqə</h5>
+            <p>Tel: (994) 99 832 07 77</p>
+            <p>E-mail: info@los.az</p>
+            <p class="text-center">
+              Ünvan: Ziya Bünyadov pr,1965.<br />Çinar Park Biznes Mərkəzi
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="footer-author"
+        class="d-flex flex-column align-items-center flex-md-row justify-content-between py-3 container border-top"
+      >
+        <p class="text-center">
+          &copy;Bütün hüquqlar qorunur -
+          <a href="#" class="text-center">Lucky Office Support</a>
+        </p>
+        <p>Powered by <a href="#">Proton.az</a></p>
+      </div>
+    </footer>
+
+    <button
+      id="page-up-scroll-btn"
+      class="btn btn-lg btn-success border-5 border-white position-fixed bottom-0 end-0 m-3 m-lg-4 d-none"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

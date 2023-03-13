@@ -1,0 +1,97 @@
+footer{
+    width: 100%;
+    position: relative;
+    background-color: var(--color-1);
+    padding: 40px 0;
+    .container{
+        @include center;
+    }
+    .row{
+        width: 100%;
+        .col-12{
+            @include column-center;
+        }
+    }
+    .logo{
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 25px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .contact-links{
+        width: 100%;
+        @include column-center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        a{
+            color: #fff;
+            @include center;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            position: relative;
+            &:hover{
+                &::after{
+                    background-color: #fff;
+                    transform: scaleX(1);
+                }
+            }
+            i{
+                margin-right: 10px;
+                font-size: 20px;
+            }
+            span{
+                text-align: center;
+            }
+        }
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        align-self: stretch;
+        padding: 15px;
+        background-color: #fff;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    footer{
+        .row{
+            .col-12{
+                &:first-child{
+                    align-items: flex-start;
+                }
+                &:last-child{
+                    align-items: flex-end;
+                }
+            }
+        }
+        .logo{
+            max-width: 260px;
+        }
+        .contact-links{
+            align-items: flex-start;
+            a{
+                font-size: 20px;
+                i{
+                    font-size: 26px;
+                }
+                span{
+                    text-align: start;
+                }
+            }
+        }
+        
+    }
+}

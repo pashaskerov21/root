@@ -1,0 +1,31 @@
+/*section title*/
+.section-title{
+    @include column-center;
+    margin-bottom: 30px;
+    .design-span{
+        font-size: 20px;
+        color: var(--t-color-2);
+        font-family: 'Dancing Script', cursive;
+        user-select: none;
+    }
+    .main-span{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 7px;
+        user-select: none;
+    }
+    img{
+        user-select: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .section-title{
+    .design-span{
+        font-size: 26px;
+    }
+    .main-span{
+        font-size: 36px;
+    }
+}
+}

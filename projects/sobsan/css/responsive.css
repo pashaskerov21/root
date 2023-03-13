@@ -1,0 +1,129 @@
+@media only screen and (min-width:360px){
+    .mobile-header{
+        padding: 25px 10px;
+    }
+    .header-icons .icon-link{
+        padding: 5px 10px;
+    }
+}
+@media only screen and (min-width:540px){
+    .header-icons .icon-link{
+        padding: 5px 15px;
+    }
+    .alt-wrapper.date{
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px){
+    .footer-bottom{
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    .footer-bottom .left{
+        align-items: flex-start;
+    }
+    .footer-bottom .right{
+        align-items: flex-end;
+    }
+    .page-heading .root-links{
+        display: flex;
+        align-items: center;
+    }
+    section .container .section-title{
+        font-size: 28px;
+    }
+    .swiper-section-2 .swiper-bottom-contact{
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    .product-card .footer{
+        width: 95%;
+    }
+    .general-wrapper-right .filters-wrapper .left-filters{
+        flex-direction: row;
+    }
+    .button-group-col .btn-group a{
+        width: 40px;
+        height: 40px;
+    }
+    .color-button{
+        margin: 10px;
+        border-radius: 30px;}
+    .color-button .image img{
+        height: 200px; 
+        border-radius: 30px 30px 0 0;
+    }
+    .color-button .name{
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 0 0 30px 30px;
+        text-align: start;
+    }
+    .color-shade{
+        margin: 10px;
+        border-radius: 30px;
+    }
+    .color-shade a img{
+        height: 180px; 
+        border-radius: 30px 30px 0 0;
+    }
+    .color-shade .name{
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 0 0 30px 30px;
+        text-align: start;
+    }
+    .contact-section form span{
+        text-align: start;
+    }
+    form .form-button{
+        align-self: flex-start;
+    }
+    .location-wrapper{
+        align-items: flex-start;
+        border-right: 1px dashed rgba(0,0,0,0.3);
+    }
+    .career-buttons{
+        flex-direction: row;
+    }
+    .badges-wrapper{
+        flex-direction: row;
+    }
+    .badges-wrapper .date-badge{
+        margin-right: 10px;
+    }
+    .masters-buttons{
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width:992px){
+    .swiper-bottom-contact .contact-links{flex-direction: row;}
+
+    .masters-categories-buttons{
+        flex-direction: row;
+    }
+    .masters-categories-buttons button{
+        border-bottom: none;
+        border-right: 1px solid rgba(0,0,0,0.3)
+    }
+}
+@media only screen and (min-width:1200px){
+    .top-navbar{flex-direction: row;justify-content: space-between;}
+    .top-navbar .left{width: auto;justify-content: space-between;}
+    .top-navbar .left .top-nav-link{margin-right: 10px;}
+    .top-navbar .right{width: auto;justify-content: space-between;}
+    .top-navbar .right .sosial-icons{margin-right: 0;}
+    .top-navbar .right .icon-link{padding: 5px 10px;}
+    .bottom-nav-link{font-size: 16px;}
+    .alt-category-links .header-link{font-size: 16px;}
+    .alt-category-links .alt-link{font-size: 16px;}
+
+    .footer-links{align-items: flex-start;}
+    
+    .catalog-buttons button{min-width: auto;}
+}
+@media only screen and (min-width:1400px){
+    .bottom-nav-link{font-size: 18px;}
+}

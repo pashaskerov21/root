@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3Schools</title>
+    <link rel="icon" href="img/head-icon.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/3cf65b98ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="first-navbar">
+        <div class="first-navbar-left">
+          <div class="first-nav-logo">
+            <img src="img/navbar-logo.jpg" alt="Home" />
+          </div>
+          <div class="fn-openMenu" onclick="openFNMenu()">
+            Menu <i class="fa-sharp fa-solid fa-caret-down"></i
+            ><i class="fa-sharp fa-solid fa-caret-up" id="arrow-dnone"></i>
+          </div>
+          <div
+            class="fn-link fn-link-show"
+            onclick="openTutorialPanel()"
+            title="Tutorials"
+          >
+            Tutorials <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+          <div
+            class="fn-link fn-link-show"
+            onclick="openReferencePanel()"
+            title="References"
+          >
+            References <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+          <div
+            class="fn-link fn-link-show"
+            onclick="openExercisePanel()"
+            title="Exercies"
+          >
+            Exercies <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+          <div class="fn-link fn-link-show" title="Video Tutorials">Videos</div>
+        </div>
+        <div class="first-navbar-right">
+          <div
+            class="btn-border fnr-btn-show black-btn"
+            title="Go pro and unlock powerful features"
+          >
+            Pro
+          </div>
+          <div class="btn-border fnr-btn-show pink-btn" title="Courses">
+            Get Certificated
+          </div>
+          <div
+            class="btn-border fnr-btn-show yellow-btn"
+            title="Get Your Own Website With W3Schools Spaces"
+          >
+            Free Website
+          </div>
+          <div class="btn-border green-btn">Log in</div>
+        </div>
+      </nav>
+      <nav class="second-navbar">
+        <div class="second-navbar-left">
+          <div class="snl-bar-icon" onclick="openAsidePanel()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="snl-home-icon">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+          <div class="snl-link snl-link-show">HTML</div>
+          <div class="snl-link snl-link-show">CSS</div>
+          <div class="snl-link snl-link-show">JAVASCRIPT</div>
+          <div class="snl-link snl-link-show">SQL</div>
+          <div class="snl-link snl-link-show">PHYTON</div>
+          <div class="snl-link snl-link-show">PHP</div>
+          <div class="snl-link snl-link-show">BOOTSTRAP</div>
+          <div class="snl-link snl-link-show">HOW TO</div>
+          <div class="snl-link snl-link-show">W3.CSS</div>
+          <div class="snl-link snl-link-show">JAVA</div>
+          <div class="snl-link snl-link-show">JQUERY</div>
+          <div class="snl-link snl-link-show">C</div>
+        </div>
+        <div class="second-navbar-right">
+          <div class="snr-link">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+          <div class="snr-link"><i class="fa-solid fa-earth-americas"></i></div>
+          <div class="snr-link">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="f-navbar-menu" class="fnav-menu-close">
+      <div class="x-mark" onclick="closeFNavMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="fnmenu-link">
+        Tutorials <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+      <div class="fnmenu-link">
+        References <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+      <div class="fnmenu-link">
+        Exercies <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </div>
+      <div class="fnmenu-link">Get Certified</div>
+      <div class="fnmenu-link">Spaces</div>
+      <div class="fnmenu-link">Videos</div>
+      <div class="fnmenu-link">Shop</div>
+      <div class="fnmenu-link">Pro</div>
+    </div>
+
+    <section class="open-fn-tutorial black-panel">
+      <div class="bp-main">
+        <h1 class="bpm-header1">Tutorials</h1>
+        <div class="bpm-close-icon" onclick="closeTutorialPanel()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="bpm-grid">
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">HTML and CSS</h2>
+            <div class="list-element">Learn HTML</div>
+            <div class="list-element">Learn CSS</div>
+            <div class="list-element">Learn RWD</div>
+            <div class="list-element">Learn Bootstrap</div>
+            <div class="list-element">Learn W3.CSS</div>
+            <div class="list-element">Learn Colors</div>
+            <div class="list-element">Learn Icons</div>
+            <div class="list-element">Learn Graphics</div>
+            <div class="list-element">Learn SVG</div>
+            <div class="list-element">Learn Canvas</div>
+            <div class="list-element">Learn How To</div>
+            <div class="list-element">Learn Sass</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">JavaScript</h2>
+            <div class="list-element">Learn JavaScript</div>
+            <div class="list-element">Learn jQuery</div>
+            <div class="list-element">Learn React</div>
+            <div class="list-element">Learn AngularJS</div>
+            <div class="list-element">Learn JSON</div>
+            <div class="list-element">Learn AJAX</div>
+            <div class="list-element">Learn AppML</div>
+            <div class="list-element">Learn W3.JS</div>
+            <h2 class="bpmg-header2">Programming</h2>
+            <div class="list-element">Learn Phyton</div>
+            <div class="list-element">Learn Java</div>
+            <div class="list-element">Learn C</div>
+            <div class="list-element">Learn C++</div>
+            <div class="list-element">Learn C#</div>
+            <div class="list-element">Learn R</div>
+            <div class="list-element">Learn Kotlin</div>
+            <div class="list-element">Learn Go</div>
+            <div class="list-element">Learn Django</div>
+            <div class="list-element">Learn TypeScript</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">Server Side</h2>
+            <div class="list-element">Learn SQL</div>
+            <div class="list-element">Learn MySQL</div>
+            <div class="list-element">Learn PHP</div>
+            <div class="list-element">Learn ASP</div>
+            <div class="list-element">Learn Node.js</div>
+            <div class="list-element">Learn Raspberry Pi</div>
+            <div class="list-element">Learn Git</div>
+            <div class="list-element">Learn AWS Cloud</div>
+            <h2 class="bpmg-header2">Web building</h2>
+            <div class="list-element">Create a Website</div>
+            <div class="list-element">Where to start</div>
+            <div class="list-element">Web templates</div>
+            <div class="list-element">Web statistics</div>
+            <div class="list-element">Web certificates</div>
+            <div class="list-element">Web development</div>
+            <div class="list-element">Code editor</div>
+            <div class="list-element">Test Your Typing Speed</div>
+            <div class="list-element">Play a code game</div>
+            <div class="list-element">Cyber security</div>
+            <div class="list-element">Accessibility</div>
+            <div class="list-element">Blog</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">Data Analytics</h2>
+            <div class="list-element">Learn AI</div>
+            <div class="list-element">Learn Machine Learning</div>
+            <div class="list-element">Learn Data science</div>
+            <div class="list-element">Learn NumPy</div>
+            <div class="list-element">Learn Pandas</div>
+            <div class="list-element">Learn Scipy</div>
+            <div class="list-element">Learn Matplotlip</div>
+            <div class="list-element">Learn Statistics</div>
+            <div class="list-element">Learn Excel</div>
+
+            <h2 class="bpmg-header2">XML Tutorials</h2>
+            <div class="list-element">Learn XML</div>
+            <div class="list-element">Learn XML AJAX</div>
+            <div class="list-element">Learn XML DOM</div>
+            <div class="list-element">Learn XML DTD</div>
+            <div class="list-element">Learn XML Schema</div>
+            <div class="list-element">Learn XSLT</div>
+            <div class="list-element">Learn XPath</div>
+            <div class="list-element">Learn XQuery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="open-fn-reference black-panel">
+      <div class="bp-main">
+        <h1 class="bpm-header1">References</h1>
+        <div class="bpm-close-icon" onclick="closeReferencePanel()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="bpm-grid">
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">HTML</h2>
+            <div class="list-element">HTML Tag Reference</div>
+            <div class="list-element">HTML Browser Support</div>
+            <div class="list-element">HTML Event Reference</div>
+            <div class="list-element">HTML Color Reference</div>
+            <div class="list-element">HTML Attribute Reference</div>
+            <div class="list-element">HTML Canvas Reference</div>
+            <div class="list-element">HTML SVG Reference</div>
+            <div class="list-element">Google Maps Reference</div>
+            <h2 class="bpmg-header2">CSS</h2>
+            <div class="list-element">CSS Reference</div>
+            <div class="list-element">CSS Browser Support</div>
+            <div class="list-element">CSS Selector Reference</div>
+            <div class="list-element">Bootstrap 3 Reference</div>
+            <div class="list-element">Bootstrap 4 Reference</div>
+            <div class="list-element">W3.CSS Reference</div>
+            <div class="list-element">Icon Reference</div>
+            <div class="list-element">Sass Reference</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">JavaScript</h2>
+            <div class="list-element">JavaScript Reference</div>
+            <div class="list-element">HTML DOM Reference</div>
+            <div class="list-element">jQuery Reference</div>
+            <div class="list-element">AngularJS Reference</div>
+            <div class="list-element">AppML Reference</div>
+            <div class="list-element">W3.JS Reference</div>
+            <h2 class="bpmg-header2">Programming</h2>
+            <div class="list-element">Phyton Reference</div>
+            <div class="list-element">Java Reference</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">Server Side</h2>
+            <div class="list-element">SQL Reference</div>
+            <div class="list-element">MySQL Reference</div>
+            <div class="list-element">PHP Reference</div>
+            <div class="list-element">ASP Reference</div>
+            <h2 class="bpmg-header2">XML</h2>
+            <div class="list-element">xML DOM Reference</div>
+            <div class="list-element">XML HTTP Reference</div>
+            <div class="list-element">XSLT Reference</div>
+            <div class="list-element">XML Schema Reference</div>
+          </div>
+          <div class="bpm-grid-list">
+            <h2 class="bpmg-header2">Character Sets</h2>
+            <div class="list-element">HTML Character Sets</div>
+            <div class="list-element">HTML ACII</div>
+            <div class="list-element">HTML ANSI</div>
+            <div class="list-element">HTML Windows-1252</div>
+            <div class="list-element">HTML ISO-8859-1</div>
+            <div class="list-element">HTML Symbols</div>
+            <div class="list-element">HTML UTF-8</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="open-fn-exercise black-panel">
+      <div class="bp-main">
+        <h1 class="bpm-header1">Exercises and Quizzes</h1>
+        <div class="bpm-close-icon" onclick="closeExercisePanel()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="bpm-grid">
+          <div class="bpm-grid-list">
+            <div class="bp-exercise-btn">Exercises</div>
+            <div class="list-element">HTML Exercies</div>
+            <div class="list-element">CSS Exercies</div>
+            <div class="list-element">JavaScript Exercies</div>
+            <div class="list-element">SQL Exercies</div>
+            <div class="list-element">MySQL Exercies</div>
+            <div class="list-element">PHP Exercies</div>
+            <div class="list-element">Phyton Exercies</div>
+            <div class="list-element">NumPy Exercies</div>
+            <div class="list-element">Pandas Exercies</div>
+            <div class="list-element">SciPy Exercies</div>
+            <div class="list-element">jQuery Exercies</div>
+            <div class="list-element">Java Exercies</div>
+            <div class="list-element">C++ Exercies</div>
+            <div class="list-element">C# Exercies</div>
+            <div class="list-element">R Exercies</div>
+            <div class="list-element">Kotlin Exercies</div>
+            <div class="list-element">Go Exercies</div>
+            <div class="list-element">Bootstrap Exercies</div>
+            <div class="list-element">Bootstrap 4 Exercies</div>
+            <div class="list-element">Bootstrap 5 Exercies</div>
+            <div class="list-element">Git Exercies</div>
+          </div>
+          <div class="bpm-grid-list">
+            <div class="bp-exercise-btn">Quizzes</div>
+            <div class="list-element">HTML Quiz</div>
+            <div class="list-element">CSS Quiz</div>
+            <div class="list-element">JavaScript Quiz</div>
+            <div class="list-element">SQL Quiz</div>
+            <div class="list-element">MySQL Quiz</div>
+            <div class="list-element">PHP Quiz</div>
+            <div class="list-element">Phyton Quiz</div>
+            <div class="list-element">NumPy Quiz</div>
+            <div class="list-element">Pandas Quiz</div>
+            <div class="list-element">SciPy Quiz</div>
+            <div class="list-element">jQuery Quiz</div>
+            <div class="list-element">Java Quiz</div>
+            <div class="list-element">C++ Quiz</div>
+            <div class="list-element">C# Quiz</div>
+            <div class="list-element">R Quiz</div>
+            <div class="list-element">Kotlin Quiz</div>
+            <div class="list-element">Go Quiz</div>
+            <div class="list-element">Bootstrap Quiz</div>
+            <div class="list-element">Bootstrap 4 Quiz</div>
+            <div class="list-element">Bootstrap 5 Quiz</div>
+            <div class="list-element">Git Quiz</div>
+            <div class="list-element">Accessibility Quiz</div>
+          </div>
+          <div class="bpm-grid-list">
+            <div class="bp-exercise-btn">Courses</div>
+            <div class="list-element">HTML Course</div>
+            <div class="list-element">CSS Course</div>
+            <div class="list-element">JavaScript Course</div>
+            <div class="list-element">SQL Course</div>
+            <div class="list-element">MySQL Course</div>
+            <div class="list-element">PHP Course</div>
+            <div class="list-element">Phyton Course</div>
+            <div class="list-element">NumPy Course</div>
+            <div class="list-element">Pandas Course</div>
+            <div class="list-element">SciPy Course</div>
+            <div class="list-element">jQuery Course</div>
+            <div class="list-element">Java Course</div>
+            <div class="list-element">C++ Course</div>
+            <div class="list-element">C# Course</div>
+            <div class="list-element">R Course</div>
+            <div class="list-element">Kotlin Course</div>
+            <div class="list-element">Go Course</div>
+            <div class="list-element">Bootstrap Course</div>
+            <div class="list-element">Bootstrap 4 Course</div>
+            <div class="list-element">Bootstrap 5 Course</div>
+            <div class="list-element">Git Course</div>
+          </div>
+          <div class="bpm-grid-list">
+            <div class="bp-exercise-btn">Certificates</div>
+            <div class="list-element">HTML Certificate</div>
+            <div class="list-element">CSS Certificate</div>
+            <div class="list-element">JavaScript Certificate</div>
+            <div class="list-element">SQL Certificate</div>
+            <div class="list-element">MySQL Certificate</div>
+            <div class="list-element">PHP Certificate</div>
+            <div class="list-element">Phyton Certificate</div>
+            <div class="list-element">NumPy Certificate</div>
+            <div class="list-element">Pandas Certificate</div>
+            <div class="list-element">SciPy Certificate</div>
+            <div class="list-element">jQuery Certificate</div>
+            <div class="list-element">Java Certificate</div>
+            <div class="list-element">C++ Certificate</div>
+            <div class="list-element">C# Certificate</div>
+            <div class="list-element">R Certificate</div>
+            <div class="list-element">Kotlin Certificate</div>
+            <div class="list-element">Go Certificate</div>
+            <div class="list-element">Bootstrap Certificate</div>
+            <div class="list-element">Bootstrap 4 Certificate</div>
+            <div class="list-element">Bootstrap 5 Certificate</div>
+            <div class="list-element">Git Certificate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <aside class="aside-open-panel">
+        <section class="tutorial-content">
+          <h1>HTML Tutorial</h1>
+          <div>HTML Home</div>
+          <div>HTML Introduction</div>
+          <div>HTML Editors</div>
+          <div>HTML Basic</div>
+          <div>HTML Elements</div>
+          <div>HTML Attributes</div>
+          <div>HTML Headings</div>
+          <div>HTML Paragraphs</div>
+          <div>HTML Styles</div>
+          <div>HTML Formatting</div>
+          <div>HTML Quatations</div>
+          <div>HTML Comments</div>
+          <div>HTML Colors</div>
+          <div>HTML CSS</div>
+          <div>HTML Links</div>
+          <div>HTML Images</div>
+          <div>HTML Favicon</div>
+          <div>HTML Tables</div>
+          <div>HTML Lists</div>
+          <div>HTML Block & Inline</div>
+          <div>HTML Classes</div>
+          <div>HTML Id</div>
+          <div>HTML IFrames</div>
+          <div>HTML JavaScript</div>
+          <div>HTML File Paths</div>
+          <div>HTML Head</div>
+          <div>HTML Layout</div>
+          <div>HTML Responsive</div>
+          <div>HTML Computercode</div>
+          <div>HTML Semantics</div>
+          <div>HTML Style Guide</div>
+          <div>HTML Entities</div>
+          <div>HTML Symbols</div>
+          <div>HTML Emojis</div>
+          <div>HTML Charset</div>
+          <div>HTML URL Encode</div>
+          <div>HTML vs XHTML</div>
+        </section>
+        <section class="form-content">
+          <h1>HTML Forms</h1>
+          <div>HTML Forms</div>
+          <div>HTML Form Attributes</div>
+          <div>HTML Form Elements</div>
+          <div>HTML Input Types</div>
+          <div>HTML Input Attributes</div>
+        </section>
+        <section class="graphic-content">
+          <h1>HTML Graphics</h1>
+          <div>HTML Canvas</div>
+          <div>HTML SVG</div>
+        </section>
+        <section class="media-content">
+          <h1>HTML Media</h1>
+          <div>HTML Media</div>
+          <div>HTML Video</div>
+          <div>HTML Audio</div>
+          <div>HTML Plug-ins</div>
+          <div>HTML Youtube</div>
+        </section>
+        <section class="api-content">
+          <h1>HTML APIs</h1>
+          <div>HTML Geolocation</div>
+          <div>HTML Drag/Drop</div>
+          <div>HTML Web Storage</div>
+          <div>HTML Web Workers</div>
+          <div>HTML SSE</div>
+        </section>
+        <section class="example-content">
+          <h1>HTML Examples</h1>
+          <div>HTML Examples</div>
+          <div>HTML Quiz</div>
+          <div>HTML Exercises</div>
+          <div>HTML Certificate</div>
+          <div>HTML Summary</div>
+          <div>HTML Accessibility</div>
+        </section>
+        <section class="reference-content">
+          <h1>HTML References</h1>
+          <div>HTML Tag List</div>
+          <div>HTML Attributes</div>
+          <div>HTML Global Attributes</div>
+          <div>HTML Browser Support</div>
+          <div>HTML Events</div>
+          <div>HTML Colors</div>
+          <div>HTML Canvas</div>
+          <div>HTML Audio/Video</div>
+          <div>HTML Doctypes</div>
+          <div>HTML Character Sets</div>
+          <div>HTML URL Encode</div>
+          <div>HTML Lang Codes</div>
+          <div>HTTP Messages</div>
+          <div>HTTP Methods</div>
+          <div>PX to EM Converter</div>
+          <div>Keyboard Shortcuts</div>
+        </section>
+      </aside>
+
+      <section class="main-right-panel">
+        <section class="content-panel">
+          <section class="content-panel-text">
+            <div class="cp-text-title">
+              <h1>HTML Tutotrial</h1>
+              <div class="title-btn">
+                <div class="title-button">
+                  <i class="fa-sharp fa-solid fa-angle-left"></i> Home
+                </div>
+                <div class="title-button">
+                  Next <i class="fa-sharp fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="cp-text-green-part">
+              <p>HTML is the standart markup language for Web Pages</p>
+              <p>With HTML you can create your own Website</p>
+              <p>HTML is easy to learn - You will enjoy it!</p>
+              <div class="gp-buttons">
+                <div class="gp-green-btn">
+                  Study our free HTML Tutorial
+                  <i class="fa-solid fa-angles-right"></i>
+                </div>
+                <div class="gp-black-btn">
+                  Watch our Video Tutorial
+                  <i class="fa-solid fa-angles-right"></i>
+                  <div class="bb-yellow-btn">NEW</div>
+                </div>
+              </div>
+            </div>
+            <div class="cp-text-short-info">
+              <h1>What is HTML?</h1>
+              <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>
+                  HTML is the standart markup language for creating Web pages
+                </li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>
+                  HTML elements tell the browser how to display the content
+                </li>
+                <li>
+                  HTML elements label pieces of content such as "this is a
+                  heading", "this is a paragraphs", "this is a link", etc,
+                </li>
+              </ul>
+            </div>
+            <div class="cp-text-code-part">
+              <h1>A Simple HTML Document</h1>
+              <div class="code-back-panel">
+                <h2>Example</h2>
+                <div class="code-front-panel">
+                  <pre>
+
+ &lt;!DCOTYPE html&gt;
+ &lt;html&gt;
+ &lt;head&gt;
+     &lt;title&gt;Page Title&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+
+     &lt;h1&gt;My First Heading&lt;/h1&gt;
+     &lt;p&gt;My First Paragraph.&lt;/p&gt;
+
+ &lt;/body&gt;
+ &lt;/html&gt;
+                        </pre
+                  >
+                </div>
+                <div class="try-btn">
+                  Try it Yourself <i class="fa-solid fa-angles-right"></i>
+                </div>
+              </div>
+              <div class="code-explain-part">
+                <h2>Example Explained</h2>
+                <ul>
+                  <li>
+                    The
+                    <code class="red-code">&lt;!DOCTYPE html&gt;</code>
+                    declaration defines that this document is an HTML5 document
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;html&gt;</code> element is
+                    the root element of an HTML page
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;head&gt;</code> element
+                    contains meta information about the HTML page
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;title&gt;</code> element
+                    specifies a title for the HTML page (which is shown in the
+                    browser`s title bar or in the page`s tap)
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;body&gt;</code> element
+                    defines the document`s body and is a container for all the
+                    visible contents, such as headings, paragraphs images,
+                    hyperlinks, tables,lists, etc.
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;h1&gt;</code> element defines
+                    a large heading
+                  </li>
+                  <li>
+                    The <code class="red-code">&lt;p&gt;</code> element defines
+                    a paragraph
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cp-text-reference-part">
+              <h2>HTML References</h2>
+              <p>
+                At W3Schools you will find complete references about HTML
+                elements, attiributes,events,color names,
+                entities,characacter-sets,URL encoding,language codes,HTTP
+                messages,browser support and more:
+              </p>
+              <div class="grid-reference-part">
+                <div class="ref-element">HTML Elements</div>
+                <div class="ref-element">Browser Support</div>
+                <div class="ref-element">Attributes</div>
+                <div class="ref-element">Global Attributes</div>
+                <div class="ref-element">Event Attributes</div>
+                <div class="ref-element">Color Names</div>
+                <div class="ref-element">Canvas</div>
+                <div class="ref-element">Audio/Video DOM</div>
+                <div class="ref-element">Characters Sets</div>
+                <div class="ref-element">URL Encoding</div>
+                <div class="ref-element">Language Codes</div>
+                <div class="ref-element">Country Codes</div>
+                <div class="ref-element">HTTP Messages</div>
+                <div class="ref-element">Px to Em Converter</div>
+                <div class="ref-element">Keyboard Shortcuts</div>
+              </div>
+            </div>
+            <div class="cp-text-certificate-part">
+              <h1>Kickstart your career</h1>
+              <p>Get certified by completing the HTML course</p>
+              <div class="cpc-btn">Get certified</div>
+              <div class="cpc-w3logo"></div>
+            </div>
+            <div class="title-btn">
+              <div class="title-button">
+                <i class="fa-sharp fa-solid fa-angle-left"></i> Home
+              </div>
+              <div class="title-button">
+                Next <i class="fa-sharp fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </section>
+          <section class="content-panel-advert">
+            <div class="cpa-youtube-channel advert-size">
+              <div class="yc-newbtn">New</div>
+              <p>We just launched</p>
+              <p>W3Schools videos</p>
+              <div class="yc-video-poster"></div>
+              <a href="#">Explore now</a>
+            </div>
+            <div class="cpa-color-picker advert-size">
+              <h1>COLOR PICKER</h1>
+              <div class="img-colormap"></div>
+              <div class="icons">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-discord"></i>
+              </div>
+            </div>
+            <div class="cpa-certificate-advert advert-size">
+              <div class="ca-text">
+                <p>Get certified</p>
+                <p>bycompleting</p>
+                <p>a HtML</p>
+                <p>course today!</p>
+              </div>
+              <div class="ca-w3logo"></div>
+              <div class="ca-startbtn">Get started</div>
+            </div>
+            <div class="cpa-code-game advert-size">
+              <h1>CODE GAME</h1>
+              <div class="cg-poster"></div>
+              <div class="cg-playbtn">Play Game</div>
+            </div>
+          </section>
+        </section>
+        <section class="last-button-part">
+          <div>Report Error</div>
+          <div>Spaces</div>
+          <div>Pro</div>
+          <div>Buy Certificate</div>
+        </section>
+        <footer>
+          <section class="grid-footer">
+            <div class="footer-tutorial footer-area">
+              <h1>Top Tutorials</h1>
+              <a href="#">HTML Tutorial</a>
+              <a href="#">CSS Tutorial</a>
+              <a href="#">JavaScript Tutorial</a>
+              <a href="#">How To Tutorial</a>
+              <a href="#">SQL Tutorial</a>
+              <a href="#">Phyton Tutorial</a>
+              <a href="#">W3.CSS Tutorial</a>
+              <a href="#">Bootstrap Tutorial</a>
+              <a href="#">PHP Tutorial</a>
+              <a href="#">Java Tutorial</a>
+              <a href="#">C++ Tutorial</a>
+              <a href="#">jQuery Tutorial</a>
+            </div>
+            <div class="footer-reference footer-area">
+              <h1>Top References</h1>
+              <a href="#">HTML Reference</a>
+              <a href="#">CSS Reference</a>
+              <a href="#">JavaScript Reference</a>
+              <a href="#">SQL Reference</a>
+              <a href="#">Phyton Reference</a>
+              <a href="#">W3.Css Reference</a>
+              <a href="#">Bootstrap Reference</a>
+              <a href="#">PHP Reference</a>
+              <a href="#">HTML Colors</a>
+              <a href="#">JavaReference</a>
+              <a href="#">Angular Reference</a>
+              <a href="#">jQuery Reference</a>
+            </div>
+            <div class="footer-example footer-area">
+              <h1>Top Exampless</h1>
+              <a href="#">HTML Examples</a>
+              <a href="#">CSS Examples</a>
+              <a href="#">JavaScript Examples</a>
+              <a href="#">How To Examples</a>
+              <a href="#">SQL Examples</a>
+              <a href="#">Phyton Examples</a>
+              <a href="#">W3.CSS Examples</a>
+              <a href="#">Bootstrap Examples</a>
+              <a href="#">PHP Examples</a>
+              <a href="#">Java Examples</a>
+              <a href="#">XMLExamples</a>
+              <a href="#">jQuery Examples</a>
+            </div>
+            <div class="footer-certificed footer-area">
+              <h1>Get Certified</h1>
+              <a href="#">HTML Certified</a>
+              <a href="#">CSS Certified</a>
+              <a href="#">JavaScript Certified</a>
+              <a href="#">Front End Certified</a>
+              <a href="#">SQL Certified</a>
+              <a href="#">Phyton Certified</a>
+              <a href="#">PHP Certified</a>
+              <a href="#">jQuery Certified</a>
+              <a href="#">Java Certified</a>
+              <a href="#">C++ Certified</a>
+              <a href="#">C# Certified</a>
+              <a href="#">XML Certified</a>
+            </div>
+          </section>
+          <section class="footer-text">
+            <div class="footer-text-link">
+              <a href="#">FORUM</a> | <a href="#">ABOUT</a>
+            </div>
+            <div class="footer-text-content">
+              <p>
+                W3Schools is optimized for learning and training. Examples might
+                be simplified to improve reading and learning. Tutorials,
+                references, and examples are constantly reviewed to avoid
+                errors, but we cannot warrant full correctness of all content.
+                While using W3Schools, you agree to have read and accepted our
+                terms of use, <a href="#">cookie and privacy policy</a>.
+              </p>
+              <p>
+                <a href="#">Copyright 1999-2022</a>by Refsnes Data. All Rights
+                Reserved.
+              </p>
+              <a href="#">W3Schools is Powered by W3.CSS.</a>
+            </div>
+            <div class="footer-text-logo"></div>
+          </section>
+        </footer>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

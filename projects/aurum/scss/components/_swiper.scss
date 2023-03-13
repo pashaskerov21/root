@@ -1,0 +1,109 @@
+/*------------------SWIPER------------------*/
+.swiper{
+    width: 100%;
+    .swiper-slide{
+        @include center;
+    }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-4);
+  opacity: 1;
+  &::after{
+    display: none;
+  }
+  i{
+    color: #fff;
+    font-size: 34px;
+  }
+}
+.swiper-pagination-bullet{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: relative;
+    opacity: 1;
+    &::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: var(--bg-color-2);
+        opacity: 0.6;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-active{
+        border-color: var(--d-color-2);
+        &::after{
+            opacity: 1;
+        }
+    }
+}
+
+/*header bg swiper*/
+.header-bg-swiper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*header about swiper*/
+.header-about-swiper{
+    margin-top: 30px;
+    padding: 30px 0 60px;
+    .slide-content{
+        min-height: 300px;
+        padding: 0 20px 20px;
+        @include column-center;
+        h1{
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .text{
+            width: 100%;
+            @include center;
+            p{
+                color: #fff;
+                text-align: center;
+                padding: 10px 25px;
+                max-width: 900px;
+            }
+        }
+    }
+}
+
+/*missin swiper*/
+.mission-swiper{
+    padding: 20px 0;
+}
+/*certificate swiper*/
+.certificate-swiper{
+    padding-bottom: 30px;
+}
+/*employee swiper*/
+.employee-swiper{
+    padding: 40px 0;
+}

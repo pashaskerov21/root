@@ -1,0 +1,42 @@
+.general-navbar{
+    width: 100%;
+    padding: 25px 0;
+    .container{
+        @include center;
+        .row{
+            width: 100%;
+            .col-12, .col-10{
+                @include center;
+            }
+        }
+    }
+    .nav-links{
+        width: 100%;
+        @include s-between;
+        a{
+            color: #fff;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: link-animation-2 0.5s ease forwards;
+            position: relative;
+            &:hover{
+                color: var(--color-1);
+                &::after{
+                    background-color: var(--color-1);
+                    transform: scaleX(1);
+                }
+            }
+            &.select{
+                color: var(--color-1);
+            }
+        }
+    }
+}
+
+@keyframes link-animation-2{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

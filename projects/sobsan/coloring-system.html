@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobsan | Rəngləndirmə Sistemi</title>
+    <link rel="icon" href="image/logo/head-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <div class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-4 d-flex align-items-center justify-content-start p-0">
+                        <button class="mobile-canvas-btn" data-bs-toggle="offcanvas" data-bs-target="#sobsan-offcanvas">
+                            <div class="bars d-flex flex-column align-items-start justify-content-evenly">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-8 d-flex align-items-center justify-content-end p-0">
+                        <div class="header-icons">
+                            <a href="product-compare.html" class="icon-link"><img src="image/icons/icons-compare.svg"></a>
+                            <a href="product-favorite.html" class="icon-link"><img src="image/icons/icons-favourite.svg"></a>
+                            <a href="product-basket.html" class="icon-link"><img src="image/icons/icons-cart.svg"></a>
+                            <div class="dropdown search-dropdown">
+                                <button class="dropdown-toggle search-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="image/icons/loupe.svg">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="search-input-div">
+                                        <input type="text" placeholder="Axtar...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-center language-dropdown">
+                                <button class="dropdown-toggle language-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="lang-wrapper">
+                                        <a href="#">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start p-0" id="sobsan-offcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html"><img src="image/logo/sobsan-logo.svg"></a>
+                <a href="#" class="pulse-icon"><i class="fa-solid fa-phone"></i></a>
+                <a href="#" class="pulse-icon"><i class="fa-solid fa-question"></i></a>
+                <a href="login.html"><img src="image/icons/icons-login.svg"><span>Giriş</span></a>
+                <button type="button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div class="categories-wrapper">
+                    <div class="category-item">
+                        <a href="products.html">Məhsullar</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#mehsullar-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="mehsullar-collapse">
+                        <div class="alt-menu-1">
+                            <div class="category-item">
+                                <a href="#">Su əsaslı boyalar</a>
+                                <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#su-esasli-boyalar-collapse">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="collapse" id="su-esasli-boyalar-collapse">
+                                <div class="alt-menu-2">
+                                    <div class="category-item"><a href="#">Daxili divar boyaları</a></div>
+                                    <div class="category-item"><a href="#">Xarici cəbhə boyaları</a></div>
+                                    <div class="category-item"><a href="#">Məcunlar</a></div>
+                                    <div class="category-item"><a href="#">Astarlar</a></div>
+                                    <div class="category-item"><a href="#">PVA əsaslı yapışdırıcılar</a></div>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">Solvent əsaslı boyalar</a>
+                                <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#solvent-esasli-boyalar-collapse">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="collapse" id="solvent-esasli-boyalar-collapse">
+                                <div class="alt-menu-2">
+                                    <div class="category-item"><a href="#">Sintetik boyalar</a></div>
+                                    <div class="category-item"><a href="#">Sellülozik boyalar</a></div>
+                                    <div class="category-item"><a href="#">Poliuretan boyalar</a></div>
+                                    <div class="category-item"><a href="#">Epoksi boyalar</a></div>
+                                </div>
+                            </div>
+                            <div class="category-item"><a href="#">Gold Series</a></div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <a href="decorative-paints.html">Dekorativ Boyalar</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#dekorativ-boyalar-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="dekorativ-boyalar-collapse">
+                        <div class="alt-menu-1">
+                            <div class="category-item"><a href="#">Dekorativ daxili boyalar</a></div>
+                            <div class="category-item"><a href="#">Dekorativ fasad boyaları</a></div>
+                            <div class="category-item"><a href="#">Astarlar</a></div>
+                            <div class="category-item"><a href="#">Məcunlar</a></div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <a href="industrial-paints.html">Sənayə Boyaları</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#senaye-boyalari-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="senaye-boyalari-collapse">
+                        <div class="alt-menu-1">
+                            <div class="category-item"><a href="#">Boyalar</a></div>
+                            <div class="category-item"><a href="#">Astarlar</a></div>
+                            <div class="category-item"><a href="#">Tinerlər</a></div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <a href="construction-products.html">İnşaat Məhsulları</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#insaat-mehsullari-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="insaat-mehsullari-collapse">
+                        <div class="alt-menu-1">
+                            <div class="category-item"><a href="#">Keramika yapışdırıcıları</a></div>
+                            <div class="category-item">
+                                <a href="#">Gips əsaslı məhsullar</a>
+                                <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#gips-esasli-mehsullar-collapse">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="collapse" id="gips-esasli-mehsullar-collapse">
+                                <div class="alt-menu-2">
+                                    <div class="category-item"><a href="#">Astarlar</a></div>
+                                    <div class="category-item"><a href="#">Üzlüklər</a></div>
+                                </div>
+                            </div>
+                            <div class="category-item"><a href="#">Dekorativ suvaqlar</a></div>
+                            <div class="category-item"><a href="#">Hidroizolosiya məhsulları</a></div>
+                            <div class="category-item"><a href="#">Təmir suvaqları</a></div>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <a href="painter-tools.html">Boyaçı alətləri</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#boyaci-aletleri-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="boyaci-aletleri-collapse">
+                        <div class="alt-menu-1">
+                            <div class="category-item"><a href="#">Fırçalar</a></div>
+                            <div class="category-item"><a href="#">Rulonlar</a></div>
+                        </div>
+                    </div>
+                    <div class="category-item"><a href="other-products.html">Digər</a></div>
+                </div>
+                <div class="offcanvas-links">
+                    <div class="link-item">
+                        <a href="about.html">Haqqımızda</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#haqqimizda-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="haqqimizda-collapse">
+                        <div class="alt-menu">
+                            <div class="link-item"><a href="coloring-system.html">Rəngləndirmə sistemi haqqında</a></div>
+                        </div>
+                    </div>
+                    <div class="link-item"><a href="catalogs.html">Kataloqlar</a></div>
+                    <div class="link-item">
+                        <a href="#">Media</a>
+                        <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#media-collapse">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="collapse" id="media-collapse">
+                        <div class="alt-menu">
+                            <div class="link-item"><a href="actions.html">Aksiyalar</a></div>
+                            <div class="link-item"><a href="news.html">Xəbərlər</a></div>
+                            <div class="link-item"><a href="gallery.html">Qalareya</a></div>
+                        </div>
+                    </div>
+                    <div class="link-item"><a href="payment-delivery.html">Ödəniş və çatdırılma</a></div>
+                    <div class="link-item"><a href="warranty-terms.html">Zəmanət şərtləri</a></div>
+                    <div class="link-item"><a href="contact.html">Bizimlə əlaqə</a></div>
+                </div>
+            </div>
+            <div class="offcanvas-bottom">
+                <a href="masters-union.html"><img src="image/logo/usta_logo.png" width="80"></a>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="left">
+                        <div class="tn-dropdown">
+                            <a href="about.html" class="top-nav-link">Haqqımızda</a>
+                            <div class="tn-dropdown-menu lg d-none">
+                                <a href="coloring-system.html" class="top-nav-link">Rəngləndirmə sistemləri haqqında</a>
+                            </div>
+                        </div>
+                        <a href="catalogs.html" class="top-nav-link">Kataloqlar</a>
+                        <div class="tn-dropdown">
+                            <a href="#" class="top-nav-link">Media</a>
+                            <div class="tn-dropdown-menu d-none">
+                                <a href="actions.html" class="top-nav-link">Aksiyalar</a>
+                                <a href="news.html" class="top-nav-link">Xəbərlər</a>
+                                <a href="gallery.html" class="top-nav-link">Qalareya</a>
+                            </div>
+                        </div>
+                        <a href="payment-delivery.html" class="top-nav-link">Ödəniş və çatdırılma</a>
+                        <a href="warranty-terms.html" class="top-nav-link">Zəmanət şərtləri</a>
+                        <a href="contact.html" class="top-nav-link">Bizimlə əlaqə</a>
+                    </div>
+                    <div class="right">
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="header-icons">
+                            <a href="product-compare.html" class="icon-link"><img src="image/icons/icons-compare.svg"></a>
+                            <a href="product-favorite.html" class="icon-link"><img src="image/icons/icons-favourite.svg"></a>
+                            <a href="product-basket.html" class="icon-link"><img src="image/icons/icons-cart.svg"></a>
+                            <div class="dropdown search-dropdown">
+                                <button class="dropdown-toggle search-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="image/icons/loupe.svg">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="search-input-div">
+                                        <input type="text" placeholder="Axtar...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-center language-dropdown">
+                                <button class="dropdown-toggle language-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="lang-wrapper">
+                                        <a href="#">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="login.html" class="icon-link login"><img src="image/icons/icons-login.svg"><span>Giriş</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-navbar">
+                <div class="container">
+                    <div class="bottom-navbar-links">
+                        <a href="index.html" class="logo"><img src="image/logo/sobsan-logo.svg"></a>
+                        <button class="alt-category-panel-button"><a href="products.html" class="bottom-nav-link">Məhsullar</a></button>
+                        <button class="alt-category-panel-button"><a href="decorative-paints.html" class="bottom-nav-link">Dekorativ Boyalar</a></button>
+                        <button class="alt-category-panel-button"><a href="industrial-paints.html" class="bottom-nav-link">Sənaye Boyaları</a></button>
+                        <button class="alt-category-panel-button"><a href="construction-products.html" class="bottom-nav-link">İnşaat Məhsulları</a></button>
+                        <button class="alt-category-panel-button"><a href="painter-tools.html" class="bottom-nav-link">Boyaçı Alətləri</a></button>
+                        <a href="other-products.html" class="bottom-nav-link">Digər</a>
+                        <a href="masters-union.html" class="usta-logo"><img src="image/logo/usta_logo.png"></a>
+                        <div class="fix-header-icons d-none">
+                            <div class="header-icons">
+                                <div class="dropdown search-dropdown">
+                                    <button class="dropdown-toggle search-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="image/icons/loupe.svg">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="search-input-div">
+                                            <input type="text" placeholder="Axtar...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-center language-dropdown">
+                                    <button class="dropdown-toggle language-button icon-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>Az <i class="fa-solid fa-chevron-down"></i></i></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="lang-wrapper">
+                                            <a href="#">En</a>
+                                            <a href="#">Ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="login.html" class="icon-link login"><img src="image/icons/icons-login.svg"><span>Giriş</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alt-category-panel d-none">
+                        <div class="alt-category-panel-menu">
+                            <div class="row w-100">
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Su əsaslı boyalar</a>
+                                        <a href="#" class="alt-link">Daxili divar boyaları</a>
+                                        <a href="#" class="alt-link">Xarici cəbhə boyaları</a>
+                                        <a href="#" class="alt-link">Məcunlar</a>
+                                        <a href="#" class="alt-link">Astarlar</a>
+                                        <a href="#" class="alt-link">PVA əsaslı yapışdırıcılar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Solvent əsaslı boyalar</a>
+                                        <div class="alt-link-item">
+                                            <a href="#" class="alt-link">Sintetik boyalar</a>
+                                            <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#sintetik-collapse">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="collapse" id="sintetik-collapse">
+                                            <div class="alt-menu">
+                                                <a href="#" class="alt-link">Astarlar</a>
+                                                <a href="#" class="alt-link">Son qat</a>
+                                                <a href="#" class="alt-link">Laklar</a>
+                                                <a href="#" class="alt-link">Tinerlər</a>
+                                            </div>
+                                        </div>
+                                        <div class="alt-link-item">
+                                            <a href="#" class="alt-link">Sellülozik boyalar</a>
+                                            <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#sellulozik-collapse">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="collapse" id="sellulozik-collapse">
+                                            <div class="alt-menu">
+                                                <a href="#" class="alt-link">Astarlar</a>
+                                                <a href="#" class="alt-link">Son qat</a>
+                                                <a href="#" class="alt-link">Laklar</a>
+                                                <a href="#" class="alt-link">Tinerlər</a>
+                                            </div>
+                                        </div>
+                                        <div class="alt-link-item">
+                                            <a href="#" class="alt-link">Poliuretan boyalar</a>
+                                            <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#poliuretan-collapse">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="collapse" id="poliuretan-collapse">
+                                            <div class="alt-menu">
+                                                <a href="#" class="alt-link">Astarlar</a>
+                                                <a href="#" class="alt-link">Son qat</a>
+                                                <a href="#" class="alt-link">Tinerlər</a>
+                                            </div>
+                                        </div>
+                                        <div class="alt-link-item">
+                                            <a href="#" class="alt-link">Epoksi boyalar</a>
+                                            <button class="collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#epoksi-collapse">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="collapse" id="epoksi-collapse">
+                                            <div class="alt-menu">
+                                                <a href="#" class="alt-link">Astarlar</a>
+                                                <a href="#" class="alt-link">Son qat</a>
+                                                <a href="#" class="alt-link">Tinerlər</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Gold Series</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alt-category-panel-menu">
+                            <div class="row w-100">
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Dekorativ daxili boyalar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Dekorativ fasad boyaları</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Astarlar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Məcunlar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alt-category-panel-menu">
+                            <div class="row w-100">
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Boyalar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Astarlar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Tinerlər</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alt-category-panel-menu">
+                            <div class="row w-100">
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Keramika yapışdırıcıları</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Gips əsaslı məhsullar</a>
+                                        <a href="#" class="alt-link">Astarlar</a>
+                                        <a href="#" class="alt-link">Üzlüklər</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Dekorativ suvaqlar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Hidroizolosiya məhsulları</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Təmir suvaqları</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alt-category-panel-menu">
+                            <div class="row w-100">
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Fırçalar</a>
+                                    </div>
+                                </div>
+                                <div class="col-3 category-col">
+                                    <div class="alt-category-links">
+                                        <a href="#" class="header-link">Rulonlar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="sobsan-about">
+        <div class="page-heading container">
+            <div class="root-links">
+                <a href="#">Əsas səhifə</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Rəngləndirmə Sistemi</a>
+            </div>
+            <h1>Rəngləndirmə Sistemi</h1>
+        </div>
+        <section class="about-section">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-12 col-xl-7 about-col">
+                        <p class="about-text">
+                            Azərbaycanda ilk dəfə rəngləndirmə sistemi Sobsan Boyaları tərəfindən təqdim olunub. 
+                            "Sobsan Rəngləndirmə Sistemi"  kompüter, rəng hazırlama makinası və qarışdırıcıdan ibarət  
+                            olub, su əsaslı daxili və fasad boyaların hazırlanmasında istifadə olunur. Sistemin özəlliyi 
+                            təbiətdəki bütün rəngləri və tonları özündə  əks etdirə bilməsidir. Standart kataloq rənglərinin 
+                            xaricində alıcılara günün trend rəngləri ilə yanaşı sərhədsiz rəng imkanı təklif edir. Bu sistem 
+                            sayəsində hər bir satış nöqtəsi fabrik funksiyası daşıyır. İstənilən satış nöqtəsində sifariş edilən 
+                            rəngi eyni keyfiyyətdə və sadəcə 5 dəqiqə ərzində  əldə etmək  mümkündür. "Sobsan Rəngləndirmə Sistemi" 
+                            Azərbaycanın bütün regionlarındakı Sobsan mağazalarında mövcuddur. Rəngləndirmə sisteminin başlıca  
+                            xüsusiyyəti ondan ibarətdir ki, daha öncə hazırlanmış hər hansı bir rəng  təkrar sifariş olunduqda  
+                            birə-bir eyni tonu əldə etmək mümkündür.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-5 about-col">
+                        <div class="about-image"><img src="image/2-about/renglendirme.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="videos-section">
+            <div class="container">
+                <div class="swiper video-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video-item">
+                                <div class="video-poster"><img src="image/2-about/renglendirme.png"></div>
+                                <div class="hover-absolute-div">
+                                    <a href="https://www.youtube.com/watch?v=hT0ESFXxqA0" data-fancybox="gallery">
+                                        <span class="play-button"><i class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-item">
+                                <div class="video-poster"><img src="image/2-about/renglendirme.png"></div>
+                                <div class="hover-absolute-div">
+                                    <a href="https://www.youtube.com/watch?v=hT0ESFXxqA0" data-fancybox="gallery">
+                                        <span class="play-button"><i class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-item">
+                                <div class="video-poster"><img src="image/2-about/renglendirme.png"></div>
+                                <div class="hover-absolute-div">
+                                    <a href="https://www.youtube.com/watch?v=hT0ESFXxqA0" data-fancybox="gallery">
+                                        <span class="play-button"><i class="fa-solid fa-play"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-12 col-xl-3">
+                    <div class="left">
+                        <a href="index.html" class="logo"><img src="image/logo/sobsan-logo.svg"></a>
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9">
+                    <div class="right">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="footer-links">
+                                    <span>Menyular</span>
+                                    <a href="about.html">Haqqımızda</a>
+                                    <a href="catalogs.html">Kataloqlar</a>
+                                    <a href="actions.html">Aksiyalar</a>
+                                    <a href="news.html">Xəbərlər</a>
+                                    <a href="gallery.html">Qalereya</a>
+                                    <a href="payment-delivery.html">Ödəniş və çatdırılma</a>
+                                    <a href="warranty-terms.html">Zəmanət şərtləri</a>
+                                    <a href="contact.html">Bizimlə əlaqə</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="footer-links">
+                                    <span>Kateqoriyalar</span>
+                                    <a href="products.html">Məhsullar</a>
+                                    <a href="decorative-paints.html">Dekorativ boyalar</a>
+                                    <a href="industrial-paints.html">Sənaye boyaları</a>
+                                    <a href="construction-products.html">İnşaat məhsulları</a>
+                                    <a href="painter-tools.html">Boyaçı alətləri</a>
+                                    <a href="other-products.html">Digər</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="footer-links">
+                                    <span>Ünvanlarımız</span>
+                                    <a href="service-network.html">Baş ofis</a>
+                                    <a href="service-network.html">Fabrik ünvanı</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="footer-links">
+                                    <span>Faydalı linklər</span>
+                                    <a href="faq.html">Tez-tez soruşulanlar</a>
+                                    <a href="career.html">Karyera</a>
+                                    <a href="service-network.html">Xidmət şəbəkəsi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-top">
+                <div class="left">
+                    <span>Bütün hüquqlar qorunur</span>
+                    <span>Hazırladı <a href="#">Pasha</a></span>
+                </div>
+                <div class="right">
+                    <span><a href="#">(+994 12) 404 45 45</a> / <a href="#">*4545</a></span>
+                    <a href="#">sobsan@sobsan.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <div class="page-toolbar-center">
+        <a href="#" class="general-qaynar-xett d-none d-md-flex">
+            <i class="fa-solid fa-phone"></i>
+            <span>*4545<br>Qaynar xətt</span>
+        </a>
+        <button class="toolbar-card">
+            <div class="icon">
+                <img src="image/icons/sebet-black.png">
+                <span class="card-badge basket-counter">0</span>
+            </div>
+            <a href="product-basket.html">Səbət</a>
+        </button>
+        <button class="toolbar-card">
+            <div class="icon">
+                <img src="image/icons/heart-black.png">
+                <span class="card-badge favorite-counter">0</span>
+            </div>
+            <a href="product-favorite.html">Seçilmişlər</a>
+        </button>
+        <button class="toolbar-card">
+            <div class="icon">
+                <img src="image/icons/compare-black.png">
+                <span class="card-badge compare-counter">0</span>
+            </div>
+            <a href="product-compare.html">Müqayisələr</a>
+        </button>
+    </div>
+    <div class="page-toolbar-bottom">
+        <button class="page-up-scroll-btn d-none"><i class="fa-solid fa-arrow-up"></i></button>
+        <a href="#" class="mobile-qaynar-xett d-md-none"><span>*4545</span></a>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

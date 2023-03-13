@@ -1,0 +1,204 @@
+/*=================SWIPER=================*/
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    @include center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-4);
+  opacity: 1;
+  background: #ECEEF6;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+.swiper-button-prev i,
+.swiper-button-next i{
+    color: var(--t-color-1);
+}
+.swiper-pagination{
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #ECEEF6;
+}
+.swiper-pagination-bullet-active{
+    background-color: #B5BDDB;
+    transform: scale(1.1);
+}
+
+
+
+.general-trainings-swiper{
+    padding: 10px 0 40px;
+    background-color: var(--bg-color-1);
+    .swiper-pagination{
+        margin-bottom: 20px;
+    }
+}
+
+/*change-002 01/26/2023 start*/
+.alt-trainings-swiper{
+    max-width: 1300px;
+    padding: 10px 0 80px;
+    margin-bottom: 20px;
+    background-color: var(--bg-color-1);
+    .t-control-buttons{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include column-center;
+        z-index: 999;
+    }
+    .training-control{
+        position: relative;
+        display: flex;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        margin: 0;
+        background-color: transparent;
+        button{
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            span{
+                font-weight: 600;
+                color: var(--t-color-1);
+                font-size: 12px;
+            }
+            i{
+                font-size: 12px;
+                color: var(--t-color-1);
+            }
+            &:hover{
+                background-color: var(--bg-color-2);
+                span, i{
+                    color: #fff;
+                }
+            }
+            
+        }
+        &.swiper-button-prev{
+            button{
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        &.swiper-button-next{
+            button{
+                i{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 576px){
+    .alt-trainings-swiper{
+    .t-control-buttons{
+        flex-direction: row;
+    }
+    .training-control{
+        button{
+            padding: 10px;
+            span{
+                font-size: 14px;
+            }
+            i{
+                font-size: 14px;
+            }
+        }
+        &.swiper-button-prev{
+            margin-right: 5px;
+        }
+    }
+}
+}
+/*change-002 01/26/2023 end*/
+
+.clients-swiper{
+    img{
+        width: 170px;
+        height: 150px;
+        object-fit: contain;
+    }
+}
+.partners-swiper{
+    .swiper-button-prev,
+    .swiper-button-next{
+        top: 60%;
+    } 
+    img{
+        width: 120px;
+        height: 70px;
+        object-fit: contain;
+    }
+}
+
+.tedbir-gallery-swiper{
+    padding: 25px 0;
+    a{
+        width: 100%;
+        @include center;
+        img{
+            width: 100%;
+            max-width: 400px;
+            min-height: 250px;
+            object-fit: contain;
+        }
+    }
+}
+
+/*change 008 01/26/2023 start*/
+.training-gallery-swiper{
+    padding: 25px 0;
+    a{
+        width: 100%;
+        @include center;
+        img{
+            width: 100%;
+            max-width: 400px;
+            min-height: 250px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+.other-training-swiper{
+    padding-bottom: 50px;
+    .swiper-pagination-bullet {
+        background-color: #B5BDDB;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: var(--bg-color-2);
+        transform: scale(1.1);
+    }
+}
+/*change 008 01/26/2023 end*/

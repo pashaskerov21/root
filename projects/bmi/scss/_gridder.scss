@@ -1,0 +1,80 @@
+/*==================GRIDDER==================*/
+.trainings-gridder{
+    width: 100%;
+    max-width: 1800px;
+    .gridder-item{
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 10px;
+        .category-card{
+            margin: 0 auto;
+        }
+    }
+    .gridder-content{
+        display: none;
+        &.show{
+            display: block;
+            float: left;
+            width: 100%;
+            position: relative;
+            animation: show-gridder-content 0.5s ease forwards;
+        }
+    }
+    .gridder-navigation-button{
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        @include row-end;
+    }
+}
+
+@keyframes show-gridder-content{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (min-width: 576px){
+    .trainings-gridder{
+        .gridder-item{
+            width: 47%; 
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .trainings-gridder{
+        .gridder-item{
+            width: 32.9%; 
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .trainings-gridder{
+        .gridder-item{
+            width: 24.6%; 
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .trainings-gridder{
+        .gridder-item{
+            width: 19.4%; 
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .trainings-gridder{
+        .gridder-item{
+            width: 16.2%; 
+        }
+    }
+}

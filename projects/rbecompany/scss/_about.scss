@@ -1,0 +1,59 @@
+.about-section{
+    .row{
+        width: 100%;
+        .col-12{
+            margin-bottom: 30px;
+            @include column-center;
+        }
+    }
+    .content{
+        width: 100%;
+        @include column-center;
+        h1,h2,h3{
+            color: var(--color-1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .text{
+            @include column-center;
+            text-align: center;
+            font-size: 18px;
+            span{
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                
+            }
+        }
+    }
+    .right-card{
+        width: 100%;
+        @include column-center;
+        img{
+            margin-bottom: 25px;
+            object-fit: contain;
+            max-width: 300px;
+        }
+        span{
+            font-size: 20px;
+            text-align: center;
+            padding: 0 15px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    .about-section{
+        .content{
+            align-items: flex-start;
+            h1,h2,h3{
+                text-align: start;
+            }
+            .text{
+                align-items: flex-start;
+                text-align: start;
+            }
+        }
+    }
+}

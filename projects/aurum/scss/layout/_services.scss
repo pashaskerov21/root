@@ -1,0 +1,89 @@
+/*-----------AURUM SERVICE PAGES-----------*/
+
+/*service content section 1/2*/
+
+.service-main-content-section{
+    .row{
+        width: 100%;
+        padding: 20px 0;
+        .col-12{
+            @include center;
+        }
+    }
+    .section-title{
+        margin-bottom: 20px;
+    }
+    .content-wrapper{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 40px;
+        .text{
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .service-image{
+        padding: 10px;
+        background-color: rgba(206, 189, 136, 0.33);
+        width: 100%;
+        max-width: 500px;
+        @include center;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        &:hover{
+            background-color: var(--bg-color-2);
+            img{
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+
+/*service content section 3*/
+.service-content-section-3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    .content-wrapper{
+        width: 100%;
+        @include column-center;
+        background-repeat: no-repeat;
+        background-position: top 20px left -20px;
+        .content-row{
+            width: 100%;
+            @include row-start;
+            &:nth-child(2n){
+                justify-content: flex-end;
+            }
+            .text-item{
+                width: 100%;
+                max-width: 600px;
+                @include column-center;
+                .text-number{
+                    color: rgba(206, 189, 136, 0.44);;
+                    font-size: 120px;
+                    font-family: 'Cinzel', serif;
+                    margin-right: 7px;
+                }
+                .text{
+                    p{
+                        text-align: center;
+                    }
+                }
+                &:hover{
+                    .text-number{
+                        color: var(--t-color-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

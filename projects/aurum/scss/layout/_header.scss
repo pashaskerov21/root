@@ -1,0 +1,131 @@
+/*--------------HEADER--------------*/
+header{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    background: linear-gradient(180deg, #28364B 0%, rgba(40, 54, 75, 0.77) 46.44%, rgba(40, 54, 75, 0) 100%);
+    .mobile-navbar{
+        @include center;
+        padding: 15px 0;
+        .container{
+            @include center;
+            .row{
+                width: 100%;
+                .col-6{
+                    padding: 0;
+                }
+            }
+        }
+        &.fixed-navbar{
+            background-color: var(--bg-color-1);
+            animation: fix-header 0.5s ease forwards;
+            box-shadow: 0 0 5px var(--d-color-2);
+            .language-dropdown{
+                .dropdown-menu{
+                    background-color: var(--bg-color-1);
+                }
+            }
+        }
+    }
+    #mobile-menu{
+        background-color: var(--bg-color-1);
+        .offcanvas-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .canvas-links,
+        .sosial-icons,
+        .contact-item{
+            margin-bottom: 15px;
+        }
+    }
+    .general-header{
+        width: 100%;
+        @include column-center;
+        padding: 25px 0;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            width: 100%;
+            //margin: auto;
+            margin-bottom: 30px;
+        }
+        .bottom-navbar{
+            width: 100%;
+            .container{
+                @include s-around;
+                border-bottom: 3px solid #D9D9D9;
+            }
+            .aurum-logo{
+                display: none;
+                &::after{
+                    display: none;
+                }
+            }
+            a{
+                color: #fff;
+                padding: 20px 0;
+                font-weight: 500;
+                position: relative;
+                &::after{
+                    transform: scale(1.2);
+                    background-color: transparent;
+                    height: 3px;
+                    bottom: -3px;
+                }
+                &:hover{
+                    color: var(--t-color-2);
+                    i{
+                        color: var(--t-color-2);
+                    }
+                    &::after{
+                        background-color: var(--bg-color-2);
+                    }
+                }
+                &.active{
+                    color: var(--t-color-2);
+                    i{
+                        color: var(--t-color-2);
+                    }
+                    &::after{
+                        background-color: var(--bg-color-2);
+                    }
+                }
+            }
+            &.fixed-navbar{
+                background-color: var(--bg-color-1);
+                animation: fix-header 0.5s ease forwards;
+                box-shadow: 0 0 5px var(--d-color-2);
+                .container{
+                    border-bottom: none;
+                    justify-content: space-between;
+                }
+                .aurum-logo{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .page-title{
+        width: 100%;
+        min-height: 350px;
+        @include center;
+        h1{
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

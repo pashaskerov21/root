@@ -1,0 +1,73 @@
+@media only screen and (min-width:540px){
+    .yardim-header{font-size: 40px;}
+    .yardim-text{font-size: 22px;}
+    .yardim-button{font-size: 25px;}
+    .button-section .container{flex-direction: row; justify-content: space-around;}
+    .button-section .container span{width: 30%;}
+    .button-section .container img{transform: scale(1);}
+    .activities-wrapper h1{font-size: 45px;}
+    .btn-group a{padding: 5px 15px;font-size: 16px;}
+
+    .inaye-ehtiyac .error-div h1{font-size: 150px;}
+}
+@media only screen and (min-width:768px){
+    .footer-info-panel{align-items: flex-start;}
+    .footer-info-content{text-align: start;padding: 0;padding-right: 15px;}
+    .footer-logo img {width: 180px;}
+    .footer-logo p {font-size: var(--fs-9);}
+    .footer-right{align-items: flex-start;}
+
+    .main-swiper-1 .content-header{font-size:20px;}
+    .main-swiper-1 .content-text{font-size:20px;}
+    .main-swiper-1 .content-button{font-size:20px;}
+    .slide-card{width: 100%;}
+
+    .inaye-uzv .uzv-content span{font-size: 60px;}
+    .inaye-uzv form{width: 100%;}
+
+    .inaye-konullu .uzv-content span{font-size: 60px;}
+
+    .inaye-gallery .container h1{font-size: 60px;}
+}
+
+@media only screen and (min-width:992px){
+    .main-swiper-1 .content-header{font-size:25px;padding: 20px;}
+    .main-swiper-1 .content-text{font-size:25px;padding: 20px;}
+    .main-swiper-1 .content-button{font-size:25px;padding: 15px 25px;}
+    .main-swiper-1 .swiper-button-prev,
+    .main-swiper-1 .swiper-button-next{width: 45px;height: 45px; margin: 0 30px;}
+    .meqsed-wrapper{flex-direction: row;}
+    .meqsed-wrapper p{text-align: start;}
+
+    .button-section .container{justify-content: space-between;}
+    .button-section .bs-buttons{flex-direction: row;}
+
+    .about-text h1{font-size: 60px;}
+    .meqsed-section-lg h1{font-size: 55px;}
+    .meqsed-section-lg p{font-size: 22px;}
+    .hesabat-section-sm h1{font-size: 55px;}
+    .hesabat-section-sm p{font-size: 22px;}
+    
+    .inaye-uzv .uzv-content span{font-size: 100px;}
+    .inaye-uzv form{width: 80%;}
+
+    .inaye-konullu .uzv-content span{font-size: 80px;}
+    .inaye-konullu form{width: 80%;}
+}
+@media only screen and (min-width:1300px){
+    .main-swiper-1 .content-header{font-size:30px;}
+    .main-swiper-1 .content-text{font-size:30px;}
+    .main-swiper-1 .content-button{font-size:30px;}
+    .yardim-header{font-size: 50px; max-width: 550px;}
+    .yardim-text{font-size: 24px;max-width: 550px;}
+    .yardim-button{font-size: 28px;}
+}
+
+@media only screen and (min-width:2000px){
+    .main-swiper-1 .content-header{font-size:40px;padding: 30px;}
+    .main-swiper-1 .content-text{font-size:40px;padding: 30px;}
+    .main-swiper-1 .content-button{font-size:40px;padding: 25px 35px;}
+    .yardim-header{font-size: 70px; max-width: 650px;}
+    .yardim-text{font-size: 28px;}
+    .yardim-button{font-size: 32px;}
+}

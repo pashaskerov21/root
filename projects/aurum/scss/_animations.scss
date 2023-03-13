@@ -1,0 +1,95 @@
+@keyframes pulse-1 {
+    0% {box-shadow: 0 0 0 0 var(--d-color-1);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes pulse-2 {
+    0% {box-shadow: 0 0 0 0 var(--d-color-2);}
+    80% {box-shadow: 0 0 0 10px rgba(255, 134, 134, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(255, 134, 134, 0);}
+}
+@keyframes phone-animation{
+    0%{transform: rotate(0);}
+    25%{transform: rotate(12deg);}
+    50%{transform: rotate(0);}
+    75%{transform: rotate(-12deg);}
+    100%{transform: rotate(0);}
+}
+@keyframes envelope-animation{
+    0%{transform: scale(1);}
+    25%{transform: scale(0.7);}
+    50%{transform: scale(1.4);}
+    100%{transform: scale(1);}
+}
+@keyframes location-animation{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-15px);}
+    100%{transform: translateY(0);}
+}
+@keyframes dropdown-menu{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes scroll-button{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes fix-header{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes section-animation{
+    0%{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes gallery-panel{
+    0%{
+        transform: scale(0);
+        //transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        //transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes ship-name{
+    100%{
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+}
+@keyframes year-menu{
+    0%{
+        transform: translate(-50%,100px);
+    }
+    100%{
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum</title>
+    <link rel="icon" href="image/logo/favicon.png">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aurum-main.css">
+</head>
+<body>
+    
+
+    <!--HEADER-->
+    <header>
+        <!--HEADER BACKGROUND SWIPER-->
+        <div class="swiper header-bg-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/header-swiper/bg-1.png">
+                </div>
+            </div>
+        </div>
+        <!--MOBILE NAVBAR-->
+        <nav class="mobile-navbar d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <div class="dropdown-center language-dropdown">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <a href="#">Az</a>
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="links">
+                                    <a href="#">En</a>
+                                    <a href="#">Ru</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="offcanvas offcanvas-start" id="mobile-menu">
+            <div class="offcanvas-header">
+                <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                <button class="close-button" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="canvas-links">
+                    <a href="index.html">Ana səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <a class="collapse-button" data-bs-toggle="collapse" href="#xidmet-collapse">Xidmətlər <i class="fa-solid fa-chevron-right"></i></a>
+                    <div class="collapse" id="xidmet-collapse">
+                        <div class="collapse-links">
+                            <a href="service-ship.html">Ship Agency</a>
+                            <a href="service-port.html">Port Service</a>
+                        </div>
+                    </div>
+                    <a href="ships.html">Üzən qurğular</a>
+                    <a href="blog.html">Bloglar</a>
+                    <a href="gallery.html">Qalereya</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-links">
+                        <a href="#">+994 55 6666600</a>
+                        <a href="#">+994 55 4466606</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">info@aurum.com</a>
+                </div>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--GENERAL HEADER-->
+        <nav class="general-header d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-start">
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-center">
+                        <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    </div>
+                    <div class="col-4 col-end">
+                        <div class="general-language">
+                            <a href="#" class="active">Az</a>
+                            <a href="#">Ru</a>
+                            <a href="#">En</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-navbar">
+                <div class="container">
+                    <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                    <a href="index.html">Ana səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <div class="bottom-navbar-dropdown">
+                        <button class="dropdown-button">
+                            <a href="#">Xidmətlər  <i class="fa-solid fa-chevron-right"></i></a>
+                        </button>
+                        <div class="links-menu d-none">
+                            <a href="service-ship.html">Ship Agency</a>
+                            <a href="service-port.html">Port Service</a>
+                        </div>
+                    </div>
+                    <a href="ships.html">Üzən qurğular</a>
+                    <a href="blog.html" class="active">Bloglar</a>
+                    <a href="gallery.html">Qalereya</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-title">
+            <h1>BLOG</h1>
+        </div>
+        
+    </header>
+
+    <main style="background-image: url('image/background/main-bg.png');">
+        
+        <!--BLOG ABOUT SECTION-->
+        <section class="blog-about-section">
+            <div class="container">
+                <div class="row general">
+                    <div class="col-12 col-lg-6 col-xl-7">
+                        <div class="about-content-wrapper">
+                            <div class="banner-image">
+                                <img src="image/blog/b-about/banner.png">
+                            </div>
+                            <div class="about-text">
+                                <div class="title">
+                                    <p>Lorem Ipsum is sumply dummy text</p>
+                                </div>
+                                <div class="date-wrapper">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <div class="date-value">
+                                        <p>26 December 2022</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Possimus quos facere illo aperiam natus unde? Perspiciatis, 
+                                        autem repellendus quisquam ipsam dicta officiis corrupti. 
+                                        Eligendi architecto iusto possimus autem ab perferendis 
+                                        consequatur deserunt modi, impedit quod excepturi corrupti 
+                                        facere doloribus porro adipisci tempora non ipsum sint a delectus 
+                                        reiciendis dolorum nulla. Deserunt veniam sed libero eius eveniet, 
+                                        sequi rerum expedita accusantium assumenda, quis modi quidem at 
+                                        porro vero ea sunt laudantium dolorem dolorum, amet nam! Cumque, 
+                                        architecto. Eum dolorum sunt fugit perspiciatis et, temporibus 
+                                        explicabo consequuntur facilis quasi? Accusamus neque voluptatibus 
+                                        quos? Labore corrupti eius amet debitis provident quae consequuntur 
+                                        minima!
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Possimus quos facere illo aperiam natus unde? Perspiciatis, 
+                                        autem repellendus quisquam ipsam dicta officiis corrupti. 
+                                        Eligendi architecto iusto possimus autem ab perferendis 
+                                        consequatur deserunt modi, impedit quod excepturi corrupti 
+                                        facere doloribus porro adipisci tempora non ipsum sint a delectus 
+                                        reiciendis dolorum nulla. Deserunt veniam sed libero eius eveniet, 
+                                        sequi rerum expedita accusantium assumenda, quis modi quidem at 
+                                        porro vero ea sunt laudantium dolorem dolorum, amet nam! Cumque, 
+                                        architecto. Eum dolorum sunt fugit perspiciatis et, temporibus 
+                                        explicabo consequuntur facilis quasi? Accusamus neque voluptatibus 
+                                        quos? Labore corrupti eius amet debitis provident quae consequuntur 
+                                        minima!
+                                        <br><br>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Possimus quos facere illo aperiam natus unde? Perspiciatis, 
+                                        autem repellendus quisquam ipsam dicta officiis corrupti. 
+                                        Eligendi architecto iusto possimus autem ab perferendis 
+                                        consequatur deserunt modi, impedit quod excepturi corrupti 
+                                        facere doloribus porro adipisci tempora non ipsum sint a delectus 
+                                        reiciendis dolorum nulla. Deserunt veniam sed libero eius eveniet, 
+                                        sequi rerum expedita accusantium assumenda, quis modi quidem at 
+                                        porro vero ea sunt laudantium dolorem dolorum, amet nam! Cumque, 
+                                        architecto. Eum dolorum sunt fugit perspiciatis et, temporibus 
+                                        explicabo consequuntur facilis quasi? Accusamus neque voluptatibus 
+                                        quos? Labore corrupti eius amet debitis provident quae consequuntur 
+                                        minima!
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Possimus quos facere illo aperiam natus unde? Perspiciatis, 
+                                        autem repellendus quisquam ipsam dicta officiis corrupti. 
+                                        Eligendi architecto iusto possimus autem ab perferendis 
+                                        consequatur deserunt modi, impedit quod excepturi corrupti 
+                                        facere doloribus porro adipisci tempora non ipsum sint a delectus 
+                                        reiciendis dolorum nulla. Deserunt veniam sed libero eius eveniet, 
+                                        sequi rerum expedita accusantium assumenda, quis modi quidem at 
+                                        porro vero ea sunt laudantium dolorem dolorum, amet nam! Cumque, 
+                                        architecto. Eum dolorum sunt fugit perspiciatis et, temporibus 
+                                        explicabo consequuntur facilis quasi? Accusamus neque voluptatibus 
+                                        quos? Labore corrupti eius amet debitis provident quae consequuntur 
+                                        minima!
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-5">
+                        <div class="right-panel">
+                            <div class="other-blogs-wrapper">
+                                <div class="section-title">
+                                    <span class="main-span">Digər bloglar</span>
+                                    <img src="image/design/wavy-line.png">
+                                </div>
+                                <div class="blogs-container">
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-1.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-2.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-3.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-4.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-5.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="active-blogs-wrapper">
+                                <div class="time-container">
+                                    <div class="top">
+                                        <div class="section-title">
+                                            <span class="main-span">Aktiv bloglar</span>
+                                            <img src="image/design/wavy-line.png">
+                                        </div>
+                                        <div class="time-panel-1">
+                                            <div class="select-time">
+                                                <span>Tarix seçin</span>
+                                                <img src="image/blog/icon/calendar.png">
+                                            </div>
+                                            <div class="year-dropdown">
+                                                <button class="active-year">
+                                                    <span>2023</span>
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </button>
+                                                <div class="year-menu d-none">
+                                                    <button class="active">2023</button>
+                                                    <button>2022</button>
+                                                    <button>2021</button>
+                                                    <button>2020</button>
+                                                    <button>2019</button>
+                                                    <button>2018</button>
+                                                    <button>2017</button>
+                                                    <button>2016</button>
+                                                    <button>2015</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="swiper month-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><button class="active">Yanvar</button></div>
+                                                <div class="swiper-slide"><button>Fevral</button></div>
+                                                <div class="swiper-slide"><button>Mart</button></div>
+                                                <div class="swiper-slide"><button>Aprel</button></div>
+                                                <div class="swiper-slide"><button>May</button></div>
+                                                <div class="swiper-slide"><button>İyun</button></div>
+                                                <div class="swiper-slide"><button>İyul</button></div>
+                                                <div class="swiper-slide"><button>Avqust</button></div>
+                                                <div class="swiper-slide"><button>Sentyabr</button></div>
+                                                <div class="swiper-slide"><button>Oktyabr</button></div>
+                                                <div class="swiper-slide"><button>Noyabr</button></div>
+                                                <div class="swiper-slide"><button>Dekabr</button></div>
+                                            </div>
+                                            <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                                            <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blogs-container">
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-1.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-2.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-3.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-4.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blog-card-other">
+                                        <div class="image">
+                                            <img src="image/blog/b-about/img-5.png">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <p>Lorem Ipsum is simply dummy text</p>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                                    Quia, cupiditate!Lorem ipsum dolor, sit amet consectetur 
+                                                    adipisicing elit. Quia, cupiditate!
+                                                </p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="date-wrapper">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                    <div class="date-value">
+                                                        <p>26 December 2022</p>
+                                                    </div>
+                                                </div>
+                                                <span class="about-link">Ətraflı <i class="fa-solid fa-chevron-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!--FOOTER-->
+    <footer style="background-image: url('image/background/footer-bg.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 logo">
+                    <a href="index.html" class="aurum-logo"><img src="image/logo/aurum-logo.png"></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="index.html">Ana səhifə</a>
+                        <a href="about.html">Haqqımızda</a>
+                        <a href="service-ship.html">Ship Agency</a>
+                        <a href="service-port.html">Port Service</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="ships.html">Üzən qurğular</a>
+                        <a href="blog.html">Bloglar</a>
+                        <a href="gallery.html">Qalereya</a>
+                        <a href="contact.html">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footer-links">
+                        <a href="#" class="adress">Bakı şəh., Üzeyir Hacıbəyov, 5/34A</a>
+                        <div class="contact-item">
+                            <span>Tel:</span>
+                            <div class="links">
+                                <a href="#">+994 55 6666600</a>
+                                <a href="#">+994 55 4666606</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>Mail:</span>
+                            <div class="links">
+                                <a href="#">info@aurum.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

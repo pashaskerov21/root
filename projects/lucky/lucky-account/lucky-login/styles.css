@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fc8410 url("img/header/leaf-header-1.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: #106853;
+}
+/*Header baslangic*/
+
+header {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Daxil ol ve qeydiyyat linkleri*/
+#registration-div a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  position: relative;
+  transition: 0.5s;
+}
+#registration-div a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: -15%;
+  transition: 0.5s;
+  z-index: 5;
+}
+#registration-div a:hover::after {
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-position: 100% 0;
+  }
+  #registration-div a::after {
+    display: none;
+  }
+
+  #registration-div a:first-child {
+    border: 2px solid #fff;
+    border-radius: 7px;
+  }
+  #registration-div a:first-child:hover {
+    background: #106853;
+    border-color: #106853;
+  }
+  #registration-div a:last-child {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    color: #000;
+  }
+  #registration-div a:last-child:hover {
+    background-color: #106853;
+    border-color: #106853;
+    color: #fff;
+  }
+}
+
+.navbar-grid-system-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "navlogo navlogo"
+    "navlogo navlogo"
+    "menubtn navicons"
+    "categorybtn categorybtn";
+}
+.navbar-grid-system-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "navlogo navlogo"
+    "menubtn navicons"
+    "searchbox searchbox"
+    "navlinks navlinks"
+    "navlinks navlinks"
+    "navlinks navlinks"
+    "categorybtn categorybtn";
+}
+#tnav-logo {
+  grid-area: navlogo;
+}
+#tnav-toggle-menu-btn {
+  grid-area: menubtn;
+}
+#tnav-icons {
+  grid-area: navicons;
+}
+#tnav-search-div {
+  grid-area: searchbox;
+}
+#tnav-menu-links {
+  grid-area: navlinks;
+}
+#bnav-category-btn {
+  grid-area: categorybtn;
+}
+
+@media only screen and (min-width: 768px) {
+  #navbar-grid-system-div {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    grid-template-areas:
+      "navlogo searchbox searchbox searchbox navicons"
+      "navlogo searchbox searchbox searchbox navicons"
+      "categorybtn categorybtn navlinks navlinks navlinks";
+  }
+}
+
+/*Fixed nav grid system*/
+#fixed-navbar-grid-system {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "categorybtn categorybtn searchbox searchbox searchbox navicons";
+}
+
+/*Menu button animation*/
+#tnav-toggle-menu-btn .tnav-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  position: relative;
+  margin: 10px;
+}
+.tnav-menu-btn .bar {
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  transition: 0.25s ease-in-out;
+  border-radius: 10px;
+  position: absolute;
+}
+.tnav-menu-btn .bar1 {
+  transform: translateY(-15px);
+}
+.tnav-menu-btn .bar3 {
+  transform: translateY(15px);
+}
+.open .bar1 {
+  transform: rotate(-45deg);
+}
+.open .bar2 {
+  transform: translate(50px);
+  background: transparent;
+}
+.open .bar3 {
+  transform: rotate(45deg);
+}
+
+/*Navbar iconlari*/
+#tnav-icons a {
+  color: #fff;
+
+  font-size: 30px;
+  position: relative;
+}
+#tnav-icons a span {
+  background-color: red;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -13px;
+}
+/*Search box*/
+#tnav-search-div div {
+  border: 2px solid #fff;
+  border-radius: 7px;
+  width: 85%;
+  position: relative;
+}
+#tnav-search-div input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  width: 90%;
+  caret-color: #fff;
+}
+#tnav-search-div input::placeholder {
+  color: #fff;
+}
+#tnav-search-div a {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 2px;
+  right: 7px;
+}
+
+/*Asagi navbar esas linkleri*/
+.tntm-links a {
+  color: white;
+  padding: 5px 0;
+  position: relative;
+}
+.tntm-links a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.tntm-links a:hover::after {
+  width: 100%;
+}
+/*Sertler linki acilan panel*/
+#terms-link-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+}
+#terms-link-btn p {
+  position: relative;
+  cursor: pointer;
+}
+#terms-link-btn p::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#terms-link-btn p:hover::after {
+  width: 90%;
+}
+
+.rotate-icon-1 {
+  animation-name: rotate1;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.rotate-icon-2 {
+  animation-name: rotate2;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(00deg);
+  }
+}
+
+/*Sertler linkinin acilan panelinin 768den sonraki goruntusu*/
+@media only screen and (min-width: 768px) {
+  #terms-link-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    text-align: start;
+    z-index: 999;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  #terms-link-menu a {
+    color: #000;
+    padding: 5px 10px;
+  }
+  #terms-link-menu a::after {
+    background-color: #000;
+    left: 0;
+  }
+  #terms-link-menu a:hover::after {
+    width: 195px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #terms-link-menu {
+    left: 0;
+  }
+}
+
+/*Kategoriyalar paneli*/
+#bnav-category-btn {
+  /* width: 100%; */
+  position: relative;
+  background-color: #106853;
+  cursor: pointer;
+}
+#bnav-category-btn #btn-name {
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  line-height: 40px;
+}
+#bnav-category-btn #btn-name p {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 20px;
+}
+#bnav-category-menu {
+  background-color: #106853;
+  border-top: 1px solid #fff;
+}
+#bnav-category-menu .category-item {
+  color: #fff;
+  width: 75%;
+}
+#bnav-category-menu .category-item a {
+  color: #fff;
+  padding: 5px 0;
+  flex-grow: 1;
+  position: relative;
+}
+/*Kategoriya linklerinin effekti*/
+#bnav-category-menu .category-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+#bnav-category-menu .category-item a:hover::after {
+  width: 95%;
+}
+
+#bnav-category-menu .category-item .mobile-menu-btns {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.category-item-menu {
+  background-color: #106853;
+  width: 100%;
+  padding: 10px 0;
+}
+.category-item-menu ul li {
+  padding: 5px 0;
+}
+
+/*Kategoriya bolmesinin 768den sonraki gorunusu*/
+@media only screen and (min-width: 768px) {
+  #bnav-category-menu {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 90%;
+    z-index: 999;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  #bnav-category-menu .category-item {
+    width: 100%;
+    padding-left: 35px;
+  }
+  #bnav-category-menu .category-item .mobile-menu-btns {
+    display: none;
+  }
+  #bnav-category-menu .category-item img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+
+  #bnav-category-menu .category-name a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #106853;
+    left: -9%;
+    bottom: 0;
+    transition: 0.5s;
+  }
+  #bnav-category-menu .category-name a:hover::after {
+    width: 100%;
+  }
+  #bnav-category-menu .category-item a {
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  #bnav-category-menu {
+    width: 70%;
+  }
+}
+
+/*Kategoriya linklerinin acilan panellerinin gorunusu*/
+@media only screen and (min-width: 768px) {
+  .category-item-menu {
+    position: absolute;
+    padding: 10px 5px;
+    background-color: #fff;
+    top: 0;
+    left: 100%;
+    width: 50vw;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  .category-item-menu ul {
+    list-style: none;
+    display: grid;
+  }
+  #office-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #food-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #teserrufat-item-menu ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #elektron-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-item-menu::-webkit-scrollbar{
+    width: 7px;
+  }
+  .category-item-menu::-webkit-scrollbar-thumb{
+    background-color: #fc8410;
+  }
+  .category-item-menu::-webkit-scrollbar-track{
+    background-color:   #f1f1f1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #office-item-menu ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #teserrufat-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #flower-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #gift-item-menu ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #coffee-item-menu ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+main {
+  padding: 30px 0;
+  background-color: #f8f8f8;
+}
+#info-header {
+  padding: 30px 50px;
+}
+#info-header .design-line {
+  width: 30px;
+  margin: 10px 0;
+  border: 2px solid #106853;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 560px) {
+  #info-text {
+    width: 70%;
+    max-width: 800px;
+  }
+}
+
+#register-btn {
+  background-color: #fff;
+  transition: 0.3s;
+}
+#register-btn a {
+  color: #000;
+  transition: 0.3s;
+}
+#register-btn:hover {
+  background-color: #106853;
+}
+#register-btn a:hover {
+  color: #fff;
+}
+#login-btn {
+  background-color: #fc8410;
+  color: #fff;
+  transition: 0.3s;
+}
+#login-btn:hover {
+  background-color: #106853;
+}
+#forgot-pwd {
+  color: #106853;
+  text-decoration: underline;
+}
+#form-panel form input:focus {
+  box-shadow: none;
+  border-color: #fc8410;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 50px 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main {
+    background-color: #fc8410;
+  }
+  #login-section {
+    width: 100%;
+  }
+  #form-panel {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top-left-radius: 20% 50%;
+    border-bottom-left-radius: 20% 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  #form-panel form {
+    width: 60%;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 40px 0 20px;
+}
+#footer-logo #footer-icons a {
+  background-color: #106853;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+#footer-logo #footer-icons a:hover {
+  background-color: #fc8410;
+}
+
+#footer-links h5 {
+  color: #fc8410;
+  text-decoration: underline;
+}
+#footer-links a {
+  color: black;
+  transition: 0.3s;
+  position: relative;
+}
+#footer-links a:hover {
+  color: #fc8410;
+}
+#footer-links a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fc8410;
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  transition: 0.3s;
+}
+#footer-links a:hover::after {
+  width: 100%;
+}
+#footer-author a {
+  color: #fc8410;
+}

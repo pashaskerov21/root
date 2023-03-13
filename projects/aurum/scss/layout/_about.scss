@@ -1,0 +1,111 @@
+/*-----------AURUM ABOUT PAGE-----------*/
+/*about section*/
+.about-section{
+    .row{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .section-title{
+        margin-bottom: 20px;
+    }
+    .content-title{
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .content-wrapper{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 40px;
+        .text{
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .about-image{
+        padding: 10px;
+        background-color: rgba(206, 189, 136, 0.33);
+        width: 100%;
+        max-width: 500px;
+        @include center;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        &:hover{
+            background-color: var(--bg-color-2);
+            img{
+                transform: scale(0.98);
+            }
+        }
+    }
+    &.reverse{
+        background-repeat: no-repeat;
+        //background-size: contain;
+        background-position: bottom 50px right 50px;
+        .content-wrapper{
+            margin-bottom: 0;
+        }
+        .about-image{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+/*partner section*/
+.partner-section{
+    padding: 30px 0;
+    background-color: var(--bg-color-1);
+    margin-bottom: 30px;
+    .swiper-slide{
+        min-height: 150px;
+    }
+    img{
+        max-width: 200px;
+        object-fit: contain;
+        user-select: none;
+    }
+}
+
+/*counter section*/
+.counter-section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    .counters-wrapper{
+        width: 100%;
+        @include column-center;
+        .item{
+            @include column-center;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 30px;
+            .counter-span{
+                color: var(--t-color-2);
+                font-size: 120px;
+                font-family: 'Cinzel', serif;
+                line-height: 140px;
+            }
+            .content{
+                width: 100%;
+                @include column-center;
+                .title{
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                .text{
+                    p{
+                        text-align: center;
+                        font-size: 12px;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+

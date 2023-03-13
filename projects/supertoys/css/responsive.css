@@ -1,0 +1,58 @@
+@media only screen and (min-width: 360px){
+    .teklif-section .hover-absolute-div .toys-panel{width: 90%;}
+}
+@media only screen and (min-width: 576px){
+    .mobile-header .supertoys-logo{width: 90%;}
+    .mobile-header .search-input{width: 70%;}
+    footer .supertoys-logo{width: 70%;}
+
+    
+    .product-card.sezon-lg{width: 95%;}
+    .product-card.sezon-sm{width: 95%;}
+    .product-card.sezon-sm .product-image img{width: 70px;height: 70px;}
+    .cp-image-sm img{width: 96px; height: 96px;}
+
+    .form-button-wrapper{flex-direction: row;}
+    .form-button-wrapper button{width: 50%;}
+    .payment-cards{flex-direction: row;}
+
+    
+}
+@media only screen and (min-width: 768px){
+    .mobile-header .supertoys-logo{width: 80%;}
+    .mobile-header .search-input{width: 60%;}
+    footer .supertoys-logo{width: 50%;}
+    footer .footer-bottom p{flex-direction: row;}
+    .swiper-button-prev, .swiper-button-next{width: 40px;height: 40px;}
+    .product-card.new{width: 85%;}
+    .kampaniya-products-swiper .product-card{width: 80%;}
+    .cp-image-lg{width: 80%;}
+    .product-description .desc-image{width: 100%;}
+    .basket-products-wrapper .products{overflow: visible;}
+    .basket-products-wrapper .product-row{margin-left: 0; min-width: auto;}
+    
+}
+@media only screen and (min-width: 992px){
+    footer .supertoys-logo{width: 95%;}
+    .swiper-button-prev, .swiper-button-next{width: 50px;height: 50px;font-size: var(--fs-7);}
+    .swiper-pagination-bullet{width: 15px; height: 15px;}
+    .white-toy-design{width: auto; height: auto;}
+    .product-card.new{width: 93%;}
+}
+@media only screen and (min-width:1200px){
+    .bottom-navbar-col img{padding: 0 10px;}
+    .bottom-navbar-col a{font-size: var(--fs-5);}
+    .teklif-section .content{padding: 50px 0;}
+}
+@media only screen and (min-width:1400px){
+    .bottom-navbar-col img{padding: 0 15px;}
+    .bottom-navbar-col a{font-size: var(--fs-6);}
+    .teklif-section{background-size: contain;}
+}
+@media only screen and (min-width:1800px){
+    .bottom-navbar-col a{font-size: var(--fs-9);}
+    .design-image-row{width: 90%;}
+}
+@media only screen and (min-width:2200px){
+    .design-image-row{width: 70%;}
+}

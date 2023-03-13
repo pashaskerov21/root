@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="icon" href="image/bmi-new-logo/1x/iconsmall.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="mobile-header d-lg-none">
+            <div class="container">
+                <div class="mobile-header-wrapper">
+                    <div class="mh-left">
+                        <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/1x/verticalsmall.png" alt="logo"></a>
+                    </div>
+                    <div class="mh-right">
+                        <button class="search-button me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button type="button" class="offcanvas-button" data-bs-toggle="offcanvas" data-bs-target="#bmi-offcanvas"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <div class="container">
+                <div class="top-navbar">
+                    <div class="top-navbar-left">
+                        <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/2x/verticalbig.png" alt="logo"></a>
+                    </div>
+                    <div class="top-navbar-right">
+                        <div class="tnr-top">
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                            </div>
+                        </div>
+                        <div class="tnr-bottom">
+                            <div class="lang-dropdown">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"><span>AZ</span><i class="fa-solid fa-chevron-down"></i></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">EN</a></li>
+                                      <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="search-box">
+                                <input type="text" placeholder="Axtar">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-navbar">
+                    <div class="container">
+                        <div class="d-flex align-items-center">
+                            <a href="index.html" class="header-logo d-none"><img src="image/bmi-new-logo/1x/shortsmall.png" alt="logo"></a>
+                            <div class="links-wrapper">
+                                <a href="index.html">Ana Səhifə</a>
+                                <a href="about.html">Haqqımızda</a>
+                                <a href="trainings.html">Təlimlər</a>
+                                <a href="trainers.html">Təlimçilər</a>
+                                <a href="forms.html">Forumlar</a>
+                                <a href="news.html">Xəbərlər</a>
+                                <a href="contact.html">Bizimlə Əlaqə</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-top" id="search-offcanvas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <input type="text" class="form-control" placeholder="Axtar">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" id="bmi-offcanvas">
+            <div class="offcanvas-header">
+                <div class="mh-left">
+                    <a href="index.html" class="header-logo"><img src="image/bmi-new-logo/white-logo/vertical.svg" alt="logo"></a>
+                </div>
+                <div class="mh-right">
+                    <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="links-wrapper">
+                    <a href="index.html">Ana Səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="trainings.html">Təlimlər</a>
+                    <a href="trainers.html">Təlimçilər</a>
+                    <a href="forms.html">Forumlar</a>
+                    <a href="news.html">Xəbərlər</a>
+                    <a href="contact.html">Bizimlə Əlaqə</a>
+                    <a data-bs-toggle="collapse" href="#lang-collapse" role="button">Az</a>
+                    <div class="collapse" id="lang-collapse">
+                        <div class="links-wrapper">
+                            <a href="#">En</a>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons-wrapper my-3">
+                    <div class="contact-icons">
+                        <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                        <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                    </div>
+                    <div class="sosial-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="banner-section">
+            <div class="swiper banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-2.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="image/2-main/swiper-1/img-2.png" alt="slide"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="content-wrapper">
+                        <div class="content-left">
+                            <h1>BUSINESS<br> MANAGEMENT<br>INSTITUTE</h1>
+                            <a href="#" class="banner-button">Ətraflı</a>
+                        </div>
+                        <div class="content-right">
+                            <div class="video-wrapper">
+                                <div class="video-poster"><img src="image/2-main/swiper-1/video-poster.png" alt="poster"></div>
+                                <div class="hover-div">
+                                    <a href="image/2-main/swiper-1/video-poster.png" data-fancybox="" class="play-button">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="page-header container">
+            <div class="root-links">
+                <a href="#">Əsas səhifə</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Təlimlər</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Təlim 1</a>
+            </div>
+            <span class="header">TƏLİM 1</span>
+        </div>
+        <section class="training-about-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="banner-image">
+                        <img src="image/2-main/training/custom-training.png">
+                    </div>
+                    <div class="header">
+                        <span class="name">İnsan resurlarının idarə edilməsi təlimləri</span>
+                        <div class="badge">
+                            <img src="image/2-main/training/online-icon.png" class="online-icon">
+                            <img src="image/2-main/training/offline-icon.png" class="offline-icon">
+                            <span class="online-span">online</span>
+                            <span class="offline-span">offline</span>
+                        </div>
+                    </div>
+                    <div class="accordion" id="training-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-1">
+                                    <span>Ümumi Məlumat:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-1" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <p class="text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        At esse aut soluta reprehenderit natus eos omnis fugit 
+                                        repellendus porro voluptatem vero ut iure ullam voluptate 
+                                        reiciendis facere officia quasi inventore adipisci eum 
+                                        dolores alias nam, nesciunt dolore! Facilis, odio, pariatur 
+                                        impedit ex deleniti maxime atque aliquam sequi sapiente 
+                                        itaque placeat nostrum tenetur quam voluptate cumque 
+                                        reprehenderit tempore veritatis laudantium vero obcaecati 
+                                        fugit inventore esse praesentium. Provident dolore maiores 
+                                        officia sit nisi pariatur quaerat, repellendus reiciendis 
+                                        eos nemo, unde voluptatibus. At, molestiae quas est, 
+                                        pariatur voluptate obcaecati blanditiis mollitia minus 
+                                        doloribus architecto aliquid quidem nesciunt cupiditate 
+                                        aperiam ut laboriosam nostrum! Eos?
+                                    </p>
+                                    <div class="list-wrapper">
+                                        <span class="label">Təlim kimlər üçün nəzərdə tutulmuşdur:</span>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <span class="label">Təlimlərdə iştirak sizə nə qazandıracaq:</span>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-2">
+                                    <span>Təlimin Mündəricatı:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-2" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <div class="list-wrapper">
+                                        <span class="label-2">Motivasiya nədir?</span>
+                                        <span class="label-2">Motivasiyanın əhəmiyyəti</span>
+                                        <span class="label-2">Motivasiya nəzəriyyələri</span>
+                                        <ul>
+                                            <li>Motivasiyanın əsas tipləri</li>
+                                            <li>Teylorun məmnunluq nəzəriyyəsi</li>
+                                            <li>Maslonun ehtiyactlar ierarxiyası nəzəriyyəsi</li>
+                                            <li>Hersbergin 2 faktorlu motivasiya nəzəriyyəsi</li>
+                                            <li>Makqreqorun X və Y nəzəriyyəsi</li>
+                                            <li>Vrumun gözləntilər nəzəriyyəsi</li>
+                                            <li>Adamsın ədalətlilik nəzəriyyəsi</li>
+                                        </ul>
+                                        <span class="label-2">Motivasiya tələbatının müəyyən olunması</span>
+                                        <span class="label-2">İnsanlar nəyə can atır?</span>
+                                        <span class="label-2">Motivasiyanın fiziologiyası</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-3">
+                                    <span>Təlimçilər:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-3" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <div class="row trainers">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="trainer-card">
+                                                <div class="trainer-image">
+                                                    <img src="image/2-main/trainer/img-1.png">
+                                                    <div class="linear-bg"></div>
+                                                    <div class="trainer-icons">
+                                                        <div class="hide-icons">
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-twitter"></i></a>
+                                                        </div>
+                                                        <button class="share-button trainer-icon"><img src="image/icons/share-icon.png"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="trainer-info">
+                                                    <a href="#" class="name">Vüsal Nasirov</a>
+                                                    <span>Təlimçi 1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="trainer-card">
+                                                <div class="trainer-image">
+                                                    <img src="image/2-main/trainer/img-2.png">
+                                                    <div class="linear-bg"></div>
+                                                    <div class="trainer-icons">
+                                                        <div class="hide-icons">
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-twitter"></i></a>
+                                                        </div>
+                                                        <button class="share-button trainer-icon"><img src="image/icons/share-icon.png"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="trainer-info">
+                                                    <a href="#" class="name">Aysel Aliyeva</a>
+                                                    <span>Təlimçi 2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="trainer-card">
+                                                <div class="trainer-image">
+                                                    <img src="image/2-main/trainer/img-1.png">
+                                                    <div class="linear-bg"></div>
+                                                    <div class="trainer-icons">
+                                                        <div class="hide-icons">
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                            <a href="#" class="trainer-icon"><i class="fa-brands fa-twitter"></i></a>
+                                                        </div>
+                                                        <button class="share-button trainer-icon"><img src="image/icons/share-icon.png"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="trainer-info">
+                                                    <a href="#" class="name">Vüsal Nasirov</a>
+                                                    <span>Təlimçi 1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-4">
+                                    <span>Təlimin ödənişi:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-4" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <p class="text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        At esse aut soluta reprehenderit natus eos omnis fugit 
+                                        repellendus porro voluptatem vero ut iure ullam voluptate 
+                                        reiciendis facere officia quasi inventore adipisci eum 
+                                        dolores alias nam, nesciunt dolore! Facilis, odio, pariatur 
+                                        impedit ex deleniti maxime atque aliquam sequi sapiente 
+                                        itaque placeat nostrum tenetur quam voluptate cumque 
+                                        reprehenderit tempore veritatis laudantium vero obcaecati 
+                                        fugit inventore esse praesentium. Provident dolore maiores 
+                                        officia sit nisi pariatur quaerat, repellendus reiciendis 
+                                        eos nemo, unde voluptatibus. At, molestiae quas est, 
+                                        pariatur voluptate obcaecati blanditiis mollitia minus 
+                                        doloribus architecto aliquid quidem nesciunt cupiditate 
+                                        aperiam ut laboriosam nostrum! Eos?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-5">
+                                    <span>Təlimin cədvəli:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-5" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <div class="training-date">
+                                        <span>12 Noyabr (Şənbə) - 10:00 - 13:00</span>
+                                        <span>19 Noyabr (Şənbə) - 10:00 - 13:00</span>
+                                        <span>26 Noyabr (Şənbə) - 10:00 - 13:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-6">
+                                    <span>Rəylər:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-6" data-bs-parent="#training-accordion">
+                                <div class="accordion-body">
+                                    <div class="comments-wrapper">
+                                        <div class="comment-item">
+                                            <div class="user-image">
+                                                <img src="image/comments/user.png">
+                                                <div class="stars-wrapper">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Illum corrupti harum, odio vel consectetur impedit fugiat. 
+                                                    Ullam quae sapiente sint saepe, doloremque, nesciunt accusamus quod, 
+                                                    nostrum aperiam officiis explicabo at.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-item">
+                                            <div class="user-image">
+                                                <img src="image/comments/user.png">
+                                                <div class="stars-wrapper">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Illum corrupti harum, odio vel consectetur impedit fugiat. 
+                                                    Ullam quae sapiente sint saepe, doloremque, nesciunt accusamus quod, 
+                                                    nostrum aperiam officiis explicabo at.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-item">
+                                            <div class="user-image">
+                                                <img src="image/comments/user.png">
+                                                <div class="stars-wrapper">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                    <img src="image/comments/star.png">
+                                                </div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Illum corrupti harum, odio vel consectetur impedit fugiat. 
+                                                    Ullam quae sapiente sint saepe, doloremque, nesciunt accusamus quod, 
+                                                    nostrum aperiam officiis explicabo at.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training-collapse-7">
+                                    <span>Qeydiyyat:</span>
+                                    <i class="fa-solid fa-chevron-down main-chevron"></i>
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="training-collapse-7" data-bs-parent="#training-accordion">
+                                <div class="accordion-body px-0">
+                                    <form action="#" class="form-general">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-item">
+                                                    <label for="user-name">Ad, soyad*</label>
+                                                    <input type="text" class="form-control" id="user-name" placeholder="Adınız və Soyadınız">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-item">
+                                                    <label for="user-phone">Telefon*</label>
+                                                    <input type="text" class="form-control" id="user-phone" placeholder="+994 50 999 99 99">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-item">
+                                                    <label for="user-email">E-mail*</label>
+                                                    <input type="email" class="form-control" id="user-email" placeholder="E-mail ünvanınızı daxil edin">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-center">
+                                                <button type="submit" class="form-submit-button">Göndər</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top d-flex flex-column align-items-center flex-lg-row">
+                <div class="footer-logo"><a href="index.html"><img src="image/bmi-new-logo/white-logo/text icon.svg" class="w-100"></a></div>
+                <div class="row w-100">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Menyular</h4>
+                            <a href="about.html">Haqqımızda</a>
+                            <a href="trainings.html">Təlimlər</a>
+                            <a href="trainers.html">Təlimçilər</a>
+                            <a href="forms.html">Forumlar</a>
+                            <a href="news.html">Xəbərlər</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Faydalı linklər</h4>
+                            <a href="faq.html">Tez-tez soruşulanlar</a>
+                            <a href="career.html">Karyera</a>
+                            <a href="service-network.html">Xidmət şəbəkəsi</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                            <h4>Əlaqə</h4>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-envelope"></i></span><span>info@gmail.com</span></a>
+                            </div>
+                            <div class="contact">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span><span>+994 50 999 99 99</span></a>
+                            </div>
+                            <div class="sosial-icons">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022. Business Management Institute</p>
+        </div>
+    </footer>
+
+    <div class="page-main-buttons">
+        <button  class="page-button muraciet-button" type="button" >
+            <img src="image/icons/muraciet.png">
+            <span data-bs-target="#muraciet-offcanvas" data-bs-toggle="offcanvas">Müraciət et</span>
+        </button>
+        <button class="page-button kurs-button" type="button">
+            <img src="image/icons/kurs.png">
+            <span data-bs-target="#kurslar-offcanvas" data-bs-toggle="offcanvas">Popular kurslar</span>
+        </button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="muraciet-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Müraciət et</h3>
+            <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="#" class="form-general" autocomplete="off">
+                <div class="row w-100">
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="telim-select">Kateqoriya seç*</label>
+                            <select id="telim-select" class="form-select">
+                                <option selected disabled>Kateqoriya daxil edin</option>
+                                <option>Kateqoriya 1</option>
+                                <option>Kateqoriya 2</option>
+                                <option>Kateqoriya 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="telim-select">Təlim seç*</label>
+                            <select id="telim-select" class="form-select">
+                                <option selected disabled>Təlim daxil edin</option>
+                                <option>Təlim 1</option>
+                                <option>Təlim 2</option>
+                                <option>Təlim 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-name">Ad, soyad*</label>
+                            <input type="text" class="form-control" id="user-name" placeholder="Adınız və Soyadınız">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-work">İş yeri*</label>
+                            <input type="text" class="form-control" id="user-work" placeholder="İş yerinizi daxil edin">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-vezife">Vəzifə*</label>
+                            <input type="text" class="form-control" id="user-vezife" placeholder="Vəzifəniz">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-email">E-mail*</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Şəxsi e-mail ünvanınızı daxil edin">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-item">
+                            <label for="user-phone">Telefon*</label>
+                            <input type="text" class="form-control" id="user-phone" placeholder="+994 50 999 99 99">
+                        </div>
+                    </div>
+                    <div class="col-12 col-center">
+                        <button type="submit" class="form-submit-button">Müraciət göndər</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="kurslar-offcanvas">
+        <div class="offcanvas-header">
+            <h3>Popular Kurslar</h3>
+            <button type="button" class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="kurs-cards-wrapper">
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-1.png"></div>
+                    <span>Rəhbərlər üçün təlimlər</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-2.png"></div>
+                    <span>Marketinq təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-3.png"></div>
+                    <span>İnsan Resurslarının idarə edilməsi təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-4.png"></div>
+                    <span>Rəhbərlər üçün təlimlər</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-5.png"></div>
+                    <span>Marketinq təlimləri</span>
+                </a>
+                <a href="#" class="kurs-card">
+                    <div class="kurs-image"><img src="image/2-main/training/img-6.png"></div>
+                    <span>İnsan Resurslarının idarə edilməsi təlimləri</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+#basket-offcanvas{
+    background-color: #f1f1f1;
+    .offcanvas-header{
+        @include s-between;
+        padding-bottom: 0;
+        span{
+            font-size: 24px
+        }
+    }
+    .offcanvas-body{
+        @include column-center;
+        justify-content: flex-start;
+        overflow: auto;
+    }
+    .basket-form{
+        width: 100%;
+        @include column-center;
+        margin-bottom: 30px;
+        input.form-control{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .submit-button{
+            width: 100%;
+            padding: 15px;
+            background-color: var(--color-1);
+            color: #fff;
+            font-weight: 500;
+            &:hover{
+                background-color: #198754;
+            }
+        }
+    }
+    .basket-product-table{
+        width: 100%;
+        min-height: 200px;
+        @include column-center;
+        justify-content: space-between;
+        padding: 10px 0;
+        .products-wrapper{
+            width: 100%;
+            @include column-center;
+            .product{
+                width: 100%;
+                @include s-between;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                .info{
+                    padding-right: 15px;
+                    @include column-center;
+                    align-items: flex-start;
+                }
+                .product-delete-button{
+                    align-self: flex-end;
+                }
+            }
+        }
+        .empty-text{
+            align-self: flex-start;
+        }
+        .basket-result{
+            width: 100%;
+            @include s-between;
+            padding: 15px 0;
+            //border-top: 1px solid rgba(0,0,0,0.1);
+        }
+    }
+    
+}

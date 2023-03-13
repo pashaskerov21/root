@@ -1,0 +1,528 @@
+/*-------------header-------------*/
+@media only screen and (min-width: 380px){
+    .aurum-logo{
+        max-width: 140px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .aurum-logo{
+        max-width: 170px;
+    }
+}
+
+@media only screen and (min-width: 380px){
+    .menu-button{
+        font-size: 26px;
+    }
+    .language-dropdown{
+        margin-right: 20px;
+        .dropdown-toggle{
+            a{
+                font-size: 26px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 576px){
+    .menu-button{
+        font-size: 30px;
+    }
+    .language-dropdown{
+        margin-right: 25px;
+        .dropdown-toggle{
+            a{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+
+/*--------------footer--------------*/
+@media only screen and (min-width: 992px){
+    footer{
+        .container{
+            .row{
+                .col-12{
+                    margin-bottom: 0;
+                    &.logo{
+                        margin-bottom: 0;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--------------aurum home page--------------*/
+@media only screen and (min-width: 992px){
+    .service-cards-section{
+        .section-title{
+            align-self: flex-start;
+        }
+    }
+    .blogs-section{
+        .section-title{
+            align-self: flex-start;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .blue-about-swiper-section{
+        .row.content{
+            .col-12{
+                margin-bottom: 0;
+            }
+            .left{
+                align-items: flex-start;
+                .text{
+                    p{
+                        text-align: start;
+                    }
+                }
+                .about-button{
+                    margin-left: 10px;
+                }
+            }
+            .right{
+                align-self: stretch;
+                max-width: 700px;
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------aurum about page-------------*/
+/*about section*/
+@media only screen and (min-width: 576px){
+    .about-section{
+        .about-image{
+            padding: 20px;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .about-section{
+        .content-wrapper{
+            align-items: flex-start;
+            margin-bottom: 0;
+            .text{
+                p{
+                    text-align: start;
+                }
+            }
+        }
+        &.reverse{
+            .about-image{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/*mission section*/
+@media only screen and (min-width: 992px){
+    .mission-section{
+        .container{
+            align-items: flex-start;
+        }
+    }
+}
+/*counter section*/
+@media only screen and (min-width: 768px){
+    .counter-section{
+        .counters-wrapper{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+/*-------------aurum services page-------------*/
+/*services content section*/
+@media only screen and (min-width: 576px){
+    .service-main-content-section{
+        .service-image{
+            padding: 20px;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .service-main-content-section{
+        .content-wrapper{
+            align-items: flex-start;
+            margin-bottom: 0;
+            .text{
+                p{
+                    text-align: start;
+                }
+            }
+        }
+    }
+    .service-main-content-section{
+        &:nth-child(2n){
+            .row{
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .service-content-section-3{
+        .content-wrapper{
+            background-position: top 80px left 80px;
+            .content-row{
+                .text-item{
+                    flex-direction: row;
+                    .text{
+                        p{
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*gallery section*/
+@media only screen and (min-width: 576px){
+    .gallery-section{
+        .gallery-buttons{
+            flex-direction: row;
+            button{
+                margin-bottom: 0;
+                &.foto{
+                    margin-right: 20px;
+                }
+                span{
+                    padding: 20px;
+                    width: 100%;
+                    border: 1px solid var(--d-color-1);
+                    font-size: 18px;
+                }
+            }
+        }
+        .photo-gallery{
+            .col-12{
+                &:nth-child(1){
+                    padding-right: 8px;
+                }
+                &:nth-child(2){
+                    padding-left: 8px;
+                }
+                &:nth-child(3){
+                    padding-right: 8px;
+                }
+                &:nth-child(4){
+                    padding-left: 8px;
+                }
+                &:nth-child(5){
+                    padding-right: 8px;
+                }
+                &:nth-child(6){
+                    padding-left: 8px;
+                }
+            }
+            a{
+                img{
+                    height: 170px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .gallery-section{
+        .photo-gallery{
+            .col-12{
+                &:nth-child(1){
+                    padding-right: 8px;
+                }
+                &:nth-child(2){
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+                &:nth-child(3){
+                    padding-left: 8px;
+                    padding-right: 0;
+                }
+                &:nth-child(4){
+                    padding-left: 0;
+                    padding-right: 8px;
+                }
+                &:nth-child(5){
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+                &:nth-child(6){
+                    padding-left: 8px;
+                }
+            }
+            a{
+                img{
+                    height: 155px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .gallery-section{
+        .large-poster{
+            margin-bottom: 0;
+            max-width: 650px;
+            align-self: stretch;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text{
+            p{
+                text-align: start;
+            }
+        }
+        .photo-gallery{
+            .col-12.distance-3{
+                margin-bottom: 0;
+            }
+            .col-12.distance-6{
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6){
+                    margin-bottom: 0;
+                }
+            }
+            a{
+                img{
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .gallery-section{
+        .photo-gallery{
+            a{
+                img{
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .gallery-section{
+        .photo-gallery{
+            a{
+                img{
+                    height: 145px;
+                }
+            }
+        }
+    }
+}
+
+
+/*-----------aurum ships page-----------*/
+
+/*ships section*/
+@media only screen and (min-width: 768px){
+    .ships-section{
+        .row{
+            .col-12{
+                padding-left: 10px;
+                &:nth-child(2n+1){
+                    padding-left: 0;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .section-title{
+            align-self: start;
+        }
+    }
+}
+/*ship card*/
+@media only screen and (min-width: 576px){
+    .ship-card{
+        .name{
+            min-width: 240px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .ship-card{
+        img{
+            height: 200px;
+        }
+        .name{
+            min-width: 150px;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .ship-card{
+        img{
+            height: 285px;
+        }
+        .name{
+            min-width: 240px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .ship-card{
+        img{
+            height: 345px;
+            max-height: 345px;
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .ship-card{
+        img{
+            height: 350px;
+            max-height: 350px;
+            object-fit: cover;
+        }
+    }
+}
+/*ship about section*/
+@media only screen and (min-width: 576px){
+    .ship-about-section{
+        .ship-content{
+            .ship-image{
+                .name{
+                    span, p{
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .ship-about-section{
+        .section-title{
+            align-self: start;
+        }
+        .ship-content{
+            .col-12{
+                margin-bottom: 0;
+                &:nth-child(1){
+                    padding-right: 15px;
+                }
+                &:nth-child(2){
+                    padding-left: 15px;
+                }
+            }
+            .ship-image{
+                max-width: 650px;
+            }
+            .text{
+                p{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+
+/*---------------AURUM BLOGS PAGE---------------*/
+@media only screen and (min-width: 992px){
+    .blog-about-section{
+        .row.general{
+            .col-12.col-lg-6.col-xl-7{
+                padding-right: 15px;
+            }
+            .col-12.col-lg-6.col-xl-5{
+                padding-left: 15px;
+            }
+        }
+        .about-content-wrapper{
+            .banner-image{
+                img{
+                    max-width: 800px;
+                    min-height: 370px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .blog-about-section{
+        .about-content-wrapper{
+            .banner-image{
+                img{
+                    min-height: 460px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 576px){
+    .blog-about-section{
+        .right-panel{
+            .active-blogs-wrapper{
+                .time-container{
+                    .top{
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        .section-title{
+                            margin-bottom: 0;
+                            padding-bottom: 10px;
+                        }
+                        .time-panel-1{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------AURUM CONTACT PAGE-------------*/
+@media only screen and (min-width: 380px){
+    .contact-section{
+        
+        .contact-map{
+            iframe{
+                min-height: 250px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .contact-section{
+        
+        .contact-map{
+            iframe{
+                min-height: 350px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .contact-section{
+        
+        .contact-map{
+            iframe{
+                min-height: 450px;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+/*------SCROLL BUTTON-------*/
+.page-scroll-button{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 99;
+    animation: scroll-button 1s ease forwards;
+}
+
+
+/*mobile header buttons*/
+.menu-button,
+.search-button{
+    font-size: 20px;
+    color: var(--color-1);
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+/*---------CLOSE BUTTON----------*/
+.close-button{
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--color-1);
+    border-radius: 50%;
+    margin: 10px 0;
+    i{
+        color: var(--color-1);
+        font-size: 24px;
+    }
+    &:hover{
+        background-color: var(--color-1);
+    }
+    &:hover i{
+        color: #fff;
+    }
+}
+
+/*----------ABOUT BUTTON----------*/
+.about-link{
+    @include center;
+    align-self: center;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    min-width: 120px;
+    max-width: 210px;
+    position: relative;
+    transition: all 0.6s;
+    --tilt: 1.2rem;
+    span{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        z-index: 3;
+    }
+    &::after{
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--tilt)) 0,
+            100% 50%,
+            calc(100% - var(--tilt)) 100%,
+            0 100%
+        );
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        height: 100%;
+        width: 40px;
+        top: 0;
+        left: 0;
+        transform: scale(1);
+        border-radius: 10px 0 0 10px;
+        transition: all 0.6s;
+        opacity: 0;
+    }
+    &::before{
+        clip-path: polygon(
+            0 0,
+            calc(100% - var(--tilt)) 0,
+            100% 50%,
+            calc(100% - var(--tilt)) 100%,
+            0 100%
+        );
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        height: 100%;
+        width: 40px;
+        top: 0;
+        right: 0;
+        transform: scale(1) rotate(180deg);
+        transition: all 0.6s;
+        border-radius: 10px 0 0 10px;
+        opacity: 0;
+    }
+    &:hover{
+        border-color: transparent;
+        transform: scale(1.1);
+        //animation: pulse-2 1s ease 0.3s infinite;
+        span{
+            color: #000;
+        }
+        &::after,
+        &::before{
+            width: 70%;
+            opacity: 1;
+        }
+    }
+}

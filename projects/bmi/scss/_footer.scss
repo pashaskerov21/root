@@ -1,0 +1,61 @@
+/*===================FOOTER===================*/
+footer{
+    background-color: var(--bg-color-3);
+    .footer-top{
+        padding: 40px 0;
+    }
+    .footer-logo{
+        @include center;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .footer-links{
+        padding: 15px 0;
+        h4{
+            color: var(--t-color-6);
+            font-weight: 700;
+        }
+        a{
+            color: var(--t-color-6);
+            font-weight: 500;
+            margin: 5px 0;
+            font-size: 16px;
+            position: relative;
+            &:hover::after{
+                background-color: var(--bg-color-6);
+                transform: scaleX(1);
+            }
+        }
+    }
+    .contact a::after, .sosial-icons a::after{
+        display: none;
+    }
+    .contact{
+        padding: 10px 0;
+        a{
+            span:first-child{
+                padding: 0 7px;
+            }
+        }
+    }
+    .sosial-icons{
+        a:hover{
+            background-color: var(--bg-color-6);
+            color: var(--t-color-3);
+            animation: pulse-2 1s ease infinite;
+        }
+    }
+    .footer-bottom{
+        width: 100%;
+        padding: 40px 10px;
+        @include center;
+        background-color: var(--bg-color-1);
+        color: var(--t-color-6);
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+}

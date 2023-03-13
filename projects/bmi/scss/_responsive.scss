@@ -1,0 +1,437 @@
+/*==============RESPONSIVE MEDIA QUERIES==============*/
+
+
+/*-------------PAGE MAIN BUTTONS-------------*/
+@media only screen and (min-width: 768px){
+    .page-main-buttons{
+        .page-button{
+            transform: translateX(-140px);
+            span{
+                display: inline-block;
+            }
+            &.active{
+                transform: translateX(-140px);
+            }
+        }
+        .muraciet-button:hover{
+            animation: pulse-4 1s ease infinite;
+        }
+        .kurs-button:hover{
+            animation: pulse-3 1s ease infinite;
+        }
+    }
+}
+/*-----------------HEADER-----------------*/
+@media only screen and (min-width: 576px){
+
+    .offcanvas-button{
+        font-size: 25px;
+    }
+    .search-button{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    header{
+        .general-header{
+            .bottom-navbar{
+                .links-wrapper{
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--------------BANNER SECTION--------------*/
+@media only screen and (min-width: 768px){
+    .banner-section{
+        .content{
+            padding: 100px 0;
+            .content-wrapper{
+                flex-direction: row;
+                justify-content: space-between;
+                .content-left{
+                    align-items: flex-start;
+                    padding-right: 20px;
+                    margin-bottom: 0;
+                    h1{
+                        text-align: start;
+                    }
+                    .banner-button{
+                        width: 100%;
+                        max-width: 220px;
+                        font-size: 22px;
+                    }
+                }
+                .content-right{
+                    .video-wrapper{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----------------COUNTER-----------------*/
+@media only screen and (min-width: 576px){
+    .counter-section{
+        .counters-wrapper{
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .item{
+                min-width: 220px;
+                max-width: 240px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .counter-section{
+        .counters-wrapper{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+/*----------------WHY US SECTION----------------*/
+
+@media only screen and (min-width: 768px){
+    .why-us-section{
+        .row{
+            .small-images{
+                flex-direction: row;
+                margin-bottom: 40px;
+                .item{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .why-us-section{
+        .row{
+            .small-images{
+                justify-content: flex-start;
+            }
+        }
+    }
+    .why-us-section.secondary{
+        .row{
+            flex-direction: row-reverse;
+            .content{
+                align-items: flex-end;
+            }
+            h1{
+                border-left: 0;
+                border-right: 5px solid var(--d-color-1);
+            }
+            p{
+                text-align: end;
+            }
+        }
+    }
+}
+/*-------------SECTION & PAGE HEADER-------------*/
+@media only screen and (min-width: 576px){
+    .section-header{
+        span{
+            font-size: 22px;
+        }
+    }
+    .page-header{
+        align-items: flex-start;
+        border-bottom: 1px solid var(--black-1);
+        .root-links{
+            display: flex;
+            a{
+                font-size: 16px;
+            }
+        }
+        .header{
+            font-size: 24px;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .section-header{
+        .blue-line{
+            width: 70px;
+        }
+        span{
+            font-size: 26px;
+        }
+    }
+    .page-header{
+        .header{
+            font-size: 28px;
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .section-header{
+        span{
+            font-size: 30px;
+        }
+    }
+    .page-header{
+        .header{
+            font-size: 32px;
+        }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .section-header{
+        span{
+            font-size: 34px;
+        }
+    }
+    .page-header{
+        .header{
+            font-size: 36px;
+        }
+    }
+}
+
+/*-----------------TRAINING CARD-----------------*/
+
+@media only screen and (min-width: 576px){
+    .training-card{
+        .content{
+            padding: 0 35px;
+            @include column-start;
+            .header{
+                text-align: start;
+                &::after{
+                    width: 70px;
+                }
+            }
+            .training-name{
+                text-align: start;
+            }
+            .training-text{
+                text-align: start;
+            }
+            .training-buttons{
+                flex-direction: row;
+                a{
+                    &.details{
+                        background-color: var(--bg-color-2);
+                        margin-bottom: 0;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .training-card{
+        .image{
+            margin-bottom: 0;
+            height: 100%;
+            img{
+                max-height: none;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .training-card{
+        max-width: 1000px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .training-card{
+        max-width: 1100px;
+    }
+}
+
+/*---------------GALLERY SECTION---------------*/
+@media only screen and (min-width: 576px){
+    .gallery-buttons{
+        flex-direction: row;
+        button{
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+}
+
+/*-----------------CONTACT PAGE-----------------*/
+@media only screen and (min-width: 768px){
+    .contact-info{
+        .info-item{
+            border-right: 2px solid var(--d-color-6);
+            margin-bottom: 0;
+        }
+    }
+    .contact-form{
+        align-items: flex-start;
+        .footer{
+            flex-direction: row;
+            justify-content: space-between;
+            .form-submit-button{
+                max-width: 250px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px){
+    .contact-info{
+        .info-item{
+            border-right: none;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    .contact-info{
+        .info-item{
+            border-right: 2px solid var(--d-color-6);
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*BMI KARYERA*/
+
+@media only screen and (min-width: 768px){
+    #vacancy-accordion{
+        .accordion-button{
+            .icons{
+                flex-direction: row;
+                .icon-item{
+                    margin-bottom: 0;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+/*------------service network------------*/
+@media only screen and (min-width: 768px){
+    .service-network-section{
+        .address-row{
+            .col-12{
+                border-bottom: none;
+                border-right: 1px dotted #000;
+            }
+        }
+    }
+}
+
+/*training about section*/
+@media only screen and (min-width: 576px){
+    .training-about-section{
+        .content-wrapper{
+            .header{
+                .name{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .training-about-section{
+        .content-wrapper{
+            .header{
+                .name{
+                    font-size: 26px;
+                }
+                .badge{
+                    padding: 13px;
+                    img{
+                        margin-right: 7px;
+                    }
+                    span{
+                        font-size: 16px;
+                        padding-right: 5px;
+                        color: var(--t-color-6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .training-about-section{
+        .content-wrapper{
+            .header{
+                .name{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+/*--------COMMENTS--------*/
+
+@media only screen and (min-width: 768px){
+    .comments-wrapper{
+        align-items: flex-start;
+        .comment-item{
+            flex-direction: row;
+            justify-content: flex-start;
+            .user-image{
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+/*-------TRAINER-ABOUT PAGE-------*/
+
+@media only screen and (min-width: 576px){
+    .trainer-about-section{
+        .row{
+            .trainer-image{
+                .name{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    .trainer-about-section{
+        .row{
+            .trainer-image{
+                margin-bottom: 0;
+                .name{
+                    font-size: 24px;
+                }
+            }
+            .trainer-info{
+                .text{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .trainer-about-section{
+        .row{
+            .trainer-image{
+                .name{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

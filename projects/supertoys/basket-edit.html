@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperToys | Səbət Edit</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <div class="mobile-header d-lg-none">
+            <div class="row w-100">
+                <div class="col-3 mobile-header-col">
+                    <button class="mobile-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-collapse-menu">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </button>
+                </div>
+                <div class="col-6 mobile-header-col">
+                    <a href="#" class="supertoys-logo"><img src="image/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-3 mobile-header-col">
+                    <a href="#" class="account-link"><img src="image/icons/user-profile.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="collapse d-lg-none" id="mobile-collapse-menu">
+                <div class="collapse-menu-wrapper">
+                    <div class="main-icons">
+                        <a href="#"><img src="image/icons/sebet.png"></a>
+                        <a href="#"><img src="image/icons/heart.png"></a>
+                        <a href="#"><img src="image/icons/flag-az.png"></a>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="Axtarış">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="menu-links-wrapper">
+                        <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/catalog.png">
+                            <span>Məhsul katalogu</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/man.png">
+                            <span>Oğlanlar üçün</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/woman.png">
+                            <span>Qızlar üçün</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/kampaniya.png">
+                            <span>Kampaniyalar</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link gift-link">
+                            <img src="image/icons/gift.png">
+                            <span>Hədiyə axtar</span> 
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <nav class="top-navbar">
+                <div class="container d-flex justify-content-center">
+                    <div class="row w-100">
+                        <div class="col-3 top-navbar-col">
+                            <a href="#" class="supertoys-logo"><img src="image/logo.png"></a>
+                        </div>
+                        <div class="col-6 top-navbar-col">
+                            <div class="search-input">
+                                <button><img src="image/icons/search.png"></button>
+                                <input type="text" placeholder="Axtarış">
+                            </div>
+                        </div>
+                        <div class="col-3 top-navbar-col">
+                            <div class="main-icons">
+                                <a href="#"><img src="image/icons/sebet.png"></a>
+                                <a href="#"><img src="image/icons/heart.png"></a>
+                                <a href="#"><img src="image/icons/flag-az.png"></a>
+                                <a href="#"><img src="image/icons/user-profile.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="bottom-navbar">
+                <div class="row w-100">
+                    <div class="col-3 bottom-navbar-col">
+                        <img src="image/icons/catalog.png">
+                        <a href="№">Məhsul katalogu</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/man.png">
+                        <a href="№">Oğlanlar üçün</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/woman.png">
+                        <a href="№">Qızlar üçün</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/kampaniya.png">
+                        <a href="№">Kampaniyalar</a>
+                    </div>
+                    <div class="col-3 bottom-navbar-col gift-col">
+                        <img src="image/icons/gift.png">
+                        <a href="#">Hədiyə axtar</a> 
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="supertoys-basket-edit">
+        <div class="page-navigation-links ">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start">
+                    <a href="#">Əsas Səhifə</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="#">Səbət</a>
+                </div>
+                <h3>Məlumatlar</h3>
+            </div>
+        </div>
+        <section class="basket-edit-section ">
+            <div class="container">
+                <div class="basket-table-wrapper">
+                    <table class="basket-table">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Məhsul qiyməti</th>
+                            <th>Sayı</th>
+                            <th>Qiymət</th>
+                            <th></th>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/products/img-21.png" >
+                                </div>
+                            </td>
+                            <td class="name-cell">
+                                <span>P.M MERCEDES</span>
+                            </td>
+                            <td class="price-cell">
+                                <span class="general-price">640 ₼</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="cp-counter">
+                                    <button class="decrement-button">-</button>
+                                    <span class="cp-number">1</span>
+                                    <button class="increment-button">+</button>
+                                </div>
+                            </td>
+                            <td class="total-price-cell">
+                                <span class="product-sum-price">0</span>
+                            </td>
+                            <td>
+                                <button class="delete-button"><img src="image/icons/delete-icon.png"></button>
+                            </td>
+                        </tr>
+                        <tr class="product-row">
+                            <td class="image-cell">
+                                <div class="product-image">
+                                    <img src="image/products/img-22.png" >
+                                </div>
+                            </td>
+                            <td class="name-cell">
+                                <span>MAŞIN</span>
+                            </td>
+                            <td class="price-cell">
+                                <span class="general-price">580 ₼</span>
+                            </td>
+                            <td class="counter-cell">
+                                <div class="cp-counter">
+                                    <button class="decrement-button">-</button>
+                                    <span class="cp-number">1</span>
+                                    <button class="increment-button">+</button>
+                                </div>
+                            </td>
+                            <td class="total-price-cell">
+                                <span class="product-sum-price">0</span>
+                            </td>
+                            <td>
+                                <button class="delete-button"><img src="image/icons/delete-icon.png"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="basket-edit-total-sum">
+                    <div class="total-sum-panel">
+                        <div class="d-flex align-items-center py-2">
+                            <span class="col-6 title">Məhsul:</span>
+                            <span class="col-6 price total-product-sum">0</span>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <span class="col-6 title">Çatdırılma:</span>
+                            <span class="col-6 price catdirilma-span">7.00 ₼</span>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <span class="col-6 title">Endirim:</span>
+                            <span class="col-6 price endirim-span">0 ₼</span>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <span class="col-6 title total">Cəmi qiymət:</span>
+                            <span class="col-6 price general-total-sum">0</span>
+                        </div>
+                    </div>
+                    <div class="total-confirm-div">
+                        <button class="confirm-button">Sifarişi təsdiqlə</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+    </main>
+
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <div class="footer-top">
+                <div class="row w-100">
+                    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                        <a href="#" class="supertoys-logo"><img src="image/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Şirkət</h4>
+                                    <a href="#">Haqqımızda</a>
+                                    <a href="#">Vakansiyalar</a>
+                                    <a href="#">Tədbirlər və layihələr</a>
+                                    <a href="#">Mağazalarımız</a>
+                                    <a href="#">Şikayətlər və təkliflər</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Müştərilər üçün</h4>
+                                    <a href="#">Hədiyə göndər</a>
+                                    <a href="#">Ad günü kompaniyası</a>
+                                    <a href="#">Çatdırılma və ödəmə</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Əlaqə</h4>
+                                    <a href="#">*4044</a>
+                                    <a href="#">055 457 40 44</a>
+                                    <div class="sosial-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><span>&copy; 2022. SUPERTOYS</span><span>❤️</span><span>Sevgi ilə sizin üçün hazırlanmışdır.</span></p>
+        </div>
+    </footer>
+
+
+
+    <button class="page-up-scroll-btn d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sebet.js"></script>
+</body>
+</html>

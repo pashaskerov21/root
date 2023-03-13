@@ -1,0 +1,871 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-navbar {
+  width: 97%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.first-navbar-left {
+  display: flex;
+}
+.first-navbar-left .first-nav-logo img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.first-navbar-left .fn-openMenu {
+  padding: 32px 16px;
+}
+.first-navbar-left .fn-openMenu:hover {
+  background-color: #04AA6D;
+  color: #fff;
+  cursor: pointer;
+}
+.first-navbar-left .fn-link {
+  padding: 32px 16px;
+}
+.first-navbar-left .fn-link:hover {
+  background-color: #04AA6D;
+  color: #fff;
+  cursor: pointer;
+}
+.first-navbar-left .fn-link-show {
+  display: none;
+}
+.first-navbar-right {
+  display: flex;
+  align-items: center;
+}
+.first-navbar-right .btn-border {
+  margin: 0 8px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.first-navbar-right .black-btn {
+  background-color: #282A35;
+  color: #fff;
+}
+.first-navbar-right .black-btn:hover {
+  background-color: #616161;
+}
+.first-navbar-right .pink-btn {
+  background-color: #FFC0C7;
+}
+.first-navbar-right .pink-btn:hover {
+  background-color: #FFB3BB;
+}
+.first-navbar-right .yellow-btn {
+  background-color: #FFF4A3;
+  padding: 12px 25px;
+}
+.first-navbar-right .yellow-btn:hover {
+  background-color: #FFF080;
+}
+.first-navbar-right .fnr-btn-show {
+  display: none;
+}
+.first-navbar-right .green-btn {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 12px 40px;
+}
+.first-navbar-right .green-btn:hover {
+  background-color: #059862;
+}
+
+.second-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #282A35;
+  color: #F1F1F1;
+  font-weight: 600;
+  position: relative;
+  z-index: 9;
+}
+.second-navbar-left {
+  display: flex;
+}
+.second-navbar-left .snl-link {
+  padding: 15px;
+  cursor: pointer;
+}
+.second-navbar-left .snl-link:hover {
+  background-color: black;
+}
+.second-navbar-left .snl-link:nth-child(3) {
+  background-color: #04AA6D;
+}
+.second-navbar-left .snl-link-show {
+  display: none;
+}
+.second-navbar-left .snl-bar-icon {
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.second-navbar-left .snl-bar-icon:hover {
+  background-color: black;
+}
+.second-navbar-left .snl-home-icon {
+  padding: 15px;
+  cursor: pointer;
+}
+.second-navbar-left .snl-home-icon:hover {
+  background-color: black;
+}
+.second-navbar-right {
+  display: flex;
+}
+.second-navbar-right .snr-link {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.second-navbar-right .snr-link:hover {
+  background-color: black;
+}
+
+.fnav-menu-open {
+  background-color: #E7E9EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  font-weight: 600;
+  position: absolute;
+  width: 100%;
+}
+.fnav-menu-open .fnmenu-link {
+  width: 80%;
+  padding: 15px 0;
+  text-align: center;
+}
+.fnav-menu-open .fnmenu-link:hover {
+  background-color: #CCCCCC;
+}
+.fnav-menu-open .x-mark {
+  align-self: flex-end;
+  padding: 20px;
+  font-size: 25px;
+}
+.fnav-menu-open .x-mark:hover {
+  background-color: #CCCCCC;
+}
+
+.fnav-menu-close {
+  display: none;
+}
+
+#arrow-dnone {
+  display: none;
+}
+
+main .aside-open-panel {
+  display: none;
+  background-color: #E7E9EB;
+  height: 92vh;
+  overflow-y: scroll;
+  font-size: 15px;
+  position: fixed;
+  top: 134px;
+  z-index: 19;
+}
+main .aside-open-panel section {
+  padding: 25px 0 0;
+}
+main .aside-open-panel section h1 {
+  padding: 8px 20px;
+  font-weight: 500;
+}
+main .aside-open-panel section div {
+  padding: 4px 20px;
+}
+main .aside-open-panel section div:hover {
+  background-color: #CCCCCC;
+}
+main .aside-open-panel .tutorial-content div:first-of-type {
+  background-color: #04AA6D;
+  color: #fff;
+}
+main .aside-open-panel .reference-content {
+  padding-bottom: 45px;
+}
+main .main-right-panel {
+  width: 100%;
+}
+main .main-right-panel .content-panel-text .cp-text-title {
+  padding: 40px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-title h1 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+main .main-right-panel .content-panel-text .cp-text-title .title-btn {
+  display: flex;
+  justify-content: space-between;
+}
+main .main-right-panel .content-panel-text .cp-text-title .title-btn .title-button {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-text .cp-text-title .title-btn .title-button:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part {
+  padding: 40px 30px;
+  background-color: #D9EEE1;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part p {
+  padding: 15px 0;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-green-btn {
+  background-color: #04AA6D;
+  padding: 13px 20px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-green-btn i {
+  font-size: 12px;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-green-btn:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-black-btn {
+  background-color: #282A35;
+  padding: 13px 30px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px 0;
+  position: relative;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-black-btn i {
+  font-size: 12px;
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-black-btn .bb-yellow-btn {
+  display: inline-block;
+  position: absolute;
+  border-radius: 12px;
+  background-color: #FFF4A3;
+  color: black;
+  font-size: 12px;
+  padding: 8px 10px;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  transform: translate(-15px, -15px) rotate(-30deg);
+}
+main .main-right-panel .content-panel-text .cp-text-green-part .gp-buttons .gp-black-btn:hover {
+  background-color: black;
+}
+main .main-right-panel .content-panel-text .cp-text-short-info {
+  padding: 40px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-short-info h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+main .main-right-panel .content-panel-text .cp-text-short-info ul {
+  padding: 20px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-short-info ul li {
+  padding: 5px 0;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part {
+  display: flex;
+  flex-direction: column;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .code-back-panel {
+  background-color: #E7E9EB;
+  padding: 20px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .code-back-panel h2 {
+  padding: 0 0 20px;
+  font-weight: 400;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .code-back-panel .code-front-panel {
+  background-color: #fff;
+  border-left: 4px solid #04AA6D;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .code-back-panel .code-front-panel pre {
+  font-size: 16px;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .try-btn {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 20px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .try-btn i {
+  font-size: 12px;
+}
+main .main-right-panel .content-panel-text .cp-text-code-part .try-btn:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-text .code-explain-part {
+  padding: 40px 30px;
+}
+main .main-right-panel .content-panel-text .code-explain-part h2 {
+  font-weight: 400;
+  padding: 0 0 20px;
+}
+main .main-right-panel .content-panel-text .code-explain-part ul {
+  padding: 20px 30px;
+}
+main .main-right-panel .content-panel-text .code-explain-part ul li {
+  padding: 5px 0;
+}
+main .main-right-panel .content-panel-text .code-explain-part ul li .red-code {
+  font-size: 18px;
+  color: #DC148F;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part h2 {
+  font-weight: 400;
+  margin: 20px 0;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part p {
+  margin: 20px 0;
+  line-height: 25px;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part .grid-reference-part {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part .grid-reference-part .ref-element {
+  text-align: center;
+  background-color: #E7E9EB;
+  padding: 25px;
+  border-radius: 6px;
+}
+main .main-right-panel .content-panel-text .cp-text-reference-part .grid-reference-part .ref-element:hover {
+  background-color: black;
+  color: #fff;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part {
+  background-color: #282A35;
+  color: #FFC0C7;
+  margin: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part h1 {
+  font-size: 50px;
+  padding: 60px 0 30px;
+  margin: 0 80px;
+  font-weight: 600;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part p {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0 0 30px;
+  margin: 0 80px;
+  font-weight: 500;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part .cpc-btn {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 20px 50px;
+  border-radius: 30px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin: 40px 80px;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part .cpc-btn:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-text .cp-text-certificate-part .cpc-w3logo {
+  width: 100px;
+  height: 100px;
+  border: 8px solid #04AA6D;
+  border-radius: 50%;
+  background-image: url("../img/navbar-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  transform: translate(10px, -20px) rotate(15deg);
+}
+main .main-right-panel .content-panel-text .title-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 30px 30px;
+}
+main .main-right-panel .content-panel-text .title-btn .title-button {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-text .title-btn .title-button:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-advert .advert-size {
+  width: 250px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+main .main-right-panel .content-panel-advert .cpa-youtube-channel {
+  background-color: #282A35;
+  color: #fff;
+}
+main .main-right-panel .content-panel-advert .cpa-youtube-channel .yc-newbtn {
+  padding: 5px 15px;
+  background-color: #FFF4A3;
+  color: black;
+  border-radius: 15px;
+  margin: 30px 0;
+}
+main .main-right-panel .content-panel-advert .cpa-youtube-channel p {
+  padding: 5px 0;
+}
+main .main-right-panel .content-panel-advert .cpa-youtube-channel .yc-video-poster {
+  width: 200px;
+  height: 160px;
+  background-image: url("../img/yc-poster.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px 0;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-advert .cpa-youtube-channel a {
+  text-decoration: none;
+  color: #FFC0C7;
+  padding: 0 0 30px;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker h1 {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .img-colormap {
+  background-image: url("../img/color-map.gif");
+  width: 25%;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .icons {
+  padding: 20px 0;
+  font-size: 32px;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .icons .fa-square-facebook:hover {
+  color: #3B5998;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .icons .fa-instagram:hover {
+  color: #8A3AB9;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .icons .fa-linkedin:hover {
+  color: #2867B2;
+}
+main .main-right-panel .content-panel-advert .cpa-color-picker .icons .fa-discord:hover {
+  color: #5865F2;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert {
+  background-color: #282A35;
+  color: #fff;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert .ca-text {
+  color: #FFC0C7;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 600;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert .ca-text p {
+  padding: 2px 0;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert .ca-w3logo {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #04AA6D;
+  border-radius: 50%;
+  background-image: url("../img/navbar-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert .ca-startbtn {
+  background-color: #04AA6D;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-advert .cpa-certificate-advert .ca-startbtn:hover {
+  background-color: #059862;
+}
+main .main-right-panel .content-panel-advert .cpa-code-game {
+  background-color: #96D4D4;
+}
+main .main-right-panel .content-panel-advert .cpa-code-game h1 {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 30px 0;
+}
+main .main-right-panel .content-panel-advert .cpa-code-game .cg-poster {
+  width: 150px;
+  height: 200px;
+  background-image: url("../img/code-game.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .main-right-panel .content-panel-advert .cpa-code-game .cg-playbtn {
+  background-color: #282A35;
+  color: #fff;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+}
+main .main-right-panel .content-panel-advert .cpa-code-game .cg-playbtn:hover {
+  background-color: #059862;
+}
+main .main-right-panel .last-button-part {
+  margin: 80px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+main .main-right-panel .last-button-part div {
+  text-align: center;
+  color: #fff;
+  background-color: #282A35;
+  padding: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .main-right-panel .last-button-part div:hover {
+  background-color: #059862;
+}
+main .main-right-panel footer {
+  margin: 60px 30px;
+}
+main .main-right-panel footer .grid-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .main-right-panel footer .grid-footer .footer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+main .main-right-panel footer .grid-footer .footer-area h1 {
+  padding: 10px 0;
+}
+main .main-right-panel footer .grid-footer .footer-area a {
+  text-decoration: none;
+  padding: 2px;
+  color: black;
+}
+main .main-right-panel footer .grid-footer .footer-area a:hover {
+  text-decoration: underline;
+  color: #04AA6D;
+}
+main .main-right-panel footer .footer-text {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+main .main-right-panel footer .footer-text a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+main .main-right-panel footer .footer-text a:hover {
+  text-decoration: underline;
+  color: #04AA6D;
+}
+main .main-right-panel footer .footer-text-link {
+  align-self: flex-end;
+  padding: 15px 0;
+}
+main .main-right-panel footer .footer-text-link a {
+  font-size: 14px;
+}
+main .main-right-panel footer .footer-text-content {
+  text-align: center;
+  padding: 15px 0;
+}
+main .main-right-panel footer .footer-text-content p {
+  padding: 10px 0;
+  line-height: 20px;
+}
+main .main-right-panel footer .footer-text-logo {
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/navbar-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.open-fn-tutorial {
+  display: none;
+}
+
+.open-fn-reference {
+  display: none;
+}
+
+.open-fn-exercise {
+  display: none;
+}
+
+.black-panel {
+  background-color: #282A35;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  z-index: 39;
+  color: #fff;
+  overflow-y: scroll;
+}
+.black-panel .bp-main {
+  width: 80%;
+  margin: 30px auto;
+}
+.black-panel .bp-main .bpm-header1 {
+  color: #FFF4A3;
+  font-size: 35px;
+  padding: 20px 5px 0;
+}
+.black-panel .bp-main .bpm-close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+}
+.black-panel .bp-main .bpm-close-icon:hover {
+  background-color: #fff;
+  color: black;
+}
+.black-panel .bp-main .bpm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.black-panel .bp-main .bpm-grid-list .bpmg-header2 {
+  color: #FFF4A3;
+  font-size: 20px;
+  padding: 10px 5px;
+  margin-top: 20px;
+}
+.black-panel .bp-main .bpm-grid-list .list-element {
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.black-panel .bp-main .bpm-grid-list .list-element:hover {
+  background-color: #CCCCCC;
+  color: black;
+}
+.black-panel .bp-main .bpm-grid-list .bp-exercise-btn {
+  background-color: #FFF4A3;
+  display: inline-block;
+  margin: 30px 0 10px;
+  color: black;
+  padding: 10px 0;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.black-panel .bp-main .bpm-grid-list .bp-exercise-btn:hover {
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+@media (min-width: 400px) {
+  .second-navbar-left .snl-link-show:nth-of-type(3) {
+    display: block;
+  }
+}
+@media (min-width: 500px) {
+  .second-navbar-left .snl-link-show:nth-of-type(4) {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  .first-navbar-left .fn-openMenu {
+    display: none;
+  }
+  .first-navbar-left .fn-link-show:nth-child(3) {
+    display: block;
+  }
+  .first-navbar-left .fn-link-show:nth-child(4) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(5) {
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .second-navbar-left .snl-link-show:nth-of-type(6) {
+    display: block;
+  }
+  main .main-right-panel .content-panel-text .cp-text-reference-part .grid-reference-part {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .main-right-panel .last-button-part {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  main .main-right-panel footer .grid-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 800px) {
+  .first-navbar-left .fn-link-show:nth-child(5) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(7) {
+    display: block;
+  }
+  main .main-right-panel .content-panel-text .cp-text-certificate-part .cpc-w3logo {
+    width: 200px;
+    height: 200px;
+    right: 40px;
+    bottom: 0;
+    transform: translateY(70px) rotate(20deg);
+  }
+  main .main-right-panel .content-panel-text .title-btn {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 900px) {
+  .first-navbar-right .fnr-btn-show:nth-child(3) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(8) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(9) {
+    display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .first-navbar-left .fn-link-show:nth-child(6) {
+    display: block;
+  }
+  .second-navbar-left .snl-bar-icon {
+    display: none;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(10) {
+    display: block;
+  }
+  main {
+    display: flex;
+  }
+  main .aside-open-panel {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  main .main-right-panel {
+    width: 85%;
+  }
+  main .main-right-panel .content-panel {
+    display: flex;
+  }
+  main .main-right-panel .content-panel-text {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  main .main-right-panel .content-panel-advert .advert-size {
+    width: 180px;
+    margin: 30px 10px;
+  }
+  main .main-right-panel .content-panel-advert .cpa-youtube-channel .yc-video-poster {
+    width: 150px;
+    height: 100px;
+  }
+  main .main-right-panel footer .grid-footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .black-panel .bp-main .bpm-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .black-panel .bp-main .bpm-grid-list .bp-exercise-btn {
+    width: 70%;
+  }
+}
+@media (min-width: 1100px) {
+  .first-navbar-right .fnr-btn-show:nth-child(2) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(11) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .first-navbar-right .fnr-btn-show:nth-child(1) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(12) {
+    display: block;
+  }
+}
+@media (min-width: 1300px) {
+  .second-navbar-left .snl-link-show:nth-of-type(13) {
+    display: block;
+  }
+  .second-navbar-left .snl-link-show:nth-of-type(14) {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */

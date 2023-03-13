@@ -1,0 +1,54 @@
+/*---------------PROJECT SECTION---------------*/
+.project-section{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    .section-title{
+        margin-bottom: 30px;
+    }
+}
+.project-card{
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    max-height: 340px;
+    @include center;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .hover-div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        @include column-center;
+        background: rgba(182, 82, 153, 0.55);
+        transform: scale(0);
+        transition: all 0.5s;
+        img{
+            width: 50px;
+            height: 50px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        span,p{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            position: absolute;
+            transform: translateY(70px);
+        }
+    }
+    &:hover{
+        .hover-div{
+            transform: scale(1);
+        }
+    }
+}
+

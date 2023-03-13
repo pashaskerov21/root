@@ -1,0 +1,95 @@
+/*--------------SWIPER--------------*/
+.swiper{
+    width: 100%;
+    z-index: 1;
+    .swiper-wrapper{
+        z-index: 1;
+    }
+    .swiper-slide{
+        z-index: 1;
+        @include center;
+    }
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: #fff;
+    transform: scale(0.6);
+    &::after{
+        color: var(--color-1);
+    }
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-1);
+}
+.banner-section{
+    //background-color: var(--color-1);
+    .banner-swiper{
+        padding: 0 0 30px;
+        .banner-card{
+            width: 90%;
+            @include column-center;
+            padding: 50px 20px;
+            a{
+                @include center;
+                margin-bottom: 25px;
+            }
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+            .label{
+                @include center;
+                background-color: var(--color-1);
+                padding: 10px;
+            }
+            span{
+                // padding: 15px 5px;
+                background-color: var(--color-1);
+                color: #fff;
+                text-align: center;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .banner-section{
+        .banner-swiper{
+            .banner-card{
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding: 50px 0;
+                a{
+                    @include center;
+                    margin-bottom: 25px;
+                }
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+                .label{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background-color: transparent;
+                }
+                span{
+                    font-size: 24px;
+                    margin: 0;
+                    margin-bottom: 5px;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

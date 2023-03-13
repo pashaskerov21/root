@@ -1,0 +1,228 @@
+/*header logo*/
+.header-logo{
+    @include center;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+/*-------------LANGUAGE DROPDOWN-------------*/
+.language-dropdown{
+    .dropdown-toggle{
+        a{
+            color: var(--color-1);
+            font-size: 22px;
+            font-weight: 500;
+        }
+        &::after{
+            display: none;
+        }
+        &:hover a{
+            opacity: 0.7;
+        }
+    }
+    .dropdown-menu{
+        min-width: 70px;
+        .links{
+            width: 100%;
+            padding: 0 5px;
+            @include column-center;
+            a{
+                width: 100%;
+                text-align: center;
+                color: var(--color-1);
+                font-size: 18px;
+                font-weight: 700;
+                &:hover{
+                    background-color: var(--color-1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/*----------TOP NAV LANGUAGE----------*/
+.top-nav-language{
+    padding: 0 15px;
+    padding-right: 0;
+    border-left: 1px solid var(--black-1);
+    @include center;
+    a{
+        text-decoration: underline;
+        font-size: 18px;
+        color: var(--black-9);
+        font-weight: 400;
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a.active{
+        color: var(--color-1);
+    }
+}
+
+/*------------SEARCH INPUT------------*/
+.search-input{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    @include center;
+    background-color: #EDEDED;
+    input{
+        border: none;
+        box-shadow: none;
+        caret-color: var(--color-1);
+        color: var(--color-1);
+        padding: 12px 15px;
+        padding-right: 45px;
+        font-weight: 500;
+        width: 100%;
+        background-color: #EDEDED !important;
+        &:focus{
+            background-color: #EDEDED;
+            border: none;
+            box-shadow: none;
+            color: var(--color-1);
+            font-weight: 500;
+        }
+        &::placeholder{
+            color: var(--color-1);
+            font-weight: 700;
+        }
+    }
+    button{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin: 0 10px;
+        i{
+            font-size: 20px;
+            color: var(--color-1);
+        }
+    }
+    form{
+        width: 100%;
+        position: relative;
+    }
+}
+
+/*-----------SOSIAL ICONS-----------*/
+.sosial-icons{
+    @include center;
+    a{
+        font-size: 18px;
+        @include center;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        margin-right: 5px;
+        color: var(--color-1);
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: var(--color-1);
+            animation: pulse-1 1s 0.3s ease infinite;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.section-title{
+    @include row-start;
+    font-size: 25px;
+    font-weight: 500;
+    img{
+        width: 72px;
+    }
+    span, p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+section{
+    &:hover{
+        .section-title{
+            color: var(--color-1)
+        }
+    }
+}
+
+
+.br-icons{
+    width: 100%;
+    @include row-end;
+    .search-button{
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    .pdf-link{
+        color: var(--color-1);
+        
+        font-size: 30px;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.video-item{
+    width: 100%;
+    max-width: 360px;
+    max-height: 340px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .hover-div{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include center;
+        top: 0;
+        left: 0;
+        background-color: rgba(107, 71, 150,0.2);
+    }
+    &:hover{
+        .hover-div{
+            background-color: rgba(107, 71, 150,0.5);
+        }
+    }
+    a.play-button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        @include center;
+        i{
+            font-size: 26px;
+            color: #fff;
+        }
+        &:hover{
+            background-color: #fff;
+            transform: scale(1.2);
+            i{
+                color: var(--color-1);
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .video-item{
+        a.play-button{
+            width: 80px;
+            height: 80px;
+            i{
+                font-size: 35px;
+            }
+        }
+    }
+}

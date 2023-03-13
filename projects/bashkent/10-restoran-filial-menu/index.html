@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bashkent</title>
+    <link rel="stylesheet" href="../main.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"/>
+      <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  </head>
+  <body>
+    
+
+    <header>
+        <div class="header-top">
+            <div class="container d-flex justify-content-around align-items-center py-4">
+                <button type="button" class="menu-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobile-offcanvas"><i class="fa-solid fa-bars"></i></button>
+                <button type="button" class="rezervasiya-btn d-none d-lg-block hover-effect"><a href="#">Rezervasiya</a></button>
+                <a href="../1-bashkent-main/index.html" class="top-logo d-flex justify-content-center align-items-center"><img src="../image/logo.png" alt="logo"></a>
+                <button class="mobile-search-button d-md-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="right-panel d-none d-md-flex flex-column align-items-center py-2">
+                    <div class="sosial-icons d-flex py-2">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="search-box d-flex">
+                        <input type="text" class="search-input">
+                        <button class="search-box-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start text-bg-dark" id="mobile-offcanvas">
+            <div class="d-flex flex-column align-items-center">
+             <div class="d-flex justify-content-center align-items-center py-4">
+                <a href="../1-bashkent-main/index.html" class="canvas-logo d-flex justify-content-start align-items-center"><img src="../image/logo.png" alt="logo"></a>
+                <button type="button" class="close-canvas-btn" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+             </div>
+             <div class="canvas-links w-100 d-flex flex-column align-items-center py-2">
+                <a href="../1-bashkent-main/index.html" class="hover-effect">Əsas səhifə</a>
+                <a href="../2-bashkent-about/index.html" class="hover-effect">Haqqımızda</a>
+                <a href="../3-bashkent-filial/index.html" class="hover-effect">Filiallar</a>
+                <a href="../4-bashkent-restoran-menu/index.html" class="hover-effect">Restoran Menyusu</a>
+                <a href="../5-bashkent-gallery/index.html" class="hover-effect">Qalereya</a>
+                <a href="../6-bashkent-catdirilma-menu/index.html" class="hover-effect">Çatdırılma Menyusu</a>
+                <a href="../7-bashkent-comment/index.html" class="hover-effect">Rəylər</a>
+                <a href="../8-bashkent-contact/index.html" class="hover-effect">Əlaqə</a>
+             </div>
+             <button class="canvas-rezerv-btn hover-effect"><a href="#">Rezervasiya</a></button>
+            </div> 
+         </div>
+         <div class="mobile-search-panel">
+            <button type="button" class="close-mobile-search"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-div d-flex">
+                <input type="text" placeholder="Axtar">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+         </div>
+         <div class="header-bottom d-none d-lg-block">
+            <div class="container d-flex justify-content-around align-items-center py-3">
+                <a href="../1-bashkent-main/index.html" class="hover-effect">Əsas səhifə</a>
+                <a href="../2-bashkent-about/index.html" class="hover-effect">Haqqımızda</a>
+                <a href="../3-bashkent-filial/index.html" class="hover-effect">Filiallar</a>
+                <a href="../4-bashkent-restoran-menu/index.html" class="hover-effect">Restoran Menyusu</a>
+                <a href="../5-bashkent-gallery/index.html" class="hover-effect">Qalereya</a>
+                <a href="../6-bashkent-catdirilma-menu/index.html" class="hover-effect">Çatdırılma Menyusu</a>
+                <a href="../7-bashkent-comment/index.html" class="hover-effect">Rəylər</a>
+                <a href="../8-bashkent-contact/index.html" class="hover-effect">Əlaqə</a>
+            </div>
+         </div>
+         <div class="navbar-fixed d-none d-lg-flex justify-content-center fixed-top py-5">
+            <div class="container row">
+                <a href="#" class="col-2 fixed-nav-logo d-flex justify-content-start align-items-center"><img src="../image/logo.png" alt="logo"></a>
+                <div class="col-10 fixed-nav-links d-flex justify-content-between align-items-center">
+                    <a href="../1-bashkent-main/index.html">Əsas səhifə</a>
+                    <a href="../2-bashkent-about/index.html">Haqqımızda</a>
+                    <a href="../3-bashkent-filial/index.html">Filiallar</a>
+                    <a href="../4-bashkent-restoran-menu/index.html">Restoran Menyusu</a>
+                    <a href="../5-bashkent-gallery/index.html">Qalereya</a>
+                    <a href="../6-bashkent-catdirilma-menu/index.html">Çatdırılma Menyusu</a>
+                    <a href="../7-bashkent-comment/index.html">Rəylər</a>
+                    <a href="../8-bashkent-contact/index.html">Əlaqə</a>
+                </div>
+            </div>
+         </div>
+
+        <div class="header-content-version-2 d-flex justify-content-center align-items-start container">
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="text-center">Menyu</h1>
+                <div><img src="../image/design-wheat/white.png" class="w-100" alt="wheat"></div>
+                <div class="d-flex align-items-center links pt-4">
+                    <a href="../1-bashkent-main/index.html" class="text-center">Əsas Səhifə</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="../8-bashkent-contact/index.html" class="text-center">Menyu</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1"></div>
+                    <div class="swiper-slide slide-2"></div>
+                    <div class="swiper-slide slide-3"></div>
+                    <div class="swiper-slide slide-4"></div>
+                    <div class="swiper-slide slide-5"></div>
+                    <div class="swiper-slide slide-6"></div>
+                    <div class="swiper-slide slide-7"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <main class="py-5 fr-menu container d-flex justify-content-center">
+    <div class="row py-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-1.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-1.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-2.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-2.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-3.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-3.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-4.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-4.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-5.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-5.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-6.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-6.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-7.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-7.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-8.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-8.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-9.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-9.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-10.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-10.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-12.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-12.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-12.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-12.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-13.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-13.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-14.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-14.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-15.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-15.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-16.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-16.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-17.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-17.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-18.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-18.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-19.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-19.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-20.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-20.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-21.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-21.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-22.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-22.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-23.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-23.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-24.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-24.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-25.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-25.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-26.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-26.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-27.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-27.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-28.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-28.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-29.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-29.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-30.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-30.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-31.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-31.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+            <div class="menu-image">
+                <a href="../image/fr-menu/menu-32.jpg" data-fancybox="gallery"><img src="../image/fr-menu/menu-32.jpg" class="w-100" alt="menu"></a>
+            </div>
+        </div>
+    </div>
+   </main>
+
+   <footer>
+    <div class="container border-bottom">
+        <div class="row py-5">
+            <div class="col-12 col-xl-3 d-flex flex-column align-items-center justify-content-center">
+                <a href="../1-bashkent-main/index.html" class="footer-logo"><img src="../image/logo.png" alt="logo"></a>
+                <div class="sosial-icons d-flex py-4">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 col-md-6 col-lg-4 d-flex flex-column align-items-center footer-links py-2">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <h3>Menyular</h3>
+                    <a href="../1-bashkent-main/index.html">Əsas səhifə</a>
+                    <a href="../2-bashkent-about/index.html">Haqqımızda</a>
+                    <a href="../3-bashkent-filial/index.html">Filiallar</a>
+                    <a href="../4-bashkent-restoran-menu/index.html">Restoran Menyusu</a>
+                    <a href="../5-bashkent-gallery/index.html">Qalereya</a>
+                    <a href="../6-bashkent-catdirilma-menu/index.html">Çatdırılma Menyusu</a>
+                    <a href="../7-bashkent-comment/index.html">Rəylər</a>
+                    <a href="../8-bashkent-contact/index.html">Əlaqə</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column align-items-center footer-links py-2">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <h3>Faydalı linklər</h3>
+                    <a href="#">Tez-tez soruşulanlar</a>
+                    <a href="#">Vakansiya</a>
+                    <a href="#">Xidmət şəbəkəsi</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-3 d-flex flex-column align-items-center footer-links py-2">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <h3>Ünvan</h3>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-location-dot"></i><a href="#">Azərbaycan, Bakı ş., Əhməd Rəcəbli</a></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-phone"></i><a href="#">0554501102</a></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-envelope"></i><a href="#">bashkentrestoran@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 d-flex justify-content-center align-items-center footer-bottom">
+        <span class="text-center">&copy; 2022 | Bütün hüquqlar qorunur.</span>
+    </div>
+   </footer>
+
+   <button id="page-up-scroll-btn" 
+            class="position-fixed bottom-0 end-0 m-3 m-lg-4 hover-effect">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+
+
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          autoplay: {
+          delay: 3000,
+          },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+  </body>
+</html>

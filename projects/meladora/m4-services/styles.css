@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+   header {
+   
+    position: relative;
+  }
+  
+  header nav #contact-info-nav .nav-item {
+    color: #91b40d;
+    padding: 5px;
+    font-size: 20px;
+  }
+ 
+  #page-links-nav #navbar-links .navbar-links-item a{
+    color: #000;
+    text-decoration: none;
+  }
+  #page-links-nav #navbar-links .navbar-links-item a:hover{
+    color: #91b40d;
+  }
+  #page-links-nav #navbar-links #nav-offcanvas #menu-toggle-btn {
+    font-size: 25px;
+    color: #91b40d;
+  }
+  
+  #page-links-nav #navbar-links #open-search-box{
+    font-size: 25px; 
+    color: #91b40d; 
+    cursor: pointer;
+  }
+  
+  
+  header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div {
+    padding: 10px;
+  }
+  header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div a {
+    color: #000;
+    text-decoration: none;
+  }
+  header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div a:hover {
+    color: #91b40d;
+  } 
+  @-webkit-keyframes show-box {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes show-box {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+    
+  #large-bg-image-div{
+    width: 100%;
+    height: 40vh;
+    background: url("img/header/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  #large-bg-image-div div{
+    width: 150px;
+    height: 150px;
+    background: url("img/header/small-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    transform: translateY(50%);
+  }
+
+  @media only screen and (min-width: 768px){
+    #large-bg-image-div{
+      height: 60vh;
+      background-position: 20% 0%;
+    }
+    #large-bg-image-div div{
+      right: 80px;
+    }
+  }
+  @media only screen and (min-width: 1140px){
+    #large-bg-image-div div{
+      width: 200px;
+      height: 200px;
+      right: 120px;
+    }
+  }
+  @media only screen and (min-width: 2000px){
+    #large-bg-image-div div{
+      width: 250px;
+      height: 250px;
+      right: 200px;
+    }
+  }
+
+
+main{
+  padding: 100px 0 0;
+}
+main #meladora-gardens-section {
+  padding: 80px 0 0;
+}
+main #meladora-gardens-section #gardens-flex-wrap {
+  padding: 30px 0 0;
+}
+
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item h4{
+  color: darkgreen;
+}
+
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item p {
+  color: #918f8f;
+  padding: 5px 30px;
+  max-width: 450px; 
+}
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item #main-img-div img {
+  max-width: 250px;
+}
+
+@media only screen and (min-width: 768px){
+  
+  main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item #main-img-div img {
+    max-width: 100%;
+    
+  }
+}
+@media only screen and (min-width: 1024px){
+  main #meladora-gardens-section {
+    padding: 80px 0;
+  }
+  main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item div{
+    width: 600px;
+  }
+  main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item #main-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+}
+
+
+
+footer {
+  width: 100%;
+  background: url("img/footer/f-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .container #main-panel {
+  padding: 300px 0 20px;
+}
+
+footer .container #main-panel #footer-links .links-wrap ul a {
+  text-decoration: none;
+  color: #000;
+}
+footer .container #main-panel #footer-links .links-wrap ul a:hover{
+  color: #91b40d;
+}
+
+
+#navbar-links .navbar-links-item:nth-child(4){
+  background-color: #91b40d;
+  border-radius: 5px;
+}
+.offcanvas-body div:nth-child(4){
+  background-color: #91b40d;
+  border-radius: 5px;
+}

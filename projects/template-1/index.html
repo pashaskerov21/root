@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+
+    <button class="page-scroll-button d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <header>
+        <div class="swiper header-bg-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/header-swiper/img-1.jpg" alt="banner-img"></div>
+                <div class="swiper-slide"><img src="image/header-swiper/img-2.jpg" alt="banner-img"></div>
+                <div class="swiper-slide"><img src="image/header-swiper/img-3.jpg" alt="banner-img"></div>
+                <div class="swiper-slide"><img src="image/header-swiper/img-4.jpg" alt="banner-img"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="header-layout">
+            <nav class="mobile-navbar d-lg-none">
+                <div class="container">
+                    <a href="index.html" class="logo"><img src="image/logo/logo.png" alt="logo"></a>
+                    <button class="menu-button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start" id="mobile-menu">
+                <div class="offcanvas-header">
+                    <button class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="menu-links page-navigation">
+                        <a href="#">Products</a>
+                        <a href="#">Brands</a>
+                        <a href="#">Why Triablo</a>
+                        <a href="#">Team</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">About us</a>
+                        <a href="#">News</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="general-navbar d-none d-lg-flex">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="index.html" class="logo"><img src="image/logo/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="col-10">
+                            <div class="nav-links page-navigation">
+                                <a href="#">Products</a>
+                                <a href="#">Brands</a>
+                                <a href="#">Why Triablo</a>
+                                <a href="#">Team</a>
+                                <a href="#">Reviews</a>
+                                <a href="#">About us</a>
+                                <a href="#">News</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-content">
+            <div class="header-time-counter">
+                <h1>20% OFF ON WINTER WARMERS</h1>
+                <div class="time-counter" data-time='07/01/2023 00:00:00'>
+                    <div class="circle">
+                        <div class="dots day_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="dd"></circle>
+                        </svg>
+                        <div id="days">00</div>
+                    </div>
+                    <div class="circle">
+                        <div class="dots hr_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="hh"></circle>
+                        </svg>
+                        <div id="hours">00</div>
+                    </div>
+                    <div class="circle">
+                        <div class="dots min_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="mm"></circle>
+                        </svg>
+                        <div id="minutes">00</div>
+                    </div>
+                    <div class="circle">
+                        <div class="dots sec_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="ss"></circle>
+                        </svg>
+                        <div id="seconds">00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <section class="products-section main-section">
+            <div class="container" data-aos="fade-up">
+                <h1>WE MAKE YOU AWESOME</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="products-navbar">
+                            <div class="left">
+                                <button class="menu-button second" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                                <button class="basket-button" data-bs-toggle="offcanvas" data-bs-target="#basket-offcanvas">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>0</span>
+                                </button>
+                            </div>
+                            <div class="right">
+                                <button class="products-prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button class="products-next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper product-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-1.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button">
+                                                    <a href="image/products/img-1.jpg" data-fancybox="">
+                                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                                    </a>
+                                                </button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$68.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Eastpak Padded PakR</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-2.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$48.00</span>
+                                                <span>$38.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Cayler And Sons Milano</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-3.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$48.00</span>
+                                                <span>$16.50</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Mi-Pac Floral Tapestry</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-4.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$25.00</span>
+                                                <span>$20.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Spiral Floral Backpack</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-5.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$53.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Cayler And Sons Milano</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-6.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$35.00</span>
+                                                <span>$32.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Reclaimed Vintage African</span>
+                                                <span class="category">Bum Bag</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-7.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$78.00</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">Herschel Woodlands</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="image">
+                                            <img src="image/products/img-8.jpg" alt="product">
+                                            <div class="icons">
+                                                <button class="detail-offcanvas-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <button class="add-basket-button"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="price">
+                                                <span>$60.00</span>
+                                                <span>$55.30</span>
+                                            </div>
+                                            <div class="info">
+                                                <span class="name">River Island Backpack</span>
+                                                <span class="category">Backpack</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </section>
+        <div class="offcanvas offcanvas-start" id="basket-offcanvas">
+            <div class="offcanvas-header">
+                <span>Products</span>
+                <button class="close-button" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <form action="#" class="basket-form">
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <button class="submit-button" type="submit">Send</button>
+                </form>
+                <div class="basket-product-table">
+                    <div class="basket-result">
+                        <span class="label">Total:</span>
+                        <span class="total-price">$0.00</span>
+                    </div>
+                    <span class="empty-text">It`s empty here</span>
+                    <div class="products-wrapper"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <section class="brands-section main-section" >
+            <div class="container" data-aos="zoom-in">
+                <div class="swiper brand-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="image/brands/brand1.png" alt="brand"></div>
+                        <div class="swiper-slide"><img src="image/brands/brand2.png" alt="brand"></div>
+                        <div class="swiper-slide"><img src="image/brands/brand3.png" alt="brand"></div>
+                        <div class="swiper-slide"><img src="image/brands/brand4.png" alt="brand"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-section main-section" >
+            <div class="container" data-aos="fade-up">
+                <h1>WHY PEOPLE CHOOSE TRIABLO?</h1>
+                <div class="grid-container">
+                    <div class="text-item">
+                        <div class="content">
+                            <span>PREORDER SYSTEM</span>
+                            <div class="txt">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                    a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                    iusto consectetur voluptate aperiam?
+                                </p>
+                            </div>
+                        </div>
+                        <img src="image/why/icon/icon-1.png" alt="icon">
+                    </div>
+                    <div class="text-item">
+                        <div class="content">
+                            <span>RESPONSIVE LAYOUT</span>
+                            <div class="txt">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                    a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                    iusto consectetur voluptate aperiam?
+                                </p>
+                            </div>
+                        </div>
+                        <img src="image/why/icon/icon-2.png" alt="icon">
+                    </div>
+                    <div class="text-item">
+                        <div class="content">
+                            <span>RETINA READY</span>
+                            <div class="txt">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                    a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                    iusto consectetur voluptate aperiam?
+                                </p>
+                            </div>
+                        </div>
+                        <img src="image/why/icon/icon-3.png" alt="icon">
+                    </div>
+                    <div class="text-item">
+                        <div class="content">
+                            <span>MATERIAL DESIGN</span>
+                            <div class="txt">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                    a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                    iusto consectetur voluptate aperiam?
+                                </p>
+                            </div>
+                        </div>
+                        <img src="image/why/icon/icon-1.png" alt="icon">
+                    </div>
+                    <div class="swiper why-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="image/why/swiper/img-1.png" alt="bg"></div>
+                            <div class="swiper-slide"><img src="image/why/swiper/img-2.png" alt="bg"></div>
+                            <div class="swiper-slide"><img src="image/why/swiper/img-3.png" alt="bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section main-section" >
+            <div class="container" data-aos="fade-up">
+                <h1>OUR TEAM</h1>
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Tempora esse, inventore incidunt consequatur magni animi 
+                        autem veniam neque laudantium quod, nihil illo unde nemo 
+                        odio sint, itaque quidem ea suscipit.
+                    </p>
+                </div>
+                <div class="swiper team-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <img src="image/team/img-1.jpg" alt="team">
+                                <div class="bottom">
+                                    <div class="info">
+                                        <span class="name">Tyler Tong</span>
+                                        <span class="position">Manager</span>
+                                    </div>
+                                    <div class="sosial-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <img src="image/team/img-2.jpg" alt="team">
+                                <div class="bottom">
+                                    <div class="info">
+                                        <span class="name">Joseph Abraham</span>
+                                        <span class="position">Photographer</span>
+                                    </div>
+                                    <div class="sosial-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <img src="image/team/img-3.jpg" alt="team">
+                                <div class="bottom">
+                                    <div class="info">
+                                        <span class="name">Aaron Bet</span>
+                                        <span class="position">Photographer</span>
+                                    </div>
+                                    <div class="sosial-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review-section main-section" >
+            <div class="container" data-aos="fade-up">
+                <div class="swiper review-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="title">
+                                    <img src="image/review/auth1.jpg" alt="auth">
+                                    <span class="name">John Mckenzey</span>
+                                </div>
+                                <div class="comment">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                        a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                        iusto consectetur voluptate aperiam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="title">
+                                    <img src="image/review/auth2.png" alt="auth">
+                                    <span class="name">John Mckenzey</span>
+                                </div>
+                                <div class="comment">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                        a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                        iusto consectetur voluptate aperiam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="title">
+                                    <img src="image/review/auth3.png" alt="auth">
+                                    <span class="name">John Mckenzey</span>
+                                </div>
+                                <div class="comment">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Ex, atque non. Accusantium laborum qui et quisquam ullam 
+                                        a nostrum obcaecati illum facere, ad odit rerum, veritatis 
+                                        iusto consectetur voluptate aperiam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us-section main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-item">
+                            <div class="icon"><img src="image/about-us/icon-1.png" alt="icon"></div>
+                            <div class="count"><span class="counter-span" data-val="24">24</span>h</div>
+                            <div class="label"><span>AVARAGE DELIVERY TIME</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-item">
+                            <div class="icon"><img src="image/about-us/icon-2.png" alt="icon"></div>
+                            <div class="count"><span class="counter-span" data-val="2443">2443</span></div>
+                            <div class="label"><span>PRODUCTS SOLD</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-item">
+                            <div class="icon"><img src="image/about-us/icon-3.png" alt="icon"></div>
+                            <div class="count"><span class="counter-span" data-val="98">98</span>%</div>
+                            <div class="label"><span>HAPPY CLIENTS</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-item">
+                            <div class="icon"><img src="image/about-us/icon-4.png" alt="icon"></div>
+                            <div class="count"><span class="counter-span" data-val="20">20</span></div>
+                            <div class="label"><span>YEARS OF EXPERIENCE</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section main-section">
+            <div class="container" data-aos="fade-up">
+                <h1>THINK ABOUT IT</h1>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
+                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure 
+                    dolor in hendrerit in vulputate velit.
+                </div>
+                <div class="swiper think-about-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="think-about-card">
+                                <div class="image">
+                                    <button class="image-prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="image-next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                                    <div class="swiper card-image-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-1.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-2.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-3.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-4.jpg" alt="card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="date">3 September 2022</span>
+                                    <div class="title">
+                                        <p>John Doe Nabs Lead in Adaptation of 'Paper Towns'</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            John Doe just added a major role to her quickly 
+                                            growing acting resume. As if teens (and, okay, quite a few adults) 
+                                            needed another reason to idolize the Brit, she just signed on to 
+                                            play the female lead in the film adaptation of The Fault in Our 
+                                            Stars author John Green’s YA book, Paper Towns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="think-about-card">
+                                <div class="image">
+                                    <button class="image-prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="image-next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                                    <div class="swiper card-image-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-2.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-3.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-4.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-1.jpg" alt="card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="date">3 September 2022</span>
+                                    <div class="title">
+                                        <p>John Doe Nabs Lead in Adaptation of 'Paper Towns'</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            John Doe just added a major role to her quickly 
+                                            growing acting resume. As if teens (and, okay, quite a few adults) 
+                                            needed another reason to idolize the Brit, she just signed on to 
+                                            play the female lead in the film adaptation of The Fault in Our 
+                                            Stars author John Green’s YA book, Paper Towns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="think-about-card">
+                                <div class="image">
+                                    <button class="image-prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="image-next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                                    <div class="swiper card-image-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-3.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-4.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-1.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-2.jpg" alt="card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="date">3 September 2022</span>
+                                    <div class="title">
+                                        <p>John Doe Nabs Lead in Adaptation of 'Paper Towns'</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            John Doe just added a major role to her quickly 
+                                            growing acting resume. As if teens (and, okay, quite a few adults) 
+                                            needed another reason to idolize the Brit, she just signed on to 
+                                            play the female lead in the film adaptation of The Fault in Our 
+                                            Stars author John Green’s YA book, Paper Towns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="think-about-card">
+                                <div class="image">
+                                    <button class="image-prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="image-next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                                    <div class="swiper card-image-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-4.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-1.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-2.jpg" alt="card-img">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="image/news/img-3.jpg" alt="card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <span class="date">3 September 2022</span>
+                                    <div class="title">
+                                        <p>John Doe Nabs Lead in Adaptation of 'Paper Towns'</p>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            John Doe just added a major role to her quickly 
+                                            growing acting resume. As if teens (and, okay, quite a few adults) 
+                                            needed another reason to idolize the Brit, she just signed on to 
+                                            play the female lead in the film adaptation of The Fault in Our 
+                                            Stars author John Green’s YA book, Paper Towns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section main-section">
+            <div class="container" data-aos="fade-up">
+                <h1>CONTACT OR FIND US ON <a href="#contact-map" data-bs-toggle="offcanvas">THE MAP</a></h1>
+                <div class="offcanvas offcanvas-top" id="contact-map">
+                    <div class="offcanvas-body">
+                        <button class="map-close-button" data-bs-dismiss="offcanvas">Back to Site</button>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24305.76232914585!2d49.86419514999999!3d40.4039704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4ee9253a65%3A0x29160f1a81905e71!2zTtOZcmltYW4gTtOZcmltYW5vdg!5e0!3m2!1saz!2saz!4v1678687906181!5m2!1saz!2saz" ></iframe>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-row">
+                                <label for="name-input">Name</label>
+                                <input type="text" class="form-control" id="name-input">
+                            </div>
+                            <div class="form-row">
+                                <label for="name-email">Email</label>
+                                <input type="email" class="form-control" id="name-email">
+                            </div>
+                            <div class="form-row">
+                                <label for="name-subject">Subject</label>
+                                <input type="text" class="form-control" id="name-subject">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-row message">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message"></textarea>
+                                <button type="submit" class="send-button"><span>Send</span><i class="fa-solid fa-envelope"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="sosial-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-col">
+                        <div class="contact-item">
+                            <span>email:</span>
+                            <a href="#">info@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>address:</span>
+                            <a href="#">Baku, Azerbaijan</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>number:</span>
+                            <a href="#">+994 55 555 55 55</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-col"><a href="index.html" class="logo"><img src="image/logo/logo.png"></a></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-col"><span>&copy; Triablo 2014. All Rights Reserved</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

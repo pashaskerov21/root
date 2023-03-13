@@ -1,0 +1,78 @@
+/*-------------------FOOTER-------------------*/
+footer{
+    background-color: var(--bg-color-1);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    @include column-center;
+    .aurum-logo{
+        max-width: 240px;
+    }
+    .container{
+        @include center;
+        .row{
+            width: 100%;
+            padding: 70px 0;
+            .col-12{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 35px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &.logo{
+                    margin-bottom: 50px;
+                }
+            }
+            
+        }
+    }
+    .footer-links{
+        width: 100%;
+        @include column-center;
+        a{
+            color: #fff;
+            margin-bottom: 15px;
+            position: relative;
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            &.adress{
+                font-size: 16px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:hover{
+                &::after{
+                    transform: scale(1);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .contact-item{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        span{
+            color: var(--t-color-2);
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .links{
+            @include column-center;
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                &::after{
+                    transform: scale(1);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+

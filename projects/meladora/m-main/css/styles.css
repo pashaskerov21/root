@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 80vh;
+  background: url("../img/header/header-bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header #black-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header nav #contact-info-nav .nav-item {
+  color: #91b40d;
+  padding: 5px;
+  font-size: 20px;
+}
+header nav #contact-info-nav .nav-item:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+header nav #page-links-nav #navbar-links .navbar-links-item a:hover {
+  color: #91b40d;
+}
+header nav #page-links-nav #navbar-links #nav-offcanvas #menu-toggle-btn {
+  font-size: 25px;
+  color: #91b40d;
+}
+header nav #page-links-nav #navbar-links #nav-offcanvas #menu-toggle-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div {
+  padding: 10px;
+}
+header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div a {
+  color: #91b40d;
+}
+header nav #page-links-nav #navbar-links #nav-offcanvas #link-nav-offcanvas .offcanvas-body div a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+header #product-swiper {
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(50%);
+}
+header #product-swiper .swiper-wrapper .swiper-slide #fruit-slide {
+  width: 400px;
+  height: 200px;
+  background-color: #1a5221;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #fruit-slide #info a:hover {
+  color: #fff;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #fruit-slide #fruit-slide-bg {
+  width: 100%;
+  height: 100%;
+  background: url("../img/slide/fruit-slide-image-1.png");
+  background-size: cover;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #fruit-slide #fruit-slide-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  background: url("../img/slide/fruit-slide-image-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #vegetable-slide {
+  width: 400px;
+  height: 200px;
+  background-color: #91b40d;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #vegetable-slide #info a:hover {
+  color: #fff;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #vegetable-slide #vegetable-slide-bg {
+  width: 100%;
+  height: 100%;
+  background: url("../img/slide/vgtbl-slide-image-1.png");
+  background-size: cover;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #vegetable-slide #vegetable-slide-img {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  background: url("../img/slide/vgtbl-slide-image-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #flour-slide {
+  width: 400px;
+  height: 200px;
+  background-color: #ffbf00;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #flour-slide #info a:hover {
+  color: #fff;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #flour-slide #flour-slide-bg {
+  width: 100%;
+  height: 100%;
+  background: url("../img/slide/fruit-slide-image-1.png");
+  background-size: cover;
+}
+header #product-swiper .swiper-wrapper .swiper-slide #flour-slide #flour-slide-img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  background: url("../img/slide/flour-slide-image-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 960px) {
+  header #product-swiper {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  header #product-swiper {
+    width: 100%;
+  }
+}
+@media (min-width: 1300px) {
+  header #product-swiper {
+    width: 90%;
+  }
+}
+@media (min-width: 1500px) {
+  header #product-swiper {
+    width: 80%;
+  }
+}
+@-webkit-keyframes show-box {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes show-box {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main {
+  margin: 180px 0 0;
+}
+main #meladora-information-section #meladora-information-image {
+  width: 100%;
+  min-height: 50vh;
+  align-self: stretch;
+  background: url("../img/main/content-img/info-sect-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main #meladora-information-section-content {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #meladora-information-section-content #content-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+}
+main #meladora-information-section-content #content-text #content-basic-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+main #meladora-information-section-content #content-text #content-basic-bg img {
+  max-width: 250px;
+}
+main #meladora-information-section-content #text-bottom-img img:nth-child(1) {
+  width: 150px;
+}
+main #meladora-information-section-content #text-bottom-img img:nth-child(3) {
+  width: 150px;
+}
+main #meladora-gardens-section {
+  padding: 80px 0;
+}
+main #meladora-gardens-section #gardens-flex-wrap {
+  padding: 30px 0;
+}
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item p:nth-child(1) {
+  font-size: 80px;
+  color: #918f8f;
+}
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item p:nth-child(2) {
+  font-size: 30px;
+  color: #000;
+}
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item p:nth-child(3) {
+  color: #918f8f;
+  padding: 5px 30px;
+  max-width: 450px;
+  text-align: center;
+}
+main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item div img {
+  max-width: 250px;
+}
+main #meladora-products-section #products-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  width: 100%;
+  cursor: pointer;
+}
+main #meladora-products-section #product-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 50px 30px;
+}
+main #meladora-products-section #product-items .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+main #meladora-products-section #product-items .card:hover {
+  transform: scale(1.05);
+}
+main #meladora-products-section #product-items .card .card-img-top {
+  width: 80px;
+}
+main #meladora-products-section #product-items .card .card-body p {
+  color: #91b40d;
+}
+main #meladora-blogs-section #blog-container .blog-item img {
+  max-width: 250px;
+}
+main #meladora-blogs-section #blog-container .blog-item h5 {
+  margin: 10px 0;
+}
+main #meladora-blogs-section #blog-container .blog-item p {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 10px;
+  max-width: 450px;
+}
+
+footer {
+  width: 100%;
+  background: url("../img/footer/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .container #main-panel {
+  padding: 300px 0 20px;
+}
+footer .container #main-panel #footer-links .links-wrap ul a:hover {
+  color: #91b40d;
+}
+
+@media only screen and (min-width: 400px) {
+  main #meladora-information-section-content #content-text #content-basic-bg img {
+    max-width: 100%;
+  }
+  main #meladora-gardens-section #gardens-flex-wrap .flex-wrap-item div img {
+    max-width: 100%;
+  }
+  main #meladora-blogs-section #blog-container .blog-item img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  header #food-carousel {
+    width: 60%;
+  }
+  main #meladora-products-section #product-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  header #food-carousel {
+    width: 50%;
+  }
+  main #meladora-products-section #product-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  main #meladora-products-section #product-items {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}/*# sourceMappingURL=styles.css.map */

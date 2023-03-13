@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky | Dibçək gülləri</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+   
+  </head>
+  
+  <body>
+    <header>
+      <!--Register Link-->
+      <div class="d-flex justify-content-end container-md p-2">
+        <div id="registration-div" class="d-flex">
+          <a href="../../lucky-account/lucky-login/index.html" class="px-2 py-1 px-md-4 py-md-2">Daxil ol</a>
+          <a href="../../lucky-account/lucky-register/index.html" class="px-2 py-1 px-md-4 py-md-2">Qeydiyyat</a>
+        </div>
+      </div>
+
+      <div class="navbar-grid-system-1" id="navbar-grid-system-div">
+        <!--1ci grid element-->
+        <div
+          class="d-flex justify-content-center align-items-center"
+          id="tnav-logo"
+        >
+          <a href="../../lucky-main/index.html"><img src="img/header/logo-header.svg"/></a>
+        </div>
+        <!--2ci grid element 768den sora yox olacaq-->
+        <div
+          class="d-flex justify-content-start justify-content-md-center align-items-center d-md-none"
+          id="tnav-toggle-menu-btn"
+        >
+          <div class="tnav-menu-btn">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </div>
+        <!--3cu grid element-->
+        <div
+          class="d-flex justify-content-end justify-content-md-center align-items-center"
+          id="tnav-icons"
+        >
+          <a href="../../lucky-icons/shopping/index.html" class="mx-1" id="nav-shopping-btn"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span class="badge">0</span></a
+          >
+          <a href="../../lucky-icons/heart/index.html" class="mx-4" id="nav-heart-btn"
+            ><i class="fa-solid fa-heart"></i><span class="badge">0</span></a
+          >
+        </div>
+        <!--4cu grid element-->
+        <div
+          class="d-flex justify-content-center align-items-center d-none d-md-flex"
+          id="tnav-search-div"
+        >
+          <div>
+            <input type="text" placeholder="Axtar" />
+            <a href="#"><i class="fa-solid fa-search"></i></a>
+          </div>
+        </div>
+        <!--5ci grid element-->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center d-none d-md-flex flex-md-row tntm-links"
+          id="tnav-menu-links"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../../lucky-nav-links/1-lucky-info/index.html">Haqqımızda</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../../lucky-nav-links/2-lucky-new-product/index.html">Yeni</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../../lucky-nav-links/3-lucky-endirim/index.html">Endirimlər</a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../../lucky-nav-links/4-lucky-favorite/index.html">Ən çox satılanlar</a>
+          </div>
+
+          <div
+            id="terms-link-btn"
+            class="d-flex flex-column align-items-center justify-content-center align-self-stretch mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <p class="m-0 p-1">
+              Şərtlər <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <div
+              id="terms-link-menu"
+              class="d-flex flex-column align-items-center d-none d-md-none align-items-md-start"
+            >
+              <a href="../../lucky-nav-links/5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+              <a href="../../lucky-nav-links/5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
+          >
+            <a href="../../lucky-nav-links/6-lucky-contact/index.html">Əlaqə</a>
+          </div>
+        </div>
+        <!--6ci grid element-->
+        <div id="bnav-category-btn" class="d-flex flex-column">
+          <div id="btn-name" class="d-flex justify-content-center">
+            <img src="img/header/category.svg" />
+            <p>Kateqoriyalar</p>
+          </div>
+          <div
+            id="bnav-category-menu"
+            class="d-flex flex-column align-items-center py-4 py-md-2 d-none d-md-none"
+          >
+            <div class="category-item" id="office-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img
+                  src="img/header/ofis-levazimat.svg"
+                  class="d-none d-md-block"
+                />
+                <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="office-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Ağardıcı</a></li>
+                  <li><a href="#">Bıçaq</a></li>
+                  <li><a href="#">Bloknot</a></li>
+                  <li><a href="#">Çek və qaimə</a></li>
+                  <li><a href="#">Çərçivə</a></li>
+                  <li><a href="#">Delgəc</a></li>
+                  <li><a href="#">Dəftər</a></li>
+                  <li><a href="#">Fayl</a></li>
+                  <li><a href="#">Kağız</a></li>
+                  <li><a href="#">Kalkulyator</a></li>
+                  <li><a href="#">Karandaş</a></li>
+                  <li><a href="#">Karandaş yonan</a></li>
+                  <li><a href="#">Marker</a></li>
+                  <li><a href="#">Masaüstü</a></li>
+                  <li><a href="#">Pozan</a></li>
+                  <li><a href="#">Pul rezini</a></li>
+                  <li><a href="#">Qayçı</a></li>
+                  <li><a href="#">Qısqac</a></li>
+                  <li><a href="#">Qeyd kağızı</a></li>
+                  <li><a href="#">Qələm</a></li>
+                  <li><a href="#">Qısqac</a></li>
+                  <li><a href="#">Qovluq</a></li>
+                  <li><a href="#">Sənəd Dolabı</a></li>
+                  <li><a href="#">Sənəd Rəfi</a></li>
+                  <li><a href="#">Skoç</a></li>
+                  <li><a href="#">Skrepka</a></li>
+                  <li><a href="#">Stepler</a></li>
+                  <li><a href="#">Xətkeş</a></li>
+                  <li><a href="#">Yapışqan</a></li>
+                  <li><a href="#">Yazı lövhəsi</a></li>
+                  <li><a href="#">Zərf</a></li>
+                  <li><a href="#">Zibil qabı</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="food-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/qida.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
+                <button id="mobile-food-btn" class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="food-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Çay</a></li>
+                  <li><a href="#">Ədviyyat</a></li>
+                  <li><a href="#">Qəhvə</a></li>
+                  <li><a href="#">Qənd</a></li>
+                  <li><a href="#">Quru meyvə</a></li>
+                  <li><a href="#">Şirniyyat</a></li>
+                  <li><a href="#">Soyuq içkilər</a></li>
+                  <li><a href="#">Süd</a></li>
+                  <li><a href="#">Un məhsulları</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="teserrufat-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img
+                  src="img/header/teserrufat.png"
+                  class="d-none d-md-block"
+                />
+                <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="teserrufat-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Birdəfəlik qablar</a></li>
+                  <li><a href="#">Əlcək</a></li>
+                  <li><a href="#">Hava təravətləndirici</a></li>
+                  <li><a href="#">Mətbəx Dəsmalı</a></li>
+                  <li><a href="#">Mətbəx Ləvazimatları</a></li>
+                  <li><a href="#">Sabun</a></li>
+                  <li><a href="#">Salfetlər</a></li>
+                  <li><a href="#">Təmizləyici maddələr</a></li>
+                  <li><a href="#">Təmizlik Vasitələri</a></li>
+                  <li><a href="#">Tibbi ləvazimatlar</a></li>
+                  <li><a href="#">Tualet kağızı</a></li>
+                  <li><a href="#">Xırdavat</a></li>
+                  <li><a href="#">Zibil paketi</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="elektron-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/elektron.webp" class="d-none d-md-block" />
+                <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="elektron-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Batareyalar</a></li>
+                  <li><a href="#">Katric</a></li>
+                  <li><a href="#">Klaviatura</a></li>
+                  <li><a href="#">Çanta</a></li>
+                  <li><a href="#">Modem</a></li>
+                  <li><a href="#">Mouse</a></li>
+                  <li><a href="#">Power Bank</a></li>
+                  <li><a href="#">Printer</a></li>
+                  <li><a href="#">Telefon</a></li>
+                  <li><a href="#">Təmizləyicilər</a></li>
+                  <li><a href="#">Uzadıcı</a></li>
+                  <li><a href="#">Yaddaş Kartı</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="flower-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/gul.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="flower-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Aksesuarlar</a></li>
+                  <li><a href="#">Otaq Gülləri</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="gift-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/hediye.jpg" class="d-none d-md-block" />
+                <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="gift-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Cüzdan</a></li>
+                  <li><a href="#">Masaüstü Dəstləri</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-item" id="coffee-item">
+              <div
+                class="d-flex justify-content-between align-items-center category-name"
+              >
+                <img src="img/header/coffee.png" class="d-none d-md-block" />
+                <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
+                <button class="mobile-menu-btns">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+              <div
+                id="coffee-item-menu"
+                class="category-item-menu d-none d-md-none"
+              >
+                <ul>
+                  <li><a href="#">Mondo</a></li>
+                  <li><a href="#">Qəhvə bişirənlər</a></li>
+                  <li><a href="#">Qəhvə kapsulları</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column align-items-center">
+      <div id="info-header" class="d-flex flex-column align-items-center">
+        <h3>Dibçək gülləri</h3>
+        <div class="design-line"></div>
+      </div>
+      <section class="container d-flex flex-column flex-lg-row">
+        <div id="filter-panel-wrapper-1" class="my-3">
+          <button class="btn btn-lg col-12 d-lg-none" id="open-filter-panel1-btn">Filterlə</button>
+          <div id="filter-panel-1" class=" my-3 container d-none d-lg-block">
+            <div class="wrapper border-bottom  py-3" id="range-panel">
+              <div  class="d-flex flex-column align-items-center py-3">
+                <h3>Qiymət filteri</h3>
+                <div class="design-line"></div>
+              </div>
+              
+              <div class="slider">
+                  <div class="progress"></div>
+              </div>
+              <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="1790" value="0">
+                  <input type="range" class="range-max" min="0" max="1790" value="500">
+              </div>
+              <div class="price-input">
+                <div class="field">
+                    <input type="number" class="input-min" value="0">
+                    <img src="img/main/manat.svg" class="mx-3">
+                </div>
+                <div class="field">
+                    <input type="number" class="input-max" value="500">
+                    <img src="img/main/manat.svg" class="mx-3">
+                </div>
+            </div>
+          </div>
+          <div id="alt-kateqoriya" class="container py-3">
+            <div class="d-flex flex-column align-items-center">
+              <h3>Alt kateqoriya</h3>
+              <div class="design-line"></div>
+            </div>
+            <div class="py-3 border-bottom">
+              <div id="chekcboxs-panel" class="px-3 pb-3">
+                <div class="form-check py-1">
+                  <input type="checkbox" id="cb-1" class="form-check-input">
+                  <label for="cb-1">Aksesuarlar</label>
+                </div>
+                <div class="form-check py-1">
+                  <input type="checkbox" id="cb-2" class="form-check-input">
+                  <label for="cb-2">Otaq gülləri</label>
+                </div>
+                
+                
+              </div>
+            </div>
+            
+            <div class="px-3 my-3">
+              <div class="form-check py-1">
+                <input type="checkbox" id="yeni" class="form-check-input">
+                <label for="yeni">Yeni</label>
+              </div>
+              <div class="form-check py-1">
+                <input type="checkbox" id="tovsiyye" class="form-check-input">
+                <label for="tovsiyye">Tövsiyyə edilir</label>
+              </div>
+              <button class="btn btn-lg my-3 px-5" id="filter-button">Filtrlə</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="products-panel" class="d-flex flex-column align-items-center container my-3 py-3 mx-lg-4 w-100 ">
+          <div id="filter-panel-wrapper-2" class="row py-4 container">
+            <div class="py-2 col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center select-item">
+              <p class="m-0">Saya görə:</p>
+              <select class="form-select">
+                <option value="12">12</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="30">30</option>
+              </select>
+            </div>
+            <div class="py-2 col-12 col-xl-6 d-flex flex-column flex-sm-row align-items-center select-item">
+              <p class="m-0">Qiymətə görə:</p>
+              <select class="form-select">
+                <option selected disabled>Seç</option>
+                <option>Ucuzdan bahaya</option>
+                <option>Bahadan ucuza</option>
+              </select>
+            </div>
+          </div>
+          <div  class="py-4 common-product-cards w-100">
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-1.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>29.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-2.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Xavortiya</p>
+              <p>35.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-3.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>65.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-4.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Xavortiya</p>
+              <p>20.60 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-5.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>30.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-6.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Xavortiya</p>
+              <p>25.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-7.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>65.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-8.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>29.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-9.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>54.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-10.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>45.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-11.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">Sansevieriya</p>
+              <p>34.00 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>
+  
+            <div class="d-flex flex-column align-items-center card-item">
+              <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+              </div>
+              <div class="card-image"><img src="img/main/products/item-12.jpg" class="w-100"></div>
+              <p class="fs-5 mt-1">"Crasulla" keramik qabda</p>
+              <p>29.25 Azn</p>
+              <button class="product-order-btn">Səbətə at</button>
+            </div>  
+  
+          </div>
+  
+          <div class="button-group my-4">
+            <button><a href="#"><i class="fa-solid fa-chevron-left"></i></a></button>
+            <button><a href="#" class="text-white">1</a></button>
+            <button><a href="#">2</a></button>
+            <button><a href="#">3</a></button>
+            <button><a href="#">4</a></button>
+            <button><a href="#">5</a></button>
+            <button><a href="#">6</a></button>
+            <button disabled><a href="#"><i class="fa-solid fa-chevron-right"></i></a></button>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="d-flex flex-column align-items-center">
+      <div
+        class="d-flex flex-column flex-xl-row w-100 justify-content-md-around align-items-center"
+      >
+        <div id="footer-logo" class="d-flex flex-column align-items-center">
+          <a href="../../lucky-main/index.html"><img src="img/footer-logo.svg" alt="logo" /></a>
+          <div id="footer-icons" class="d-flex py-1">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a
+            ><a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div id="footer-links" class="d-flex flex-column flex-md-row">
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Kateqoriyalar</h5>
+            <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
+            <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
+            <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
+            <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
+            <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
+            <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
+            <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Menyular</h5>
+            <a href="../../lucky-nav-links/1-lucky-info/index.html">Haqqımızda</a>
+            <a href="../../lucky-nav-links/5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+            <a href="../../lucky-nav-links/5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
+            <a href="../../lucky-nav-links/6-lucky-contact/index.html">Əlaqə</a>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
+          >
+            <h5>Əlaqə</h5>
+            <p>Tel: (994) 99 832 07 77</p>
+            <p>E-mail: info@los.az</p>
+            <p class="text-center">
+              Ünvan: Ziya Bünyadov pr,1965.<br />Çinar Park Biznes Mərkəzi
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="footer-author"
+        class="d-flex flex-column align-items-center flex-md-row justify-content-between py-3 container border-top"
+      >
+        <p class="text-center">
+          &copy;Bütün hüquqlar qorunur -
+          <a href="#" class="text-center">Lucky Office Support</a>
+        </p>
+        <p>Powered by <a href="#">Proton.az</a></p>
+      </div>
+    </footer>
+
+    <button
+      id="page-up-scroll-btn"
+      class="btn btn-lg btn-success border-5 border-white position-fixed bottom-0 end-0 m-3 m-lg-4 d-none"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <div class="toast align-items-center text-bg-success border-0 position-fixed end-0 m-sm-3" id="product-toast" style="bottom: 10%;" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">
+          Məhsul səbətə əlavə olundu
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

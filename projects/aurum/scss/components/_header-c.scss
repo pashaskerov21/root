@@ -1,0 +1,208 @@
+/*---------HEADER COMPONENTS---------*/
+/*mobile header start*/
+/*mobile logo*/
+.aurum-logo{
+    width: 100%;
+    max-width: 100px;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+/*menu button*/
+.menu-button{
+    font-size: 20px;
+    color: var(--t-color-2);
+}
+/*language dropdown*/
+.language-dropdown{
+    margin-right: 15px;
+    .dropdown-toggle{
+        a{
+            color: var(--t-color-2);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &::after{
+            display: none;
+        }
+        &:hover a{
+            color: var(--t-color-2);
+        }
+    }
+    .dropdown-menu{
+        min-width: 70px;
+        background-color: transparent;
+        .links{
+            width: 100%;
+            padding: 0 5px;
+            @include column-center;
+            a{
+                width: 100%;
+                text-align: center;
+                color: var(--t-color-2);
+                font-size: 20px;
+                font-weight: 700;
+                &:hover{
+                    background-color: var(--t-color-2);
+                    color: var(--t-color-1);
+                }
+            }
+        }
+    }
+}
+
+/*offcanvas links*/
+.canvas-links{
+    width: 100%;
+    @include column-center;
+    a{
+        @include center;
+        display: block;
+        padding: 12px 15px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--t-color-2);
+        position: relative;
+        transition: all 0.7s;
+        margin-bottom: 10px;
+        i{
+            font-size: 15px;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 3px solid var(--d-color-2);
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.5);
+            transition: all 0.3s;
+        }
+        &:hover{
+            background-color: var(--bg-color-2);
+            color: var(--t-color-1);
+            animation: pulse-2 1s ease infinite;
+            &::after{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+    .collapse-links{
+        @include column-start;
+    }
+}
+/*sosial icons*/
+.sosial-icons{
+    @include center;
+    a{
+        @include center;
+        font-size: 18px;
+        color: var(--t-color-2);
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        &:hover{
+            background-color: var(--bg-color-2);
+            color: var(--t-color-1);
+            animation: pulse-2 1s ease infinite;
+        }
+    }
+}
+/*contact item*/
+.contact-item{
+    @include center;
+    i{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: var(--bg-color-2);
+        font-size: 24px;
+        color: var(--t-color-1);
+        margin-right: 10px;
+        @include center;
+    }
+    a{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--t-color-2);
+        position: relative;
+        &:hover{
+            &::after{
+                background-color: var(--d-color-2);
+                transform: scale(1);
+            }
+        }
+    }
+    .phone-links{
+        @include column-start;
+        a{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:hover{
+        .fa-phone{
+            animation: phone-animation 0.2s ease infinite;
+        }
+    }
+}
+/*mobile header end*/
+/*general header start*/
+
+/*general language*/
+.general-language{
+    display: flex;
+    a{
+        color: #fff;
+        font-size: 18px;
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &.active{
+            color: var(--t-color-2);
+            text-decoration: underline;
+        }
+    }
+}
+/*bottom navbar dropdown*/
+.bottom-navbar-dropdown{
+    position: relative;
+    .dropdown-button{
+        i{
+            font-size: 11px;
+            color: #fff;
+        }
+    }
+    .links-menu{
+        position: absolute;
+        z-index: 999;
+        top: 90%;
+        left: -25%;
+        border: 1px solid var(--black-3);
+        background-color: var(--bg-color-1);
+        border-radius: 5px;
+        padding: 10px;
+        opacity: 0;
+        animation: dropdown-menu 0.5s ease forwards;
+        a{
+            @include center;
+            padding: 10px !important;
+            min-width: 150px;
+            &::after{
+                display: none;
+            }
+            &:hover{
+                background-color: var(--bg-color-2);
+                color: var(--t-color-1) !important;
+            }
+        }
+    }
+}
+/*general header end*/

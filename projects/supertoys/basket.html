@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperToys | Səbət</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <header>
+        <div class="mobile-header d-lg-none">
+            <div class="row w-100">
+                <div class="col-3 mobile-header-col">
+                    <button class="mobile-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-collapse-menu">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                    </button>
+                </div>
+                <div class="col-6 mobile-header-col">
+                    <a href="#" class="supertoys-logo"><img src="image/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-3 mobile-header-col">
+                    <a href="#" class="account-link"><img src="image/icons/user-profile.png" alt="user-icon"></a>
+                </div>
+            </div>
+            <div class="collapse d-lg-none" id="mobile-collapse-menu">
+                <div class="collapse-menu-wrapper">
+                    <div class="main-icons">
+                        <a href="#"><img src="image/icons/sebet.png"></a>
+                        <a href="#"><img src="image/icons/heart.png"></a>
+                        <a href="#"><img src="image/icons/flag-az.png"></a>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="Axtarış">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="menu-links-wrapper">
+                        <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/catalog.png">
+                            <span>Məhsul katalogu</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/man.png">
+                            <span>Oğlanlar üçün</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/woman.png">
+                            <span>Qızlar üçün</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link">
+                            <img src="image/icons/kampaniya.png">
+                            <span>Kampaniyalar</span> 
+                         </a>
+                         <a href="#" class="mobile-menu-link gift-link">
+                            <img src="image/icons/gift.png">
+                            <span>Hədiyə axtar</span> 
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="general-header d-none d-lg-block">
+            <nav class="top-navbar">
+                <div class="container d-flex justify-content-center">
+                    <div class="row w-100">
+                        <div class="col-3 top-navbar-col">
+                            <a href="#" class="supertoys-logo"><img src="image/logo.png"></a>
+                        </div>
+                        <div class="col-6 top-navbar-col">
+                            <div class="search-input">
+                                <button><img src="image/icons/search.png"></button>
+                                <input type="text" placeholder="Axtarış">
+                            </div>
+                        </div>
+                        <div class="col-3 top-navbar-col">
+                            <div class="main-icons">
+                                <a href="#"><img src="image/icons/sebet.png"></a>
+                                <a href="#"><img src="image/icons/heart.png"></a>
+                                <a href="#"><img src="image/icons/flag-az.png"></a>
+                                <a href="#"><img src="image/icons/user-profile.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="bottom-navbar">
+                <div class="row w-100">
+                    <div class="col-3 bottom-navbar-col">
+                        <img src="image/icons/catalog.png">
+                        <a href="№">Məhsul katalogu</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/man.png">
+                        <a href="№">Oğlanlar üçün</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/woman.png">
+                        <a href="№">Qızlar üçün</a>
+                    </div>
+                    <div class="col-2 bottom-navbar-col">
+                        <img src="image/icons/kampaniya.png">
+                        <a href="№">Kampaniyalar</a>
+                    </div>
+                    <div class="col-3 bottom-navbar-col gift-col">
+                        <img src="image/icons/gift.png">
+                        <a href="#">Hədiyə axtar</a> 
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="supertoys-basket">
+        <section class="basket-section">
+            <div class="container">
+                <form action="#" class="basket-form">
+                    <div class="row w-100">
+                        <div class="col-12 col-lg-6 basket-form-col">
+                            <div class="basket-form-left">
+                                <div class="form-item">
+                                    <label for="user-name">Ad, Soyad*</label>
+                                    <input type="text" class="form-control" id="user-name" placeholder="Adınız və Soyadınız">
+                                </div>
+                                <div class="form-item">
+                                    <label for="user-phone">Telefon*</label>
+                                    <input type="text" class="form-control" id="user-phone" placeholder="+994 50 999 99 99">
+                                </div>
+                                <div class="form-item">
+                                    <label for="user-email">E-mail*</label>
+                                    <input type="email" class="form-control" id="user-email" placeholder="E-mail ünvanınızı daxil edin">
+                                </div>
+                                <div class="form-button-wrapper">
+                                    <button type="button" class="active">Mağazadan götür</button>
+                                    <button type="button">Ünvana çatdırılma</button>
+                                </div>
+                                <div class="form-item">
+                                    <label for="user-city">Şəhər*</label>
+                                    <input type="text" class="form-control" id="user-city" placeholder="Bakı, Sumqayıt...">
+                                </div>
+                                <div class="form-item">
+                                    <label for="user-address">Ünvan*</label>
+                                    <input type="text" class="form-control" id="user-address" placeholder="Küçə adı və ev ünvanı">
+                                </div>
+                                <div class="form-item">
+                                    <label for="user-notice">Qeyd*</label>
+                                    <textarea id="user-notice" class="form-control" placeholder="Əlavə qeydləri daxil edin"></textarea>
+                                </div>
+                                <div class="form-button-wrapper">
+                                    <button type="button" class="active">Qapıda ödəniş</button>
+                                    <button type="button">Kartla ödəniş</button>
+                                </div>
+                                <div class="payment-card-info">
+                                    <span class="header">Kart məlumatlarını daxil edin</span>
+                                    <div class="payment-cards">
+                                        <button type="button" class="active"><img src="image/icons/payment-card-1.png"></button>
+                                        <button type="button"><img src="image/icons/payment-card-2.png"></button>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="user-card-number">Kartın nömrəsi*</label>
+                                        <input id="user-card-number" class="form-control" placeholder="____  ____  ____  ____"></input>
+                                    </div>
+                                    <div class="row w-100">
+                                        <div class="col-12 col-sm-6 p-0 pe-sm-2">
+                                            <div class="form-item">
+                                                <label for="user-date">Tarix*</label>
+                                                <input id="user-date" class="form-control" placeholder="MM/YY"></input>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 p-0 ps-sm-2">
+                                            <div class="form-item">
+                                                <label for="user-cvv">CVV*</label>
+                                                <input id="user-cvv" class="form-control" placeholder="CVV 2"></input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 basket-products-col">
+                            <div class="basket-products-wrapper">
+                                <div class="header">
+                                    <span>Məlumatlar</span>
+                                    <a href="basket-edit.html">Edit</a>
+                                </div>
+                                <div class="products">
+                                    <div class="product-row row">
+                                        <div class="col-3">
+                                            <div class="image"><img src="image/products/img-21.png"></div>
+                                        </div>
+                                        <div class="col-6 col-xl-7">
+                                            <div class="info">
+                                                <span class="name">P.M MERCEDES</span>
+                                                <span class="number">640 ₼ x 1</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 col-xl-2">
+                                            <div class="price">
+                                                <span>640 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-row row">
+                                        <div class="col-3">
+                                            <div class="image"><img src="image/products/img-22.png"></div>
+                                        </div>
+                                        <div class="col-6 col-xl-7">
+                                            <div class="info">
+                                                <span class="name">MAŞIN</span>
+                                                <span class="number">580 ₼ x 2</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 col-xl-2">
+                                            <div class="price">
+                                                <span>1160 ₼</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-total-sum">
+                                    <div class="sum-row">
+                                        <span>Məhsul:</span>
+                                        <span>1800 ₼</span>
+                                    </div>
+                                    <div class="sum-row">
+                                        <span>Çatdırılma:</span>
+                                        <span>7 ₼</span>
+                                    </div>
+                                    <div class="sum-row">
+                                        <span>Endirim:</span>
+                                        <span>0 ₼</span>
+                                    </div>
+                                    <div class="sum-row main">
+                                        <span>Cəmi qiymət:</span>
+                                        <span>1807 ₼</span>
+                                    </div>
+                                    <button type="submit" class="confirm-button">Sifarişi təsdiqlə</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <div class="footer-top">
+                <div class="row w-100">
+                    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                        <a href="#" class="supertoys-logo"><img src="image/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center">
+                        <div class="row w-100">
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Şirkət</h4>
+                                    <a href="#">Haqqımızda</a>
+                                    <a href="#">Vakansiyalar</a>
+                                    <a href="#">Tədbirlər və layihələr</a>
+                                    <a href="#">Mağazalarımız</a>
+                                    <a href="#">Şikayətlər və təkliflər</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Müştərilər üçün</h4>
+                                    <a href="#">Hədiyə göndər</a>
+                                    <a href="#">Ad günü kompaniyası</a>
+                                    <a href="#">Çatdırılma və ödəmə</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 d-flex justify-content-center">
+                                <div class="footer-links d-flex flex-column align-items-center align-items-md-start">
+                                    <h4>Əlaqə</h4>
+                                    <a href="#">*4044</a>
+                                    <a href="#">055 457 40 44</a>
+                                    <div class="sosial-icons">
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><span>&copy; 2022. SUPERTOYS</span><span>❤️</span><span>Sevgi ilə sizin üçün hazırlanmışdır.</span></p>
+        </div>
+    </footer>
+
+
+
+    <button class="page-up-scroll-btn d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sebet.js"></script>
+    <script>
+        let formButtons = document.querySelectorAll(".form-button-wrapper button");
+        formButtons[0].addEventListener("click",function(){
+            formButtons[1].classList.remove("active");
+            formButtons[0].classList.add("active");
+        });
+        formButtons[1].addEventListener("click",function(){
+            formButtons[0].classList.remove("active");
+            formButtons[1].classList.add("active");
+        });
+        formButtons[2].addEventListener("click",function(){
+            formButtons[3].classList.remove("active");
+            formButtons[2].classList.add("active");
+        });
+        formButtons[3].addEventListener("click",function(){
+            formButtons[2].classList.remove("active");
+            formButtons[3].classList.add("active");
+        });
+        let paymentCards = document.querySelectorAll(".payment-cards button");
+        paymentCards[0].addEventListener("click",function(){
+            paymentCards[1].classList.remove("active");
+            paymentCards[0].classList.add("active");
+        });
+        paymentCards[1].addEventListener("click",function(){
+            paymentCards[0].classList.remove("active");
+            paymentCards[1].classList.add("active");
+        });
+    </script>
+</body>
+</html>

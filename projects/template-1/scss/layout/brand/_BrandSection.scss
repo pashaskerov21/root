@@ -1,0 +1,7 @@
+.brands-section{
+    min-height: 300px;
+    @include center;
+    img{
+        max-width: 220px;
+    }
+}
